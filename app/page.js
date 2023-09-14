@@ -1,11 +1,11 @@
-import About from './about';
-import Contact from './contact';
-import Footer from './footer';
-import Hero from './hero';
-import Navbar from './navbar';
-import Mentors from './mentors';
-import Sponsors from './sponsors';
-import Timeline from './timeline';
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Mentors from "@/components/Mentors";
+import Navbar from "@/components/Navbar";
+import Sponsors from "@/components/Sponsors";
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
