@@ -1,5 +1,5 @@
 import React from 'react';
-import im from '/images/HFest23_Logo.png' ;
+import im from '../public/images/HFest23_Logo.png' ;
 
 const Hero=()=>{
     return (

@@ -1,8 +1,8 @@
 import React from "react";
-// import insta from '/images/insta.svg'
-// import facebook from '/images/facebook.svg'
-// import twitter from '/images/twitter.svg'
-// import linkedin from '/images/linkedin.svg'
+import insta from '../public/images/insta.svg'
+import facebook from '../public/images/facebook.svg'
+import twitter from '../public/images/twitter.svg'
+import linkedin from '../public/images/linkedin.svg'
 
 function footer(){
     return(
