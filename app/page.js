@@ -9,14 +9,16 @@ import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between ">
       <Navbar />
       <Hero />
       <Timeline />
       <Mentors />
       <Sponsors />
       <Contact />
-      <About />
+      <section id="about">
+        <About />
+      </section>
       <Footer />
     </main>
   );

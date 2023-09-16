@@ -26,8 +26,10 @@ body {
     rgb(var(--background-start-rgb)); */
   background: rgb(15, 9, 19);
   background: linear-gradient(
-    112deg,
-    rgba(15, 9, 19, 1) 73%,
-    rgba(61, 46, 16, 1) 100%
+    180deg,
+    rgba(15, 9, 19, 1) 28%,
+    rgba(61, 46, 16, 1) 50%,
+    rgba(15, 9, 19, 1) 67%
   );
+  background-attachment: fixed;
 }
