@@ -11,11 +11,19 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
       <Navbar />
-      <Hero />
-      <Timeline />
-      <Mentors />
-      <Sponsors />
-      <Contact />
+      <div className=" spacer layer1">
+        <Hero />
+      </div>
+      <div className=" bg-bblue-400 w-full">
+        <Timeline />
+      </div>
+
+      <div className=" spacer layer2 mx-auto">
+        <Mentors />
+        <Sponsors />
+        <Contact />
+      </div>
+
       <section id="about">
         <About />
       </section>

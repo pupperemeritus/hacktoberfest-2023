@@ -50,14 +50,16 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" w-full backdrop-blur-3xl bg-[#0f0913] bg-opacity-70">
-        Hacktoberfest'2023
+      <div className=" w-full bg-void px-4 text-sm py-1 text-bblue-200">
+        <Link href="mailto:cosc@cbit.ac.in" className=" hover:underline">
+          cosc@cbit.ac.in
+        </Link>
       </div>
       <div
         className={`${
           isSticky
             ? "sticky top-0 h-16 backdrop-blur-3xl bg-[#0f0913] bg-opacity-70 shadow-md"
-            : "h-20"
+            : "h-20 bg-void"
         } left-0  py-2 px-4 flex justify-between items-center w-full transition-all duration-300 `}
       >
         <div className=" flex items-center">

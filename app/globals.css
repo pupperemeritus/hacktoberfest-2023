@@ -24,12 +24,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-  background: rgb(15, 9, 19);
-  background: linear-gradient(
-    180deg,
+  background: #0f0913;
+  /* background: linear-gradient(
+    130deg,
     rgba(15, 9, 19, 1) 28%,
     rgba(61, 46, 16, 1) 50%,
     rgba(15, 9, 19, 1) 67%
-  );
+  ); */
   background-attachment: fixed;
+}
+
+.spacer {
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url("/stacked-wave-blue1.svg");
+}
+
+.layer2 {
+  background-image: url("/stacked-wave-blue2.svg");
 }
