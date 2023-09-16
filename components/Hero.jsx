@@ -1,14 +1,15 @@
 import React from 'react';
-import im from '../public/images/HFest23_Logo.png' ;
+// import im from '../public/images/HFest23_Logo.png' ;
+import Image from 'next/image'
 
 const Hero=()=>{
     return (
         <div>
             <div>
-        <img
-          width="300px"
-          height="120px"
-          src={im}
+        <Image
+          width={300}
+          height={120}
+          src="/images/HFest23_Logo.png"
           alt="Logo"
         />
       </div>
