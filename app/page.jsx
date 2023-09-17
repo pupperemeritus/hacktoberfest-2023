@@ -1,6 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+
 import Hero from "@/components/Hero";
 import Mentors from "@/components/Mentors";
 import Navbar from "@/components/Navbar";
@@ -10,24 +10,24 @@ import Timeline from "@/components/Timeline";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
-      <Navbar />
       <div className=" spacer layer1">
         <Hero />
       </div>
-      <div className=" bg-bblue-400 w-full">
+      <div className="spacer layer2"></div>
+      <div className=" bg-void w-full">
         <Timeline />
       </div>
 
-      <div className=" spacer layer2 ">
-        <Mentors />
-        <Sponsors />
-        <Contact />
+      <div className=" spacer1 layer5 flex flex-col justify-center mb-12">
+        <div>
+          <Mentors />
+          <Sponsors />
+          <Contact />
+        </div>
       </div>
-
       <section id="about">
         <About />
       </section>
-      <Footer />
     </main>
   );
 }

@@ -42,12 +42,27 @@ body {
   background-size: cover;
 }
 
+.spacer1 {
+  aspect-ratio: 900/900;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .layer1 {
   background-image: url("/stacked-wave-blue1.svg");
 }
 
 .layer2 {
   background-image: url("/stacked-wave-blue2.svg");
+}
+
+.layer5 {
+  background-image: url("/stacked-wave-blue4.svg");
+}
+
+.layer5 {
+  background-image: url("/stacked-wave-blue5.svg");
 }
 
 .scroll-section-outer {
