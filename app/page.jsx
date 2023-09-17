@@ -18,7 +18,7 @@ export default function Home() {
         <Timeline />
       </div>
 
-      <div className=" spacer layer2 mx-auto">
+      <div className=" spacer layer2 ">
         <Mentors />
         <Sponsors />
         <Contact />

@@ -50,10 +50,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" w-full bg-void px-4 text-sm py-1 text-bblue-200">
-        <Link href="mailto:cosc@cbit.ac.in" className=" hover:underline">
-          cosc@cbit.ac.in
-        </Link>
+      <div className=" w-full bg-void px-4 text-sm py-1 text-bblue-200 flex justify-center">
+        <span>Learn. Code. Share.</span>
       </div>
       <div
         className={`${
