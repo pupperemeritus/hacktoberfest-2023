@@ -9,7 +9,7 @@ const Navbar = () => {
   const Links = [
     { name: "Home", link: "/" },
     { name: "About", link: "#about" },
-    { name: "Register", link: "/Register" },
+    { name: "Register", link: "/register" },
     { name: "Schedule", link: "/#schedule" },
     { name: "Mentors", link: "/#mentors" },
     // { name: "FAQ", link: "/" },
