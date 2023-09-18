@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 
 function ScrollSection() {
   const sectionRef = useRef(null);
@@ -14,17 +16,17 @@ function ScrollSection() {
     const pin = gsap.fromTo(
       sectionRef.current,
       {
-        translateX: 0,
+        translateX: "100vmin",
       },
       {
-        translateX: "-300vw",
+        translateX: "-150vmin",
         ease: "none",
         duration: 1,
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
           end: "2000 top",
-          scrub: 0.6,
+          scrub: 1,
           pin: true,
         },
       }
@@ -33,13 +35,15 @@ function ScrollSection() {
     const mask = document.querySelector("#recfill");
 
     gsap.to(mask, {
-      width: "100%",
+      width: "998",
       scrollTrigger: {
         trigger: triggerRef.current,
         start: "top left",
+        end: "2000 top",
         scrub: 1,
       },
     });
+
     return () => {
       {
         /* A return function for killing the animation on component unmount */
@@ -48,6 +52,20 @@ function ScrollSection() {
     };
   }, []);
 
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      ScrollTrigger.update();
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <section className="scroll-section-outer">
       {/* The section up act just as a wrapper. If the trigger (below) is the
@@ -57,6 +75,9 @@ function ScrollSection() {
       the animation should alway be two separated refs */}
 
       <div ref={triggerRef}>
+        <div className=" top-24 absolute w-full">
+          <h1 className=" w-min mx-auto shimmer text-3xl">Timeline</h1>
+        </div>
         <svg
           className=" top-40 absolute mx-auto px-4 w-full"
           width="1004"
@@ -85,17 +106,57 @@ function ScrollSection() {
           />
         </svg>
         <div ref={sectionRef} className="scroll-section-inner relative">
-          <div className="scroll-section">
-            <h3>Section 1</h3>
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin]">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between ">
+              <h1 className=" text-2xl ">24th September, 2023</h1>
+              <div>
+                <span>Registrations Begin</span>
+                <Link href="/register" className=" self-center mt-6">
+                  <button className=" px-6 py-3 bg-none hover:bg-Manga-100 hover:bg-opacity-10 duration-300 my-2  text-bgold-200 border border-bgold-200 rounded-lg text-xl mt-3">
+                    Register
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
-          <div className="scroll-section">
-            <h3>Section 2</h3>
+
+          <div className="scroll-section   mt-60 mx-4 ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between ">
+              <h1 className=" text-2xl ">4th October, 2023</h1>
+              <div>
+                <span>Registrations End</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro, minima?
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="scroll-section">
-            <h3>Section 3</h3>
+
+          <div className="scroll-section   mt-60 mx-4 ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between ">
+              <h1 className=" text-2xl ">4th October, 2023</h1>
+              <div>
+                <span>Registrations End</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro, minima?
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="scroll-section">
-            <h3>Section 4</h3>
+
+          <div className="scroll-section   mt-60 mx-4">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between ">
+              <h1 className=" text-2xl ">4th October, 2023</h1>
+              <div>
+                <span>Registrations End</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro, minima?
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

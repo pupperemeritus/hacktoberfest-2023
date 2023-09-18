@@ -13,8 +13,8 @@ export default function Home() {
       <div className=" spacer layer1">
         <Hero />
       </div>
-      <div className="spacer layer2"></div>
-      <div className=" bg-void w-full">
+      {/* <div className="spacer layer2"></div> */}
+      <div className=" spacer layer2 w-full">
         <Timeline />
       </div>
 
