@@ -31,17 +31,17 @@ function Footer() {
 
       <div className=" flex justify-between font-thin  flex-col md:flex-row items-center gap-4 text-bgold-200">
         <div>
-          <Link className="foot" href="https://hacktoberfest.com/">
+          <Link className="shimmer" href="https://hacktoberfest.com/">
             Hacktoberfest
           </Link>
         </div>
         <div>
-          <Link className="foot" href="https://cbitosc.github.io/">
+          <Link className="shimmer" href="https://cbitosc.github.io/">
             CBIT Open Source Community
           </Link>
         </div>
         <div>
-          <Link className="foot" href="https://cbitosc.github.io/coc/">
+          <Link className="shimmer" href="https://cbitosc.github.io/coc/">
             Code Of Conduct
           </Link>
         </div>

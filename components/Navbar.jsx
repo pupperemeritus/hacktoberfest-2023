@@ -51,7 +51,7 @@ const Navbar = () => {
   return (
     <>
       <div className=" w-full bg-void px-4 text-sm py-1 text-bblue-200 flex justify-center">
-        <span>Learn. Code. Share.</span>
+        <span className=" shimmer">Learn. Code. Share.</span>
       </div>
       <div
         className={`${
