@@ -18,7 +18,7 @@ export default function Home() {
         <Timeline />
       </div>
 
-      <div className=" spacer1 layer5 flex flex-col justify-center mb-12">
+      <div className=" spacer1 layer5 flex flex-col justify-center mt-16 mb-12">
         <div>
           <Mentors />
           <Sponsors />
