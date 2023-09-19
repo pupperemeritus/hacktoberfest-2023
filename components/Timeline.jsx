@@ -274,7 +274,7 @@ function ScrollSection() {
                     8th October
                     <span className=" hidden md:inline">, 2023</span>
                   </h1>
-                  <h1>4:00 PM</h1>
+                  <h1>2:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Coding Ends</span>
@@ -292,7 +292,7 @@ function ScrollSection() {
                     8th October
                     <span className=" hidden md:inline">, 2023</span>
                   </h1>
-                  <h1>4:30 PM</h1>
+                  <h1>2:30 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Submissions Close</span>
@@ -313,7 +313,7 @@ function ScrollSection() {
                     8th October
                     <span className=" hidden md:inline">, 2023</span>
                   </h1>
-                  <h1>5:00 PM</h1>
+                  <h1>3:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Presentations</span>
@@ -332,7 +332,7 @@ function ScrollSection() {
                     8th October
                     <span className=" hidden md:inline">, 2023</span>
                   </h1>
-                  <h1>8:00 PM</h1>
+                  <h1>7:30 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Closing Ceremony</span>
