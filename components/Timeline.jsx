@@ -115,7 +115,7 @@ function ScrollSection() {
               <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <h1 className=" md:text-2xl text-sm  tracking-tighter ">
                   24th September
-                  <span className=" hidden md:visible">, 2023</span>
+                  <span className=" hidden md:inline">, 2023</span>
                 </h1>
                 <div className="flex flex-col items-start">
                   <span className=" md:text-xl text-sm">
@@ -135,7 +135,7 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     4th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>11:59 PM</h1>
                 </div>
@@ -153,13 +153,13 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     6th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>7:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Introductory Session</span>
-                  <p className=" text-sm text-bgold-300 md:visible hidden ">
+                  <p className=" text-sm text-bgold-300 md:inline hidden ">
                     A short introductory session on GitHub and Discord.
                   </p>
                 </div>
@@ -171,14 +171,15 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     7th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>4:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Opening Ceremony</span>
-                  <p className=" text-sm text-bgold-300 md:visible hidden">
-                    A short introductory session on GitHub and Discord.
+                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                    The inauguration of the 10th installation of the CBIT
+                    Hacktoberfest Hackathon will be set underway
                   </p>
                 </div>
               </div>
@@ -191,7 +192,7 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     7th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>6:00 PM</h1>
                 </div>
@@ -199,8 +200,8 @@ function ScrollSection() {
                   <span className=" md:text-xl pb-3">
                     Releasing Problem Statements
                   </span>
-                  <p className=" text-sm text-bgold-300 md:visible hidden">
-                    A short introductory session on GitHub and Discord.
+                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                    The problem statements will be made public
                   </p>
                 </div>
               </div>
@@ -210,7 +211,7 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     7th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>6:30 PM</h1>
                 </div>
@@ -218,7 +219,7 @@ function ScrollSection() {
                   <span className=" md:text-xl pb-3">
                     Selection of problem statements
                   </span>
-                  <p className=" text-sm text-bgold-300 md:visible hidden">
+                  <p className=" text-sm text-bgold-300 md:inline hidden">
                     Teams will be given until 6:45 PM to fill out their choices
                   </p>
                 </div>
@@ -232,15 +233,15 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     7th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>7:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Coding begins!</span>
-                  <p className=" text-sm text-bgold-300 md:visible hidden">
-                    Problem statements are assigned to the teams and coding
-                    begins.
+                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                    The contestants now set sail and begin their voyage towards
+                    success.
                   </p>
                 </div>
               </div>
@@ -251,14 +252,14 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     8th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>2:00 AM & 9:00 AM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Ice Breaker Sessions</span>
-                  <p className=" text-sm text-bgold-300 md:visible hidden">
-                    A short introductory session on GitHub and Discord.
+                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                    Help melt the awkwardness and forge connections.
                   </p>
                 </div>
               </div>
@@ -271,14 +272,14 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     8th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>4:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Coding Ends</span>
-                  <p className=" text-sm text-bgold-300 md:visible hidden">
-                    A short introductory session on GitHub and Discord.
+                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                    The time for the contestants to finish up has finally come.
                   </p>
                 </div>
               </div>
@@ -289,14 +290,15 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     8th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>4:30 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Submissions Close</span>
-                  <p className=" text-sm text-bgold-300 md:visible hidden">
-                    A short introductory session on GitHub and Discord.
+                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                    Contestants must push their codes to GitHub before the
+                    deadline and delays will not be accepted
                   </p>
                 </div>
               </div>
@@ -309,14 +311,15 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     8th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>5:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Presentations</span>
-                  <p className=" text-sm text-bgold-300 md:visible hidden">
-                    A short introductory session on GitHub and Discord.
+                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                    Pitching a solution to a panel of judges often acts as the
+                    deciding factor to ensuring victory!
                   </p>
                 </div>
               </div>
@@ -327,14 +330,15 @@ function ScrollSection() {
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     8th October
-                    <span className=" hidden md:visible">, 2023</span>
+                    <span className=" hidden md:inline">, 2023</span>
                   </h1>
                   <h1>8:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Closing Ceremony</span>
-                  <p className=" text-sm text-bgold-300 md:visible hidden">
-                    A short introductory session on GitHub and Discord.
+                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                    It’s time for closing remarks and to finally announce the
+                    much awaited winners!
                   </p>
                 </div>
               </div>
