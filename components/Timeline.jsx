@@ -21,11 +21,11 @@ function ScrollSection() {
       {
         translateX: "-575vmin",
         ease: "none",
-        duration: 2,
+        duration: 1.2,
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "2000 top",
+          end: "4000 top",
           scrub: 1,
           pin: true,
         },
@@ -39,7 +39,7 @@ function ScrollSection() {
       scrollTrigger: {
         trigger: triggerRef.current,
         start: "top left",
-        end: "2000 top",
+        end: "4000 top",
         scrub: 1,
       },
     });
@@ -219,25 +219,10 @@ function ScrollSection() {
             <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
               <div className=" tracking-tighter text-2xl">
                 <h1>8th October, 2023</h1>
-                <h1>2:00 AM</h1>
+                <h1>2:00 AM & 9:00 AM</h1>
               </div>
               <div className=" flex flex-col items-start">
-                <span className=" text-xl pb-3">Ice Breaker Session - 1</span>
-                <p className=" text-sm text-bgold-300">
-                  A short introductory session on GitHub and Discord.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
-            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
-              <div className=" tracking-tighter text-2xl">
-                <h1>8th October, 2023</h1>
-                <h1>9:00 AM</h1>
-              </div>
-              <div className=" flex flex-col items-start">
-                <span className=" text-xl pb-3">Ice Breaker Session - 2</span>
+                <span className=" text-xl pb-3">Ice Breaker Sessions</span>
                 <p className=" text-sm text-bgold-300">
                   A short introductory session on GitHub and Discord.
                 </p>
