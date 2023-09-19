@@ -14,9 +14,9 @@ function ScrollSection() {
 
   useEffect(() => {
     const isMdScreen = window.matchMedia("(max-width: 768px)").matches; // Adjust the breakpoint as per your Tailwind CSS configuration
-    const translateXValue = isMdScreen ? "-275vmin" : "-525vmin";
-    const translateXvalStart = isMdScreen ? "8vmin" : "25vmin";
-    const end = isMdScreen ? "2500 top" : "4000 top";
+    const translateXValue = isMdScreen ? "-650vmin" : "-525vmin";
+    const translateXvalStart = isMdScreen ? "25vmin" : "25vmin";
+    const end = isMdScreen ? "4000 top" : "4000 top";
     const pin = gsap.fromTo(
       sectionRef.current,
       {
@@ -71,7 +71,7 @@ function ScrollSection() {
     requestAnimationFrame(raf);
   }, []);
   return (
-    <section className="scroll-section-outer relative">
+    <section className="scroll-section-outer">
       {/* The section up act just as a wrapper. If the trigger (below) is the
       first jsx element in the component, you get an error on route change */}
 
@@ -110,9 +110,9 @@ function ScrollSection() {
           />
         </svg>
         <div ref={sectionRef} className="scroll-section-inner relative">
-          <div className=" flex md:flex-row flex-col  mt-60">
+          <div className=" flex flex-row 1  mt-60">
             <div className="scroll-section    mx-4 mb-6 w-[50vmin]">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <h1 className=" md:text-2xl text-sm  tracking-tighter ">
                   24th September
                   <span className=" hidden md:inline">, 2023</span>
@@ -131,7 +131,7 @@ function ScrollSection() {
             </div>
 
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 mb-6 md:py-4 px-4 py-2 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 mb-6 md:py-4 px-4 py-2 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     4th October
@@ -147,9 +147,9 @@ function ScrollSection() {
             </div>
           </div>
 
-          <div className=" flex md:flex-row flex-col mt-60">
+          <div className=" flex flex-row 1 mt-60">
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     6th October
@@ -159,7 +159,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Introductory Session</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden ">
+                  <p className="  text-xs text-bgold-300   ">
                     A short introductory session on GitHub and Discord.
                   </p>
                 </div>
@@ -167,7 +167,7 @@ function ScrollSection() {
             </div>
 
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     7th October
@@ -177,7 +177,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Opening Ceremony</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                  <p className="  text-xs text-bgold-300  ">
                     The inauguration of the 10th installation of the CBIT
                     Hacktoberfest Hackathon will be set underway
                   </p>
@@ -186,9 +186,9 @@ function ScrollSection() {
             </div>
           </div>
 
-          <div className=" flex md:flex-row flex-col justify-center mt-60">
+          <div className=" flex flex-row 1 justify-center mt-60">
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     7th October
@@ -200,14 +200,14 @@ function ScrollSection() {
                   <span className=" md:text-xl pb-3">
                     Releasing Problem Statements
                   </span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                  <p className="  text-xs text-bgold-300  ">
                     The problem statements will be made public
                   </p>
                 </div>
               </div>
             </div>
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     7th October
@@ -219,7 +219,7 @@ function ScrollSection() {
                   <span className=" md:text-xl pb-3">
                     Selection of problem statements
                   </span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                  <p className="  text-xs text-bgold-300  ">
                     Teams will be given until 6:45 PM to fill out their choices
                   </p>
                 </div>
@@ -227,9 +227,9 @@ function ScrollSection() {
             </div>
           </div>
 
-          <div className=" flex md:flex-row flex-col justify-center mt-60">
+          <div className=" flex flex-row 1 justify-center mt-60">
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     7th October
@@ -239,7 +239,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Coding begins!</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                  <p className="  text-xs text-bgold-300  ">
                     The contestants now set sail and begin their voyage towards
                     success.
                   </p>
@@ -248,7 +248,7 @@ function ScrollSection() {
             </div>
 
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     8th October
@@ -258,7 +258,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Ice Breaker Sessions</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                  <p className="  text-xs text-bgold-300  ">
                     Help melt the awkwardness and forge connections.
                   </p>
                 </div>
@@ -266,9 +266,9 @@ function ScrollSection() {
             </div>
           </div>
 
-          <div className=" flex md:flex-row flex-col justify-center mt-60">
+          <div className=" flex flex-row 1 justify-center mt-60">
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     8th October
@@ -278,7 +278,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Coding Ends</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                  <p className="  text-xs text-bgold-300  ">
                     The time for the contestants to finish up has finally come.
                   </p>
                 </div>
@@ -286,7 +286,7 @@ function ScrollSection() {
             </div>
 
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     8th October
@@ -296,7 +296,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Submissions Close</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                  <p className="  text-xs text-bgold-300  ">
                     Contestants must push their codes to GitHub before the
                     deadline and delays will not be accepted
                   </p>
@@ -305,9 +305,9 @@ function ScrollSection() {
             </div>
           </div>
 
-          <div className=" flex md:flex-row flex-col justify-center mt-60">
+          <div className=" flex flex-row 1 justify-center mt-60">
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     8th October
@@ -317,7 +317,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Presentations</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                  <p className="  text-xs text-bgold-300  ">
                     Pitching a solution to a panel of judges often acts as the
                     deciding factor to ensuring victory!
                   </p>
@@ -326,7 +326,7 @@ function ScrollSection() {
             </div>
 
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <div className="  text-bgold-200 md:h-60 h-80 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     8th October
@@ -336,7 +336,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Closing Ceremony</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden">
+                  <p className="  text-xs text-bgold-300  ">
                     It’s time for closing remarks and to finally announce the
                     much awaited winners!
                   </p>

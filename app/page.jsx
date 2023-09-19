@@ -14,7 +14,7 @@ export default function Home() {
         <Hero />
       </div>
       {/* <div className="spacer layer2"></div> */}
-      <div className=" spacer layer2 w-full">
+      <div id="schedule" className=" spacer layer2 w-full">
         <Timeline />
       </div>
 
