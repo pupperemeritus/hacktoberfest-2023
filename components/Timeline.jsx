@@ -16,12 +16,12 @@ function ScrollSection() {
     const pin = gsap.fromTo(
       sectionRef.current,
       {
-        translateX: "100vmin",
+        translateX: "25vmin",
       },
       {
-        translateX: "-150vmin",
+        translateX: "-575vmin",
         ease: "none",
-        duration: 1,
+        duration: 2,
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
@@ -107,11 +107,13 @@ function ScrollSection() {
         </svg>
         <div ref={sectionRef} className="scroll-section-inner relative">
           <div className="scroll-section   mt-60 mx-4 w-[50vmin]">
-            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between ">
-              <h1 className=" text-2xl ">24th September, 2023</h1>
-              <div>
-                <span>Registrations Begin</span>
-                <Link href="/register" className=" self-center mt-6">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full ">
+              <h1 className=" text-2xl tracking-tighter ">
+                24th September, 2023
+              </h1>
+              <div className="flex flex-col items-start">
+                <span className=" text-xl">Registrations Begin</span>
+                <Link href="/register">
                   <button className=" px-6 py-3 bg-none hover:bg-Manga-100 hover:bg-opacity-10 duration-300 my-2  text-bgold-200 border border-bgold-200 rounded-lg text-xl mt-3">
                     Register
                   </button>
@@ -120,40 +122,184 @@ function ScrollSection() {
             </div>
           </div>
 
-          <div className="scroll-section   mt-60 mx-4 ">
-            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between ">
-              <h1 className=" text-2xl ">4th October, 2023</h1>
-              <div>
-                <span>Registrations End</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Porro, minima?
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>4th October, 2023</h1>
+                <h1>11:59 PM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">Registrations End</span>
+                <p className=" text-sm"></p>
+              </div>
+            </div>
+          </div>
+
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>6th October, 2023</h1>
+                <h1>7:00 PM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">Introductory Session</span>
+                <p className=" text-sm text-bgold-300">
+                  A short introductory session on GitHub and Discord.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="scroll-section   mt-60 mx-4 ">
-            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between ">
-              <h1 className=" text-2xl ">4th October, 2023</h1>
-              <div>
-                <span>Registrations End</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Porro, minima?
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>7th October, 2023</h1>
+                <h1>4:00 PM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">Opening Ceremony</span>
+                <p className=" text-sm text-bgold-300">
+                  A short introductory session on GitHub and Discord.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="scroll-section   mt-60 mx-4">
-            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between ">
-              <h1 className=" text-2xl ">4th October, 2023</h1>
-              <div>
-                <span>Registrations End</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Porro, minima?
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>7th October, 2023</h1>
+                <h1>6:00 PM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">
+                  Releasing Problem Statements
+                </span>
+                <p className=" text-sm text-bgold-300">
+                  A short introductory session on GitHub and Discord.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>7th October, 2023</h1>
+                <h1>6:30 PM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">
+                  Selection of problem statements
+                </span>
+                <p className=" text-sm text-bgold-300">
+                  Teams will be given until 6:45 PM to fill out their choices
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>7th October, 2023</h1>
+                <h1>7:00 PM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">Coding begins!</span>
+                <p className=" text-sm text-bgold-300">
+                  Problem statements are assigned to the teams and coding
+                  begins.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>8th October, 2023</h1>
+                <h1>2:00 AM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">Ice Breaker Session - 1</span>
+                <p className=" text-sm text-bgold-300">
+                  A short introductory session on GitHub and Discord.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>8th October, 2023</h1>
+                <h1>9:00 AM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">Ice Breaker Session - 2</span>
+                <p className=" text-sm text-bgold-300">
+                  A short introductory session on GitHub and Discord.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>8th October, 2023</h1>
+                <h1>4:00 PM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">Coding Ends</span>
+                <p className=" text-sm text-bgold-300">
+                  A short introductory session on GitHub and Discord.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>8th October, 2023</h1>
+                <h1>4:30 PM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">Submissions Close</span>
+                <p className=" text-sm text-bgold-300">
+                  A short introductory session on GitHub and Discord.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>8th October, 2023</h1>
+                <h1>5:00 PM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">Presentations</span>
+                <p className=" text-sm text-bgold-300">
+                  A short introductory session on GitHub and Discord.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="scroll-section   mt-60 mx-4 w-[50vmin] ">
+            <div className="  text-bgold-200 h-60 px-8 py-4 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full">
+              <div className=" tracking-tighter text-2xl">
+                <h1>8th October, 2023</h1>
+                <h1>8:00 PM</h1>
+              </div>
+              <div className=" flex flex-col items-start">
+                <span className=" text-xl pb-3">Closing Ceremony</span>
+                <p className=" text-sm text-bgold-300">
+                  A short introductory session on GitHub and Discord.
                 </p>
               </div>
             </div>

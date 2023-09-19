@@ -71,7 +71,7 @@ body {
 
 .scroll-section-inner {
   /* height: 100vh; */
-  width: 200vw;
+  width: 700vmin;
   display: flex;
   flex-direction: row;
   position: relative;
