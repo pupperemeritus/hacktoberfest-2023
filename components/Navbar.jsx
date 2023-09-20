@@ -8,7 +8,7 @@ import React, { useEffect, useState } from "react";
 const Navbar = () => {
   const Links = [
     { name: "Home", link: "/" },
-    { name: "About", link: "#about" },
+    { name: "About", link: "/#about" },
     { name: "Register", link: "/register" },
     { name: "Schedule", link: "/#schedule" },
     { name: "Mentors", link: "/#mentors" },
@@ -122,7 +122,7 @@ const Navbar = () => {
                 <Link
                   href={link.link}
                   className={`${
-                    pathname === link.link
+                    pathname + window.location.hash === link.link
                       ? "text-[#33b6d8]"
                       : "hover:text-[#d2b863] duration-300"
                   }`}
