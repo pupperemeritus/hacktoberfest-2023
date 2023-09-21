@@ -3,6 +3,7 @@
 import React, { useCallback } from "react";
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import Card from "./Card";
+import Image from "next/image";
 
 const mentors = [
   {
@@ -107,16 +108,21 @@ const Slider = ({ children, options }) => {
   return (
     // 3. set ref as emblaRef.
     // make sure we have overflow-hidden and flex so that it displays properly
-    <div>
+    <div className=" relative">
+      <div className="top-0 bottom-0 left-5 absolute flex justify-center items-center z-10">
+        <button className="embla__prev " onClick={scrollPrev}>
+          <Image src={"images/leftarrow.svg"} width={45} height={45} />
+        </button>
+      </div>
+      <div className=" top-0 bottom-0 right-5 absolute flex justify-center items-center z-10">
+        <button className="embla__next" onClick={scrollNext}>
+          <Image src={"/images/rightarrow.svg"} width={45} height={45} />
+        </button>
+      </div>
+
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex  ">{children}</div>
       </div>
-      <button className="embla__prev absolute" onClick={scrollPrev}>
-        Prev
-      </button>
-      <button className="embla__next" onClick={scrollNext}>
-        Next
-      </button>
     </div>
   );
 };
@@ -130,7 +136,7 @@ function Mentors() {
         </h1>
         <div className=" h-[2px] bg-bblue-200 w-16"></div>
       </div>
-      <div className="w-[99%]">
+      <div className=" w-full">
         <Slider>
           {mentors.map((mentor, i) => (
             <div key={i} className="flex">
