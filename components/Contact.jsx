@@ -1,14 +1,15 @@
 import React from "react";
 
 const Contact = () => {
-  const location = 'Chaitanya Bharathi Institute of Technology, Gandipet, Hyderabad.';
-  const email = 'cosc@cbit.ac.in';
-  const phone = 'Gopal: +91 98480 39729';
+  const location =
+    "Chaitanya Bharathi Institute of Technology, Gandipet, Hyderabad.";
+  const email = "cosc@cbit.ac.in";
+  const phone = "Gopal: +91 98480 39729";
 
   return (
     <div className="mx-auto p-4 sm:w-1/2">
       <div className=" flex flex-col items-center gap-2">
-        <h1 className=" text-center text-3xl text-bblue-200">
+        <h1 className=" text-center text-3xl text-bblue-200 shimmerb">
           Contact Information
         </h1>
         <div className=" h-[2px] bg-bblue-200 w-16"></div>

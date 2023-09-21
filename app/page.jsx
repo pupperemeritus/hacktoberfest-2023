@@ -21,8 +21,10 @@ export default function Home() {
       <div className=" spacer1 layer5 flex flex-col justify-center mt-16 mb-12">
         <div>
           <Mentors />
-          <Sponsors />
-          <Contact />
+          {/* <Sponsors /> */}
+          <div id="contact">
+            <Contact />
+          </div>
         </div>
       </div>
       <section id="about">

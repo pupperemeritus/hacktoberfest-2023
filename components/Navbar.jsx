@@ -14,7 +14,7 @@ const Navbar = () => {
     { name: "Mentors", link: "/#mentors" },
     // { name: "FAQ", link: "/" },
     // { name: "Panelists", link: "/" },
-    { name: "Contact", link: "/contact" },
+    { name: "Contact", link: "/#contact" },
     // { name: "Sponsors", link: "/" },
   ];
 

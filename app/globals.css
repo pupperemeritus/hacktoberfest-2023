@@ -32,6 +32,7 @@ body {
     rgba(15, 9, 19, 1) 67%
   ); */
   background-attachment: fixed;
+  box-sizing: border-box;
 }
 
 .spacer {
@@ -163,6 +164,85 @@ body {
   }
 }
 @keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+.shimmerb {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#33b6d8),
+    to(#33b6d8),
+    color-stop(0.3, #b2f3e0)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#33b6d8),
+    to(#33b6d8),
+    color-stop(0.3, #b2f3e0)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#33b6d8),
+    to(#33b6d8),
+    color-stop(0.3, #b2f3e0)
+  );
+  -webkit-background-size: 70px 100%;
+  -moz-background-size: 70px 100%;
+  background-size: 70px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmerb;
+  -moz-animation-name: shimmerb;
+  animation-name: shimmerb;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #33b6d8;
+}
+@-moz-keyframes shimmerb {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmerb {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmerb {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmerb {
   0% {
     background-position: top left;
   }
