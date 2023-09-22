@@ -75,7 +75,7 @@ const mentors = [
     Github: "https://github.com/lohith1392",
     LinkedIn: "https://www.linkedin.com/in/peddi-lohith-3a0851203/",
     Designation: "Joint Secretary",
-    imgSrc: "/images/mentors/Lohith.jpg",
+    imgSrc: "/images/mentors/Lohith.jpeg",
   },
   {
     Name: "Adi Yerabati",
@@ -109,7 +109,7 @@ const Slider = ({ children, options }) => {
     // 3. set ref as emblaRef.
     // make sure we have overflow-hidden and flex so that it displays properly
     <div className=" relative">
-      <div className="top-0 bottom-0 left-5 absolute flex justify-center items-center z-10">
+      {/* <div className="top-0 bottom-0 left-5 absolute flex justify-center items-center z-10">
         <button className="embla__prev " onClick={scrollPrev}>
           <Image src={"images/leftarrow.svg"} width={45} height={45} />
         </button>
@@ -118,8 +118,8 @@ const Slider = ({ children, options }) => {
         <button className="embla__next" onClick={scrollNext}>
           <Image src={"/images/rightarrow.svg"} width={45} height={45} />
         </button>
-      </div>
-
+      </div> */}
+    
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex  ">{children}</div>
       </div>

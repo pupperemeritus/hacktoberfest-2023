@@ -14,8 +14,8 @@ const Card = (mentor) => {
         />
       </div>
 
-      <h2 className=" md:text-xl text-sm font-bold my-2">{mentor.Name}</h2>
-      <h2 className=" md:text-base text-xs ">{mentor.Designation}</h2>
+      <h2 className=" md:text-xl text-sm text-bblue-100 font-bold my-2">{mentor.Name}</h2>
+      <h2 className=" md:text-base text-xs text-bgold-200 ">{mentor.Designation}</h2>
 
       <div className=" flex my-2">
         <div className="mx-1">
@@ -31,7 +31,7 @@ const Card = (mentor) => {
         <div className="mx-1">
           <Link href={mentor.Github}>
             <Image
-              src="/images/githublogo.png"
+              src="/images/github.svg"
               alt="GitHub Icon"
               height={30}
               width={30}
