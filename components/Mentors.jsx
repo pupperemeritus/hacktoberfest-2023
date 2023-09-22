@@ -109,12 +109,12 @@ const Slider = ({ children, options }) => {
     // 3. set ref as emblaRef.
     // make sure we have overflow-hidden and flex so that it displays properly
     <div className=" relative">
-      <div className="top-0 bottom-0 left-5 absolute flex justify-center items-center z-10">
+      <div className="top-0 bottom-0 left-5 absolute  justify-center items-center z-10 md:flex hidden">
         <button className="embla__prev " onClick={scrollPrev}>
           <Image src={"images/leftarrow.svg"} width={30} height={30} />
         </button>
       </div>
-      <div className=" top-0 bottom-0 right-3 absolute flex justify-center items-center z-10">
+      <div className=" top-0 bottom-0 right-3 absolute md:flex hidden justify-center items-center z-10">
         <button className="embla__next" onClick={scrollNext}>
           <Image src={"/images/rightarrow.svg"} width={30} height={30} />
         </button>
