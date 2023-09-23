@@ -9,10 +9,10 @@ const Navbar = () => {
   const Links = [
     { name: "Home", link: "/", section: "home" },
     { name: "About", link: "/#about", section: "about" },
-    { name: "Register", link: "/register", section: "register" },
     { name: "Schedule", link: "/#schedule", section: "schedule" },
     { name: "Mentors", link: "/#mentors", section: "mentors" },
     { name: "Contact", link: "/#contact", section: "contact" },
+    { name: "Register", link: "/register", section: "register" },
   ];
 
   const [activeSection, setActiveSection] = useState("home");
@@ -26,13 +26,14 @@ const Navbar = () => {
     const sections = document.querySelectorAll(".section");
     for (const section of sections) {
       const sectionTop = section.getBoundingClientRect().top;
+
       const sectionBottom = section.getBoundingClientRect().bottom;
-      if (sectionTop <= 0 && sectionBottom >= 0) {
-        console.log(`Active Section ID: ${section.id}`);
+      console.log(sectionBottom);
+      if (sectionTop - 1000 <= 0 && sectionBottom >= 0) {
         return section.id;
       }
     }
-    console.log("No Active Section Found");
+
     return null;
   };
   const toggleMenu = () => {

@@ -20,12 +20,12 @@ export default function Home() {
         <Timeline />
       </section>
 
-      <div className=" spacer1 layer5 flex flex-col justify-center mt-16 mb-12">
-        <section id="mentors" className=" section">
+      <div className=" spacer1 layer5 flex flex-col justify-center  mb-12">
+        <section id="mentors" className=" section pt-16">
           <Mentors />
         </section>
         {/* <Sponsors /> */}
-        <section id="contact" className=" section">
+        <section id="contact" className=" section pt-28">
           <Contact />
         </section>
       </div>
