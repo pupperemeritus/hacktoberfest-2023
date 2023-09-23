@@ -741,7 +741,7 @@ class Form extends React.Component {
 
                     </div>
                     <div id="section-7" style={{
-                        display: hiddenOrShow([1,3].includes(this.state.teamSize))
+                        display: hiddenOrShow([1,2].includes(this.state.teamSize))
                     }}>
                         <fieldset>
                             <legend for="673550520">Team Member Details</legend>
