@@ -50,6 +50,14 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.spacer2 {
+  aspect-ratio: 900/900;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .layer1 {
   background-image: url("/stacked-wave-blue1.svg");
 }
@@ -64,6 +72,10 @@ body {
 
 .layer5 {
   background-image: url("/stacked-wave-blue5.svg");
+}
+
+.layer6 {
+  background-image: url("/stacked-waves-blueVer.svg");
 }
 
 .scroll-section-outer {

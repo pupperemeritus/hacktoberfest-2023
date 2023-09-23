@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <div className=" flex flex-col items-center gap-2">
-        <h1 className=" text-center text-3xl text-bblue-200 shimmerb">
+        <h1 className=" text-center text-3xl text-bgold-200 shimmer">
           About The Event
         </h1>
         <div className=" h-[2px] bg-bblue-200 w-16"></div>
