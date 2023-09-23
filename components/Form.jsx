@@ -1,114 +1,89 @@
 "use client";
 import React from "react";
 
+
+const hiddenOrShow = (e) => {
+    if (e === true)
+    return "block";
+else
+return "none";
+}
+// const handleTeamSizeChange = (e) => {
+//     const selectedTeamSize = parseInt(e.target.value);
+//     setFormState((prevState) => ({
+//         ...prevState,
+//         teamSize: selectedTeamSize,
+//     }));
+// };
+// let [formState, setFormState] = useState({
+//     teamSize: 1,
+//     section2: false,
+//     section3: false,
+//     section4: false,
+//     section5: false,
+//     section6: false,
+//     section7: false,
+// });
+
 class Form extends React.Component {
-  static async getInitialProps(ctx) {
-    ctx.res.setHeader("Content-type", "text/html");
-    ctx.res.write(str);
-    ctx.res.end();
-  }
-  componentDidMount() {
-    // Hide the second section initially
-
-    document.getElementById("section-2").style.display = "none";
-    document.getElementById("section-3").style.display = "none";
-    document.getElementById("section-4").style.display = "none";
-    document.getElementById("section-5").style.display = "none";
-    document.getElementById("section-6").style.display = "none";
+    constructor() {
+    super();
+    this.state = {
+        teamSize: 1,
+    };
   }
 
-  handleTeamSizeChange = (e) => {
-    const selectedTeamSize = e.target.value;
+    handleTeamSizeChange = (e) => {
+      this.setState({ teamSize: e }, () => {
+        console.log("teamSize Updated:", this.state.teamSize);
+        });
+     };
 
-    // Logic to show/hide sections based on the selectedTeamSize
-    if (selectedTeamSize === "1") {
-      document.getElementById("section-2").style.display = "none";
-      document.getElementById("section-3").style.display = "none";
-      document.getElementById("section-4").style.display = "none";
-      document.getElementById("section-5").style.display = "none";
-      document.getElementById("section-6").style.display = "none";
-    } else if (selectedTeamSize === "2") {
-      document.getElementById("section-2").style.display = "none";
-      document.getElementById("section-3").style.display = "none";
-      document.getElementById("section-4").style.display = "none";
-      document.getElementById("section-5").style.display = "none";
-      document.getElementById("section-6").style.display = "block";
-    } else if (selectedTeamSize === "3") {
-      document.getElementById("section-2").style.display = "none";
-      document.getElementById("section-3").style.display = "none";
-      document.getElementById("section-4").style.display = "block";
-      document.getElementById("section-5").style.display = "block";
-      document.getElementById("section-6").style.display = "none";
-      document.getElementById("section-7").style.display = "none";
-    } else if (selectedTeamSize === "4") {
-      document.getElementById("section-2").style.display = "none";
-      document.getElementById("section-3").style.display = "block";
-      document.getElementById("section-4").style.display = "block";
-      document.getElementById("section-5").style.display = "block";
-    } else if (selectedTeamSize === "5") {
-      document.getElementById("section-2").style.display = "block";
-      document.getElementById("section-3").style.display = "block";
-      document.getElementById("section-4").style.display = "block";
-      document.getElementById("section-5").style.display = "block";
-    }
-  };
-  render() {
-    return (
-      <div>
-        <form
-          action="https://docs.google.com/forms/d/e/1FAIpQLSepwkYVpD9rWy5Ym2LnvZipnlQlZH5YPbL-M6J0M6uAg9K2BA/formResponse"
-          target="_self"
-          id="bootstrapForm"
-          method="POST"
-        >
-          <div id="section-1">
-            <fieldset>
-              <h2>
-                CBIT Hacktoberfest Hackathon 2023
-                <br />
-                <small>
-                  Greetings Open-Source Enthusiasts! It&#x27;s that time of the
-                  year again, the much awaited CBIT Hacktoberfest Hackathon is
-                  just around the corner. With a tremendous turnout of 98 teams
-                  and 516 participants, Hacktoberfest is still going strong and
-                  we intend to keep it that way! This years edition of
-                  COSC&#x27;s flagship event is similar to its predecessors and
-                  fosters a community and celebrates open source. Hacktoberfest
-                  stands as the premier virtual celebration within the Open
-                  Source Community, offering a dynamic platform to sharpen your
-                  technical prowess and spotlight your talents through
-                  meaningful contributions to the open-source world. This is
-                  your chance to make a mark on the open-source realm! Here are
-                  some essential rules and guidelines to keep in mind: Every
-                  team will consist of 3 to 5 members and individual or paired
-                  participants will be pooled together In the spirit of open
-                  source, there will be no Registration Fees Problem Statements
-                  will be released on the day of the Hackathon. The hackathon is
-                  inclusive and welcomes students from all academic disciplines,
-                  all years of study, and any college or university. Mode:
-                  Virtual (on Discord) Registration Deadline: 4th October, 11:00
-                  PM Hackathon Date and Timings: 7th October, 4:00 PM to 8th
-                  October, 7:30 PM Stay tuned for additional information that
-                  will be relayed through your Team Leader. Please keep an eye
-                  on your registered email addresses for upcoming announcements.
-                  And most importantly, may the source be with you! Also, stay
-                  connected and stay informed by following our Instagram handle
-                  for future updates. For any queries, contact: Akil: 9442621187
-                </small>
-              </h2>
-            </fieldset>
-            <fieldset>
-              <legend for="">Email</legend>
-              <div class="form-group">
-                <input
-                  id="emailAddress"
-                  type="email"
-                  name="emailAddress"
-                  class="form-control"
-                  required
-                />
-              </div>
-            </fieldset>
+    static async getInitialProps(ctx) {
+        ctx.res.setHeader('Content-type', 'text/html');
+        ctx.res.write(str);
+        ctx.res.end();
+        
+    }  
+//     If team size is one -> Jump to section 7 and submit
+// If team size is two -> Jump to section 6 Team Member Details -> Jump to section 7 -> submit
+
+// If team size is three -> Jump to section 4 -> Jump to section 5 -> Submit
+// If team size is four -> Jump to section 3 -> Jump to section 4 -> Jump to section 5 -> Submit
+// If team size is five -> Jump to section 2 -> Jump to section 3 -> Jump to section 4 -> Jump to section 5 -> Submit
+    render() {
+        return (
+            <div>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSepwkYVpD9rWy5Ym2LnvZipnlQlZH5YPbL-M6J0M6uAg9K2BA/formResponse"
+                    target="_self"
+                    id="bootstrapForm"
+                    method="POST">
+                    <div id="section-1">
+                        <fieldset>
+                            <h2>CBIT Hacktoberfest Hackathon 2023<br /><small>Greetings Open-Source Enthusiasts!
+                                It&#x27;s that time of the year again, the much awaited CBIT Hacktoberfest Hackathon is just around the corner. With a tremendous turnout of 98 teams and 516 participants, Hacktoberfest is still going strong and we intend to keep it that way! This years edition of COSC&#x27;s flagship event is similar to its predecessors and fosters a community and celebrates open source. Hacktoberfest stands as the premier virtual celebration within the Open Source Community, offering a dynamic platform to sharpen your technical prowess and spotlight your talents through meaningful contributions to the open-source world.
+                                This is your chance to make a mark on the open-source realm!
+                                Here are some essential rules and guidelines to keep in mind:
+                                Every team will consist of 3 to 5 members and individual or paired participants will be pooled together
+                                In the spirit of open source, there will be no Registration Fees
+                                Problem Statements will be released on the day of the Hackathon.
+                                The hackathon is inclusive and welcomes students from all academic disciplines, all years of study, and any college or university.
+                                Mode: Virtual (on Discord)
+                                Registration Deadline: 4th October, 11:00 PM
+                                Hackathon Date and Timings: 7th October, 4:00 PM to 8th October, 7:30 PM
+                                Stay tuned for additional information that will be relayed through your Team Leader. Please keep an eye on your registered email addresses for upcoming announcements. And most importantly, may the source be with you!
+                                Also, stay connected and stay informed by following our Instagram handle for future updates.
+                                For any queries, contact:
+                                Akil: 9442621187
+                            </small></h2>
+                        </fieldset>
+                        <fieldset>
+                            <legend for="">Email</legend>
+                            <div class="form-group">
+                                <input id="emailAddress" type="email" name="emailAddress" class="form-control" required />
+                            </div>
+                        </fieldset>
+
 
             {/*  */}
             <fieldset>
@@ -124,77 +99,45 @@ class Form extends React.Component {
               </div>
             </fieldset>
 
-            {/*  */}
-            <fieldset>
-              <legend for="115335284">Team Size</legend>
-              <div class="form-group">
-                <p class="help-block">
-                  Individual participants and teams comprising of two members
-                  will be pooled with other participants Further details will be
-                  communicated to the Team Lead and the specified email
-                </p>
-                <div class="radio">
-                  <label>
-                    <input
-                      type="radio"
-                      name="entry.1110453834"
-                      value="1"
-                      required
-                      onChange={this.handleTeamSizeChange}
-                    />
-                    1
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input
-                      type="radio"
-                      name="entry.1110453834"
-                      value="2"
-                      required
-                      onChange={this.handleTeamSizeChange}
-                    />
-                    2
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input
-                      type="radio"
-                      name="entry.1110453834"
-                      value="3"
-                      required
-                      onChange={this.handleTeamSizeChange}
-                    />
-                    3
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input
-                      type="radio"
-                      name="entry.1110453834"
-                      value="4"
-                      required
-                      onChange={this.handleTeamSizeChange}
-                    />
-                    4
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input
-                      type="radio"
-                      name="entry.1110453834"
-                      value="5"
-                      required
-                      onChange={this.handleTeamSizeChange}
-                    />
-                    5
-                  </label>
-                </div>
-              </div>
-            </fieldset>
+                        {/*  */}
+                        <fieldset>
+                            <legend for="115335284">Team Size</legend>
+                            <div class="form-group">
+                                <p class="help-block">Individual participants and teams comprising of two members will be pooled with other participants
+                                    Further details will be communicated to the Team Lead and the specified email</p>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="entry.1110453834" value="1" onClick={() => this.handleTeamSizeChange(1)} required  />
+                                        1
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="entry.1110453834" value="2" onClick={() => this.handleTeamSizeChange(2)} required />
+                                        2
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="entry.1110453834" value="3" onClick={() => this.handleTeamSizeChange(3)} required />
+                                        3
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="entry.1110453834" value="4" onClick={() => this.handleTeamSizeChange(4)} required />
+                                        4
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="entry.1110453834" value="5" onClick={() => this.handleTeamSizeChange(5)}required />
+                                        5
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
 
             {/*  */}
             <fieldset>
@@ -324,68 +267,57 @@ class Form extends React.Component {
               </div>
             </fieldset>
 
-            {/*  */}
-            <fieldset>
-              <legend for="1743077529">Section</legend>
-              <div class="form-group">
-                <select
-                  id="1743077529"
-                  name="entry.1958219572"
-                  class="form-control"
-                >
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-            </fieldset>
-          </div>
-          <div id="section-2">
-            {/*  */}
-            <fieldset>
-              <legend for="1998221997">Team Member Details</legend>
-              <div class="form-group"></div>
-            </fieldset>
+                        {/*  */}
+                        <fieldset>
+                            <legend for="1743077529">Section</legend>
+                            <div class="form-group">
+                                <select id="1743077529" name="entry.1958219572" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </fieldset>
 
-            {/*  */}
-            <fieldset>
-              <legend for="88520221">Name</legend>
-              <div class="form-group">
-                <input
-                  id="614815331"
-                  type="text"
-                  name="entry.614815331"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
+                    </div>
+                    <div id="section-2" style={{display: hiddenOrShow(this.state.teamSize===5)}}>
+                        {/*  */}
+                        <fieldset>
+                            <legend for="1998221997">Team Member Details</legend>
+                            <div class="form-group">
+                            </div>
+                        </fieldset>
 
-            {/*  */}
-            <fieldset>
-              <legend for="1049216781">Roll Number</legend>
-              <div class="form-group">
-                <input
-                  id="592584203"
-                  type="text"
-                  name="entry.592584203"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
 
-            <fieldset>
-              <legend for="1147559039">College Name</legend>
-              <div class="form-group">
-                <input
-                  id="257862837"
-                  type="text"
-                  name="entry.257862837"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
+                        {/*  */}
+                        <fieldset>
+                            <legend for="88520221">Name</legend>
+                            <div class="form-group">
+                                <input id="614815331" type="text" name="entry.614815331" class="form-control" required={this.state.teamSize===5} />
+                            </div>
+                        </fieldset>
+
+
+                        {/*  */}
+                        <fieldset>
+                            <legend for="1049216781">Roll Number</legend>
+                            <div class="form-group">
+                                <input id="592584203" type="text" name="entry.592584203" class="form-control" required={this.state.teamSize===5} />
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="1147559039">College Name</legend>
+                            <div class="form-group">
+                                <input id="257862837" type="text" name="entry.257862837" class="form-control" required={this.state.teamSize===5} />
+                            </div>
+                        </fieldset>
+
+
 
             <fieldset>
               <legend for="596154546">Year</legend>
@@ -403,88 +335,77 @@ class Form extends React.Component {
               </div>
             </fieldset>
 
-            <fieldset>
-              <legend for="2093469607">Branch</legend>
-              <div class="form-group">
-                <select
-                  id="2093469607"
-                  name="entry.113284536"
-                  class="form-control"
-                >
-                  <option value="CSE">CSE</option>
-                  <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                  <option value="CET">CET</option>
-                  <option value="IT">IT</option>
-                  <option value="AIDS">AIDS</option>
-                  <option value="CIVIL">CIVIL</option>
-                  <option value="MECHANICAL">MECHANICAL</option>
-                  <option value="ECE">ECE</option>
-                  <option value="EEE">EEE</option>
-                  <option value="CHEMICAL">CHEMICAL</option>
-                  <option value="BIOTECH">BIOTECH</option>
-                  <option value="MCA">MCA</option>
-                </select>
-              </div>
-            </fieldset>
+                        <fieldset>
+                            <legend for="2093469607">Branch</legend>
+                            <div class="form-group">
+                                <select id="2093469607" name="entry.113284536" class="form-control" >
+                                    <option value="CSE">CSE</option>
+                                    <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                                    <option value="CET">CET</option>
+                                    <option value="IT">IT</option>
+                                    <option value="AIDS">AIDS</option>
+                                    <option value="CIVIL">CIVIL</option>
+                                    <option value="MECHANICAL">MECHANICAL</option>
+                                    <option value="ECE">ECE</option>
+                                    <option value="EEE">EEE</option>
+                                    <option value="CHEMICAL">CHEMICAL</option>
+                                    <option value="BIOTECH">BIOTECH</option>
+                                    <option value="MCA">MCA</option>
+                                </select>
+                            </div>
+                        </fieldset>
 
-            <fieldset>
-              <legend for="245507387">Section</legend>
-              <div class="form-group">
-                <select
-                  id="245507387"
-                  name="entry.639858685"
-                  class="form-control"
-                >
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-            </fieldset>
-          </div>
-          <div id="section-3">
-            <fieldset>
-              <legend for="297319105">Team Member Details</legend>
-              <div class="form-group"></div>
-            </fieldset>
 
-            <fieldset>
-              <legend for="934191790">Name</legend>
-              <div class="form-group">
-                <input
-                  id="1193142679"
-                  type="text"
-                  name="entry.1193142679"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
 
-            <fieldset>
-              <legend for="966119623">Roll Number</legend>
-              <div class="form-group">
-                <input
-                  id="1627949356"
-                  type="text"
-                  name="entry.1627949356"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
+                        <fieldset>
+                            <legend for="245507387">Section</legend>
+                            <div class="form-group">
+                                <select id="245507387" name="entry.639858685" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </fieldset>
 
-            <fieldset>
-              <legend for="1289435999">College Name</legend>
-              <div class="form-group">
-                <input
-                  id="443034656"
-                  type="text"
-                  name="entry.443034656"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
+                    </div>
+                    <div id="section-3" style={{ display: hiddenOrShow([4, 5].includes(this.state.teamSize))}}>
+                        <fieldset>
+                            <legend for="297319105">Team Member Details</legend>
+                            <div class="form-group">
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="934191790">Name</legend>
+                            <div class="form-group">
+                                <input id="1193142679" type="text" name="entry.1193142679" class="form-control" required={[4,5].includes(this.state.teamSize)} />
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="966119623">Roll Number</legend>
+                            <div class="form-group">
+                                <input id="1627949356" type="text" name="entry.1627949356" class="form-control" required={[4,5].includes(this.state.teamSize)} />
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="1289435999">College Name</legend>
+                            <div class="form-group">
+                                <input id="443034656" type="text" name="entry.443034656" class="form-control" required={[4,5].includes(this.state.teamSize)} />
+                            </div>
+                        </fieldset>
+
+
 
             <fieldset>
               <legend for="219766217">Year</legend>
@@ -526,65 +447,55 @@ class Form extends React.Component {
               </div>
             </fieldset>
 
-            <fieldset>
-              <legend for="291227852">Section</legend>
-              <div class="form-group">
-                <select
-                  id="291227852"
-                  name="entry.11271393"
-                  class="form-control"
-                >
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-            </fieldset>
-          </div>
+                        <fieldset>
+                            <legend for="291227852">Section</legend>
+                            <div class="form-group">
+                                <select id="291227852" name="entry.11271393" class="form-control" >
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
 
-          <div id="section-4">
-            <fieldset>
-              <legend for="1535613039">Team Member Details</legend>
-              <div class="form-group"></div>
-            </fieldset>
+                    <div id="section-4" style={{display:hiddenOrShow([3,4,5].includes(this.state.teamSize))}}>
+                        <fieldset>
+                            <legend for="1535613039">Team Member Details</legend>
+                            <div class="form-group">
+                            </div>
+                        </fieldset>
 
-            <fieldset>
-              <legend for="839804749">Name</legend>
-              <div class="form-group">
-                <input
-                  id="1369366464"
-                  type="text"
-                  name="entry.1369366464"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
 
-            <fieldset>
-              <legend for="1911951528">Roll Number</legend>
-              <div class="form-group">
-                <input
-                  id="1399044406"
-                  type="text"
-                  name="entry.1399044406"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
 
-            <fieldset>
-              <legend for="536772932">College Name</legend>
-              <div class="form-group">
-                <input
-                  id="477497822"
-                  type="text"
-                  name="entry.477497822"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
+                        <fieldset>
+                            <legend for="839804749">Name</legend>
+                            <div class="form-group">
+                                <input id="1369366464" type="text" name="entry.1369366464" class="form-control" required={[3,4,5].includes(this.state.teamSize)} />
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="1911951528">Roll Number</legend>
+                            <div class="form-group">
+                                <input id="1399044406" type="text" name="entry.1399044406" class="form-control" required={[3,4,5].includes(this.state.teamSize)} />
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="536772932">College Name</legend>
+                            <div class="form-group">
+                                <input id="477497822" type="text" name="entry.477497822" class="form-control" required={[3,4,5].includes(this.state.teamSize)} />
+                            </div>
+                        </fieldset>
+
+
 
             <fieldset>
               <legend for="471078577">Year</legend>
@@ -644,47 +555,41 @@ class Form extends React.Component {
             </fieldset>
           </div>
 
-          <div id="section-5">
-            <fieldset>
-              <legend for="494494688">Team Member Details</legend>
-              <div class="form-group"></div>
-            </fieldset>
+                    <div id="section-5" style={{display:hiddenOrShow([3,4,5].includes(this.state.teamSize))}}>
+                        <fieldset>
+                            <legend for="494494688">Team Member Details</legend>
+                            <div class="form-group">
+                            </div>
+                        </fieldset>
 
-            <fieldset>
-              <legend for="684711812">Name</legend>
-              <div class="form-group">
-                <input
-                  id="1172486922"
-                  type="text"
-                  name="entry.1172486922"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
 
-            <fieldset>
-              <legend for="49335025">Roll Number</legend>
-              <div class="form-group">
-                <input
-                  id="1756258122"
-                  type="text"
-                  name="entry.1756258122"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
 
-            <fieldset>
-              <legend for="892138441">College Name</legend>
-              <div class="form-group">
-                <input
-                  id="1327608088"
-                  type="text"
-                  name="entry.1327608088"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
+                        <fieldset>
+                            <legend for="684711812">Name</legend>
+                            <div class="form-group">
+                                <input id="1172486922" type="text" name="entry.1172486922" class="form-control" required={[3,4,5].includes(this.state.teamSize)} />
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="49335025">Roll Number</legend>
+                            <div class="form-group">
+                                <input id="1756258122" type="text" name="entry.1756258122" class="form-control" required={[3,4,5].includes(this.state.teamSize)} />
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="892138441">College Name</legend>
+                            <div class="form-group">
+                                <input id="1327608088" type="text" name="entry.1327608088" class="form-control" required={[3,4,5].includes(this.state.teamSize)} />
+                            </div>
+                        </fieldset>
+
+
 
             <fieldset>
               <legend for="650086981">Year</legend>
@@ -744,47 +649,42 @@ class Form extends React.Component {
             </fieldset>
           </div>
 
-          <div id="section-6">
-            <fieldset>
-              <legend for="1716255882">Team Member Details</legend>
-              <div class="form-group"></div>
-            </fieldset>
+                    <div id="section-6" style={{display:hiddenOrShow(this.state.teamSize===2)}}>
 
-            <fieldset>
-              <legend for="1570443883">Name</legend>
-              <div class="form-group">
-                <input
-                  id="2120853261"
-                  type="text"
-                  name="entry.2120853261"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
+                        <fieldset>
+                            <legend for="1716255882">Team Member Details</legend>
+                            <div class="form-group">
+                            </div>
+                        </fieldset>
 
-            <fieldset>
-              <legend for="717435800">Roll Number</legend>
-              <div class="form-group">
-                <input
-                  id="2011915937"
-                  type="text"
-                  name="entry.2011915937"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
 
-            <fieldset>
-              <legend for="1859382656">College Name</legend>
-              <div class="form-group">
-                <input
-                  id="1137456307"
-                  type="text"
-                  name="entry.1137456307"
-                  class="form-control"
-                />
-              </div>
-            </fieldset>
+
+                        <fieldset>
+                            <legend for="1570443883">Name</legend>
+                            <div class="form-group">
+                                <input id="2120853261" type="text" name="entry.2120853261" class="form-control"  required={this.state.teamSize===2}/>
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="717435800">Roll Number</legend>
+                            <div class="form-group">
+                                <input id="2011915937" type="text" name="entry.2011915937" class="form-control" required={this.state.teamSize===2} />
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="1859382656">College Name</legend>
+                            <div class="form-group">
+                                <input id="1137456307" type="text" name="entry.1137456307" class="form-control" required={this.state.teamSize===2} />
+                            </div>
+                        </fieldset>
+
+
 
             <fieldset>
               <legend for="1803766961">Year</legend>
@@ -826,89 +726,66 @@ class Form extends React.Component {
               </div>
             </fieldset>
 
-            <fieldset>
-              <legend for="1047500206">Section</legend>
-              <div class="form-group">
-                <select
-                  id="1047500206"
-                  name="entry.1679693985"
-                  class="form-control"
-                >
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-            </fieldset>
-          </div>
-          <div id="section-7">
-            <fieldset>
-              <legend for="673550520">Team Member Details</legend>
-              <div class="form-group"></div>
-            </fieldset>
+                        <fieldset>
+                            <legend for="1047500206">Section</legend>
+                            <div class="form-group">
+                                <select id="1047500206" name="entry.1679693985" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </fieldset>
 
-            <fieldset>
-              <legend for="1085751915">
-                Which of the following tech stacks are you and your teammate (if
-                any) familiar with?
-              </legend>
-              <div class="form-group">
-                <div class="checkbox">
-                  <label>
-                    <input
-                      type="checkbox"
-                      name="entry.1744030706"
-                      value="Frontend Development"
-                    />
-                    Frontend Development
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input
-                      type="checkbox"
-                      name="entry.1744030706"
-                      value="Backend  Development"
-                    />
-                    Backend Development
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input
-                      type="checkbox"
-                      name="entry.1744030706"
-                      value="UI/UX"
-                    />
-                    UI/UX
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>Machine Learning and Artificial Intelligence</label>
-                  <input
-                    type="checkbox"
-                    name="entry.1744030706"
-                    value="Machine Learning and Artificial Intelligence"
-                  />
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input
-                      type="checkbox"
-                      name="entry.1744030706"
-                      value="__other_option__"
-                    />
-                  </label>
-                  <input
-                    type="text"
-                    name="entry.1744030706.other_option_response"
-                    placeholder="custom value"
-                  />
-                </div>
-              </div>
-            </fieldset>
+                    </div>
+                    <div id="section-7" style={{
+                        display: hiddenOrShow([1,3].includes(this.state.teamSize))
+                    }}>
+                        <fieldset>
+                            <legend for="673550520">Team Member Details</legend>
+                            <div class="form-group">
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset>
+                            <legend for="1085751915">Which of the following tech stacks are you and your teammate (if any) familiar with?</legend>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="entry.1744030706" value="Frontend Development" required={[1, 2].includes(this.state.teamSize)} />
+                                        Frontend Development
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="entry.1744030706" value="Backend  Development" required={[1, 2].includes(this.state.teamSize)} />
+                                        Backend  Development
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="entry.1744030706" value="UI/UX" required={[1, 2].includes(this.state.teamSize)} />
+                                        UI/UX
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="entry.1744030706" value="Machine Learning and Artificial Intelligence"  required={[1, 2].includes(this.state.teamSize)}/>
+                                    <label>
+                                        Machine Learning and Artificial Intelligence
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="entry.1744030706" value="__other_option__" />
+                                    </label>
+                                    <input type="text" name="entry.1744030706.other_option_response" placeholder="custom value" />
+                                </div>
+                            </div>
+                        </fieldset>
 
             <input type="none" name="fvv" value="1" />
             <input type="none" name="fbzx" value="7231037383997258336" />
