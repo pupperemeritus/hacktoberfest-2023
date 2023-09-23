@@ -107,31 +107,31 @@ class Form extends React.Component {
                                     Further details will be communicated to the Team Lead and the specified email</p>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="entry.1110453834" value="1" onClick={() => this.handleTeamSizeChange(1)} required  />
+                                        <input type="radio" name="entry.1110453834" defaultValue={1} onChange={(e) => this.handleTeamSizeChange(1)} required  />
                                         1
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="entry.1110453834" value="2" onClick={() => this.handleTeamSizeChange(2)} required />
+                                        <input type="radio" name="entry.1110453834" defaultValue={2} onChange={(e) => this.handleTeamSizeChange(2)} required />
                                         2
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="entry.1110453834" value="3" onClick={() => this.handleTeamSizeChange(3)} required />
+                                        <input type="radio" name="entry.1110453834" defaultValue={3} onChange={(e) => this.handleTeamSizeChange(3)} required />
                                         3
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="entry.1110453834" value="4" onClick={() => this.handleTeamSizeChange(4)} required />
+                                        <input type="radio" name="entry.1110453834" defaultValue={4} onChange={(e) => this.handleTeamSizeChange(4)} required />
                                         4
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="entry.1110453834" value="5" onClick={() => this.handleTeamSizeChange(5)}required />
+                                        <input type="radio" name="entry.1110453834" defaultValue={5} onChange={(e) => this.handleTeamSizeChange(5)}required />
                                         5
                                     </label>
                                 </div>
@@ -823,7 +823,7 @@ class Form extends React.Component {
         crossorigin="anonymous"
       />;
     }
-
+    <MyDynamicComponentWithFallback />
     {
       $("#bootstrapForm").submit(function (event) {
         event.preventDefault();
