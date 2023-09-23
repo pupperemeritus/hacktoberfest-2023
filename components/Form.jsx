@@ -1,14 +1,62 @@
 'use client';
 import React from "react";
 
-
-
 class Form extends React.Component {
     static async getInitialProps(ctx) {
         ctx.res.setHeader('Content-type', 'text/html');
         ctx.res.write(str);
         ctx.res.end();
+        
     }
+    componentDidMount() {
+        // Hide the second section initially
+
+        document.getElementById("section-2").style.display = "none";
+        document.getElementById("section-3").style.display = "none";
+        document.getElementById("section-4").style.display = "none";
+        document.getElementById("section-5").style.display = "none";
+        document.getElementById("section-6").style.display = "none";
+    }
+    
+    handleTeamSizeChange = (e) => {
+        const selectedTeamSize = e.target.value;
+    
+        // Logic to show/hide sections based on the selectedTeamSize
+        if (selectedTeamSize === "1") {
+            document.getElementById("section-2").style.display = "none";
+            document.getElementById("section-3").style.display = "none";
+            document.getElementById("section-4").style.display = "none";
+            document.getElementById("section-5").style.display = "none";
+            document.getElementById("section-6").style.display = "none";
+            
+        } else if(selectedTeamSize === "2"){
+            document.getElementById("section-2").style.display = "none";
+            document.getElementById("section-3").style.display = "none";
+            document.getElementById("section-4").style.display = "none";
+            document.getElementById("section-5").style.display = "none";
+            document.getElementById("section-6").style.display = "block";
+            
+        } else if(selectedTeamSize  === "3"){
+            document.getElementById("section-2").style.display = "none";
+            document.getElementById("section-3").style.display = "none";
+            document.getElementById("section-4").style.display = "block";
+            document.getElementById("section-5").style.display = "block";
+            document.getElementById("section-6").style.display = "none";
+            document.getElementById("section-7").style.display = "none";
+            
+        } else if(selectedTeamSize  === "4"){
+            document.getElementById("section-2").style.display = "none";
+            document.getElementById("section-3").style.display = "block";
+            document.getElementById("section-4").style.display = "block";
+            document.getElementById("section-5").style.display = "block";
+
+        } else if(selectedTeamSize  === "5"){
+            document.getElementById("section-2").style.display = "block";
+            document.getElementById("section-3").style.display = "block";
+            document.getElementById("section-4").style.display = "block";
+            document.getElementById("section-5").style.display = "block";
+        }
+    };
     render() {
         return (
             <div>
@@ -60,31 +108,31 @@ class Form extends React.Component {
                                     Further details will be communicated to the Team Lead and the specified email</p>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="entry.1110453834" value="1" required />
+                                        <input type="radio" name="entry.1110453834" value="1" required onChange={this.handleTeamSizeChange} />
                                         1
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="entry.1110453834" value="2" required />
+                                        <input type="radio" name="entry.1110453834" value="2" required onChange={this.handleTeamSizeChange}/>
                                         2
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="entry.1110453834" value="3" required />
+                                        <input type="radio" name="entry.1110453834" value="3" required onChange={this.handleTeamSizeChange}/>
                                         3
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="entry.1110453834" value="4" required />
+                                        <input type="radio" name="entry.1110453834" value="4" required onChange={this.handleTeamSizeChange}/>
                                         4
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" name="entry.1110453834" value="5" required />
+                                        <input type="radio" name="entry.1110453834" value="5" required onChange={this.handleTeamSizeChange}/>
                                         5
                                     </label>
                                 </div>
@@ -210,7 +258,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="88520221">Name</legend>
                             <div class="form-group">
-                                <input id="614815331" type="text" name="entry.614815331" class="form-control" required />
+                                <input id="614815331" type="text" name="entry.614815331" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -219,7 +267,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="1049216781">Roll Number</legend>
                             <div class="form-group">
-                                <input id="592584203" type="text" name="entry.592584203" class="form-control" required />
+                                <input id="592584203" type="text" name="entry.592584203" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -228,7 +276,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="1147559039">College Name</legend>
                             <div class="form-group">
-                                <input id="257862837" type="text" name="entry.257862837" class="form-control" required />
+                                <input id="257862837" type="text" name="entry.257862837" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -296,7 +344,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="934191790">Name</legend>
                             <div class="form-group">
-                                <input id="1193142679" type="text" name="entry.1193142679" class="form-control" required />
+                                <input id="1193142679" type="text" name="entry.1193142679" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -305,7 +353,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="966119623">Roll Number</legend>
                             <div class="form-group">
-                                <input id="1627949356" type="text" name="entry.1627949356" class="form-control" required />
+                                <input id="1627949356" type="text" name="entry.1627949356" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -314,7 +362,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="1289435999">College Name</legend>
                             <div class="form-group">
-                                <input id="443034656" type="text" name="entry.443034656" class="form-control" required />
+                                <input id="443034656" type="text" name="entry.443034656" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -382,7 +430,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="839804749">Name</legend>
                             <div class="form-group">
-                                <input id="1369366464" type="text" name="entry.1369366464" class="form-control" required />
+                                <input id="1369366464" type="text" name="entry.1369366464" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -391,7 +439,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="1911951528">Roll Number</legend>
                             <div class="form-group">
-                                <input id="1399044406" type="text" name="entry.1399044406" class="form-control" required />
+                                <input id="1399044406" type="text" name="entry.1399044406" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -400,7 +448,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="536772932">College Name</legend>
                             <div class="form-group">
-                                <input id="477497822" type="text" name="entry.477497822" class="form-control" required />
+                                <input id="477497822" type="text" name="entry.477497822" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -468,7 +516,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="684711812">Name</legend>
                             <div class="form-group">
-                                <input id="1172486922" type="text" name="entry.1172486922" class="form-control" required />
+                                <input id="1172486922" type="text" name="entry.1172486922" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -477,7 +525,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="49335025">Roll Number</legend>
                             <div class="form-group">
-                                <input id="1756258122" type="text" name="entry.1756258122" class="form-control" required />
+                                <input id="1756258122" type="text" name="entry.1756258122" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -486,7 +534,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="892138441">College Name</legend>
                             <div class="form-group">
-                                <input id="1327608088" type="text" name="entry.1327608088" class="form-control" required />
+                                <input id="1327608088" type="text" name="entry.1327608088" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -554,7 +602,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="1570443883">Name</legend>
                             <div class="form-group">
-                                <input id="2120853261" type="text" name="entry.2120853261" class="form-control" required />
+                                <input id="2120853261" type="text" name="entry.2120853261" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -563,7 +611,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="717435800">Roll Number</legend>
                             <div class="form-group">
-                                <input id="2011915937" type="text" name="entry.2011915937" class="form-control" required />
+                                <input id="2011915937" type="text" name="entry.2011915937" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -572,7 +620,7 @@ class Form extends React.Component {
                         <fieldset>
                             <legend for="1859382656">College Name</legend>
                             <div class="form-group">
-                                <input id="1137456307" type="text" name="entry.1137456307" class="form-control" required />
+                                <input id="1137456307" type="text" name="entry.1137456307" class="form-control"  />
                             </div>
                         </fieldset>
 
@@ -673,18 +721,17 @@ class Form extends React.Component {
                             </div>
                         </fieldset>
 
-                        <input type="hidden" name="fvv" value="1" />
-                        <input type="hidden" name="fbzx" value="7231037383997258336" />
+                        <input type="none" name="fvv" value="1" />
+                        <input type="none" name="fbzx" value="7231037383997258336" />
                         {/* <!--
                         CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
                         This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
                         Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
                         We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
     --> */}
-                        <input type="hidden" name="pageHistory" value="0,1,2,3,4,5,6" />
-
-                        <input class="btn btn-primary" type="submit" value="Submit" />
+                        <input type="none" name="pageHistory" value="0,1,2,3,4,5,6" />
                     </div>
+                    <div id = "section-8"><input class="btn btn-primary" type="submit" value="Submit" /></div>
                 </form>
             </div >);
         {/* // This script requires jQuery and jquery-form plugin */ }
