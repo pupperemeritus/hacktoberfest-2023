@@ -300,3 +300,32 @@ body {
     background-position: top right;
   }
 }
+
+.formlabel {
+  color: #33b6d8; /* Text color equivalent to text-blue-200 */
+  font-size: 1.25rem; /* Font size equivalent to text-xl */
+  padding-top: 0.5rem; /* Top padding equivalent to py-2 */
+  padding-bottom: 0.5rem;
+}
+
+.forminput {
+  font-size: 1.25rem; /* Font size equivalent to text-xl */
+  padding: 0.5rem 1rem; /* Equivalent to px-4 and py-2 */
+  border: 1px solid #d2b863; /* Border equivalent to border-bgold-200 */
+  background-color: rgba(
+    239,
+    237,
+    239,
+    0.2
+  ); /* Background color equivalent to bg-Manga-200 bg-opacity-20 */
+  border-radius: 0.375rem; /* Rounded corners equivalent to rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
