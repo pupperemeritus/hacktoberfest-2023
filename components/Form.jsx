@@ -1281,7 +1281,7 @@ class Form extends React.Component {
         />
           <div className="align-items-center flex justify-between font-thin  flex-col md:flex-row items-center gap-4 text-bgold-200 text-align-center">
             <Link className="shimmerb text-lg" href="https://forms.gle/pt1HRckW8i8gAMgv9">
-              To edit response or if the website isn't working please go to this google form
+              To edit response or if the website isn&apos;t working please go to this google form
             </Link>
         </div>
       </div>

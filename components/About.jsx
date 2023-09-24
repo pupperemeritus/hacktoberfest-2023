@@ -39,10 +39,10 @@ function About() {
         </div>
         <div className=" px-4 py-2 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md">
           <span className=" text-bgold-200 shimmer font-bold">
-            Why We're Thrilled
+            Why We&apos;re Thrilled
           </span>
           <p className=" mt-2">
-            The "CBIT Hacktoberfest Hackathon" is an exciting 24-hour coding
+            The &quot;CBIT Hacktoberfest Hackathon&quot; is an exciting 24-hour coding
             challenge within this event. It empowers individuals to make
             meaningful contributions, expand tech knowledge, and connect with
             open source enthusiasts.

@@ -11,7 +11,7 @@ const Hero = () => {
           <span className=" text-bblue-100">Welcome to </span>
 
           <span className=" text-4xl text-bgold-200 font-semibold shimmer">
-            CBIT Hacktoberfest Hackathon'23
+            CBIT Hacktoberfest Hackathon&apos;23
           </span>
         </h1>
         <p className="text-lg mt-6 leading-8">

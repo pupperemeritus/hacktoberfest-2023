@@ -11,7 +11,7 @@ function Footer() {
           <strong className="shimmerb text-bblue-200">What We Do</strong>
           <br />
           <br />
-          At COSC, we're more than just an event organizer we're a community
+          At COSC, we&apos;re more than just an event organizer we&apos;re a community
           dedicated to advancing the open source culture. We host hackathons,
           conduct bootcamps, and facilitate workshops to equip students with the
           skills they need to thrive in the world of technology. Through our
@@ -21,11 +21,11 @@ function Footer() {
           <strong className="shimmerb text-bblue-200">Join Us on This Journey</strong>
           <br />
           <br />
-          HacktoberFest isn't just an event; it's a chance to be part of
+          HacktoberFest isn&apos;t just an event; it&apos;s a chance to be part of
           something bigger, to embrace the power of open source, and to make an
-          impact in the tech world. So, whether you're a seasoned developer, a
+          impact in the tech world. So, whether you&apos;re a seasoned developer, a
           curious beginner, or simply someone with a passion for technology, we
-          invite you to join us on this exhilarating journey. Let's learn, code,
+          invite you to join us on this exhilarating journey. Let&apos;s learn, code,
           and celebrate the magic of open source together!
         </p>
       </div>
