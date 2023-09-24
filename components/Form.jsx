@@ -159,7 +159,7 @@ class Form extends React.Component {
                     type="email"
                     name="emailAddress"
                     // className="form-control"
-                    className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                    className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
                     required
                   />
                 </div>
@@ -179,7 +179,7 @@ class Form extends React.Component {
                     type="text"
                     name="entry.2063582306"
                     // className="form-control"
-                    className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 text-xl"
+                    className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 md:text-xl"
                     required
                   />
                 </div>
@@ -304,7 +304,7 @@ class Form extends React.Component {
                       id="445699137"
                       type="text"
                       name="entry.445699137"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
                       required
                     />
                   </div>
@@ -323,7 +323,7 @@ class Form extends React.Component {
                       id="1814031188"
                       type="text"
                       name="entry.1814031188"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
                       required
                     />
                   </div>
@@ -342,7 +342,7 @@ class Form extends React.Component {
                       id="580637188"
                       type="text"
                       name="entry.580637188"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
                       required
                     />
                   </div>
@@ -361,7 +361,7 @@ class Form extends React.Component {
                       id="1494484691"
                       type="text"
                       name="entry.1494484691"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
                       required
                     />
                   </div>
@@ -380,7 +380,7 @@ class Form extends React.Component {
                       id="1644823420"
                       type="text"
                       name="entry.1644823420"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
                       required
                     />
                   </div>
@@ -1155,7 +1155,7 @@ class Form extends React.Component {
                       type="checkbox"
                       name="entry.1744030706"
                       value="Frontend Development"
-                      required={[1, 2].includes(this.state.teamSize)}
+                      //   required={[1, 2].includes(this.state.teamSize)}
                     />
                     <label>Frontend Development</label>
                   </div>
@@ -1164,7 +1164,7 @@ class Form extends React.Component {
                       type="checkbox"
                       name="entry.1744030706"
                       value="Backend  Development"
-                      required={[1, 2].includes(this.state.teamSize)}
+                      //   required={[1, 2].includes(this.state.teamSize)}
                     />
                     <label>Backend Development</label>
                   </div>
@@ -1173,7 +1173,7 @@ class Form extends React.Component {
                       type="checkbox"
                       name="entry.1744030706"
                       value="UI/UX"
-                      required={[1, 2].includes(this.state.teamSize)}
+                      //   required={[1, 2].includes(this.state.teamSize)}
                     />
                     <label>UI/UX</label>
                   </div>
@@ -1182,7 +1182,7 @@ class Form extends React.Component {
                       type="checkbox"
                       name="entry.1744030706"
                       value="Machine Learning and Artificial Intelligence"
-                      required={[1, 2].includes(this.state.teamSize)}
+                      //   required={[1, 2].includes(this.state.teamSize)}
                     />
                     <label>Machine Learning and Artificial Intelligence</label>
                   </div>
