@@ -30,7 +30,7 @@ function Footer() {
         </p>
       </div>
       <div className=" self-center w-fit mx-auto my-8">
-        <div className=" flex  gap-2">
+        <div className=" flex  gap-6">
           <Link href="https://www.facebook.com/cbitosc/">
             <Image src="/images/facebook.svg" width={40} height={40} />
           </Link>

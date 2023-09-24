@@ -26,8 +26,8 @@ const Hero = () => {
       </div>
       <div className="h-max my-0 mt-24 md:mt-16 mb-24 md:mb-12">
         <Image
-          width={1575}
-          height={630}
+          width={1000}
+          height={400}
           src="/images/HFest23_LogoCrop.png"
           alt="Logo"
           className=""
