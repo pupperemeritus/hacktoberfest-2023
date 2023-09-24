@@ -28,7 +28,6 @@ const Navbar = () => {
       const sectionTop = section.getBoundingClientRect().top;
 
       const sectionBottom = section.getBoundingClientRect().bottom;
-      console.log(sectionBottom);
       if (sectionTop - 1000 <= 0 && sectionBottom >= 0) {
         return section.id;
       }

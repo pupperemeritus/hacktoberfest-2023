@@ -58,6 +58,40 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.spacer3 {
+  /* aspect-ratio: 540/960;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+
+  background: hsla(276, 36%, 5%, 1);
+
+  background: linear-gradient(
+    0deg,
+    hsla(276, 36%, 5%, 1) 0%,
+    hsla(192, 68%, 15%, 1) 44%,
+    hsla(192, 69%, 25%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    0deg,
+    hsla(276, 36%, 5%, 1) 0%,
+    hsla(192, 68%, 15%, 1) 44%,
+    hsla(192, 69%, 25%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    0deg,
+    hsla(276, 36%, 5%, 1) 0%,
+    hsla(192, 68%, 15%, 1) 44%,
+    hsla(192, 69%, 25%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0F0913", endColorstr="#0C3640", GradientType=1 );
+}
+
 .layer1 {
   background-image: url("/stacked-wave-blue1.svg");
 }
@@ -66,7 +100,7 @@ body {
   background-image: url("/stacked-wave-blue2.svg");
 }
 
-.layer5 {
+.layer4 {
   background-image: url("/stacked-wave-blue4.svg");
 }
 
@@ -76,6 +110,10 @@ body {
 
 .layer6 {
   background-image: url("/stacked-waves-blueVer.svg");
+}
+
+.layerDeez {
+  background-image: url("/polygonScatter.svg");
 }
 
 .scroll-section-outer {
