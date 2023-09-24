@@ -159,7 +159,7 @@ class Form extends React.Component {
                     type="email"
                     name="emailAddress"
                     // className="form-control"
-                    className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                    className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                     required
                   />
                 </div>
@@ -179,7 +179,7 @@ class Form extends React.Component {
                     type="text"
                     name="entry.2063582306"
                     // className="form-control"
-                    className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 md:text-xl"
+                    className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 md:text-xl md:w-80 w-60"
                     required
                   />
                 </div>
@@ -304,7 +304,7 @@ class Form extends React.Component {
                       id="445699137"
                       type="text"
                       name="entry.445699137"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                       required
                     />
                   </div>
@@ -323,7 +323,7 @@ class Form extends React.Component {
                       id="1814031188"
                       type="text"
                       name="entry.1814031188"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                       required
                     />
                   </div>
@@ -342,7 +342,7 @@ class Form extends React.Component {
                       id="580637188"
                       type="text"
                       name="entry.580637188"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                       required
                     />
                   </div>
@@ -361,7 +361,7 @@ class Form extends React.Component {
                       id="1494484691"
                       type="text"
                       name="entry.1494484691"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                       required
                     />
                   </div>
@@ -380,7 +380,7 @@ class Form extends React.Component {
                       id="1644823420"
                       type="text"
                       name="entry.1644823420"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                       required
                     />
                   </div>
@@ -398,18 +398,30 @@ class Form extends React.Component {
                     <select
                       id="620465286"
                       name="entry.108615760"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void focus:w-60 md:focus:w-80"
                     >
-                      <option value="First Year" className=" text-bblue-200 ">
+                      <option
+                        value="First Year"
+                        className=" w-min text-bblue-200 "
+                      >
                         First Year
                       </option>
-                      <option value="Second Year" className=" text-bblue-200 ">
+                      <option
+                        value="Second Year"
+                        className=" w-min text-bblue-200 "
+                      >
                         Second Year
                       </option>
-                      <option value="Third Year" className=" text-bblue-200 ">
+                      <option
+                        value="Third Year"
+                        className=" w-min text-bblue-200 "
+                      >
                         Third Year
                       </option>
-                      <option value="Fourth Year" className=" text-bblue-200 ">
+                      <option
+                        value="Fourth Year"
+                        className=" w-min text-bblue-200 "
+                      >
                         Fourth Year
                       </option>
                     </select>
@@ -428,7 +440,7 @@ class Form extends React.Component {
                     <select
                       id="1672735296"
                       name="entry.1563983552"
-                      className="  form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
+                      className="md:w-80 w-60  form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
                     >
                       <option value="CSE" className=" text-bblue-200 ">
                         CSE
@@ -485,7 +497,7 @@ class Form extends React.Component {
                     <select
                       id="1743077529"
                       name="entry.1958219572"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
                     >
                       <option value="1" className=" text-bblue-200 ">
                         1
@@ -577,7 +589,7 @@ class Form extends React.Component {
                     <select
                       id="596154546"
                       name="entry.467655292"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="First Year">First Year</option>
                       <option value="Second Year">Second Year</option>
@@ -595,7 +607,7 @@ class Form extends React.Component {
                     <select
                       id="2093469607"
                       name="entry.113284536"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="CSE">CSE</option>
                       <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
@@ -621,7 +633,7 @@ class Form extends React.Component {
                     <select
                       id="245507387"
                       name="entry.639858685"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -701,7 +713,7 @@ class Form extends React.Component {
                     <select
                       id="219766217"
                       name="entry.1324061005"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="First Year">First Year</option>
                       <option value="Second Year">Second Year</option>
@@ -719,7 +731,7 @@ class Form extends React.Component {
                     <select
                       id="625150825"
                       name="entry.1284054994"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="CSE">CSE</option>
                       <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
@@ -745,7 +757,7 @@ class Form extends React.Component {
                     <select
                       id="291227852"
                       name="entry.11271393"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -826,7 +838,7 @@ class Form extends React.Component {
                     <select
                       id="471078577"
                       name="entry.962333022"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="First Year">First Year</option>
                       <option value="Second Year">Second Year</option>
@@ -844,7 +856,7 @@ class Form extends React.Component {
                     <select
                       id="1317916075"
                       name="entry.171849333"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="CSE">CSE</option>
                       <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
@@ -870,7 +882,7 @@ class Form extends React.Component {
                     <select
                       id="1725491973"
                       name="entry.2122078574"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -951,7 +963,7 @@ class Form extends React.Component {
                     <select
                       id="650086981"
                       name="entry.1988676886"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="First Year">First Year</option>
                       <option value="Second Year">Second Year</option>
@@ -969,7 +981,7 @@ class Form extends React.Component {
                     <select
                       id="1580540328"
                       name="entry.1536308670"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="CSE">CSE</option>
                       <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
@@ -995,7 +1007,7 @@ class Form extends React.Component {
                     <select
                       id="1352080404"
                       name="entry.1511534131"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -1074,7 +1086,7 @@ class Form extends React.Component {
                     <select
                       id="1803766961"
                       name="entry.232235344"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="First Year">First Year</option>
                       <option value="Second Year">Second Year</option>
@@ -1092,7 +1104,7 @@ class Form extends React.Component {
                     <select
                       id="2092753228"
                       name="entry.1312317868"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="CSE">CSE</option>
                       <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
@@ -1118,7 +1130,7 @@ class Form extends React.Component {
                     <select
                       id="1047500206"
                       name="entry.1679693985"
-                      className=" form-control shadow-md text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
