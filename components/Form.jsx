@@ -46,7 +46,7 @@ class Form extends React.Component {
           className=" flex flex-col items-center justify-items-center justify-center my-2"
         >
           <div id="section-1">
-            <fieldset>
+            <fieldset className="w-full">
               <h2 className=" flex flex-col items-center justify-between ">
                 <span className=" shimmer font-bold text-3xl">
                   CBIT Hacktoberfest Hackathon 2023
@@ -138,54 +138,54 @@ class Form extends React.Component {
               </div>
             </fieldset>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
-              <fieldset className=" my-2">
-                <legend htmlFor="" className=" text-bblue-200 text-xl py-2">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  w-full rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
+              <fieldset className=" my-2 w-full">
+                <legend htmlFor="" className=" text-bblue-200 text-xl py-2 w-full">
                   Email
                 </legend>
-                <div className="form-group ">
+                <div className="form-group w-full">
                   <input
                     id="emailAddress"
                     type="email"
                     name="emailAddress"
                     // className="form-control"
-                    className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2  w-60"
+                    className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                     required
                   />
                 </div>
               </fieldset>
 
               {/*  */}
-              <fieldset className=" my-2">
+              <fieldset className=" my-2 w-full">
                 <legend
                   htmlFor="589548866"
                   className=" text-bblue-200 text-xl py-2"
                 >
                   Team Name
                 </legend>
-                <div className="form-group">
+                <div className="form-group w-full">
                   <input
                     id="2063582306"
                     type="text"
                     class="formText"
                     name="entry.2063582306"
                     // className="form-control"
-                    className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 md:text-xl  w-60"
+                    className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 md:text-xl  w-full"
                     required
                   />
                 </div>
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20 items-center rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8 ">
-              <fieldset>
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20 justify-content-center align-center items-center rounded-xl w-full justify-self-center shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8">
+              <fieldset className="w-full">
                 <legend
                   htmlFor="115335284"
                   className=" text-bblue-200 text-xl py-2 "
                 >
                   Team Size
                 </legend>
-                <div className="form-group">
+                <div className="form-group w-full">
                   <p
                     //   className="help-block"
                     className="help-block text-sm leading-7"
@@ -194,7 +194,7 @@ class Form extends React.Component {
                     will be pooled with other participants Further details will
                     be communicated to the Team Lead and the specified email
                   </p>
-                  <div className=" flex justify-start gap-8 my-4">
+                  <div className=" flex align-items-center justify-center gap-8 my-4">
                     <div className="radio">
                       <label>
                         <input
@@ -265,141 +265,141 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
-              <fieldset>
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full">
+              <fieldset className="w-full">
                 <legend
                   htmlFor="2019641531"
-                  className=" text-bblue-200 text-xl py-2 "
+                  className=" text-bblue-200 text-xl py-2 w-full"
                 >
                   What technical skills and frameworks are you and your team
                   members familiar with?
                 </legend>
-                <div className="form-group">
+                <div className="form-group w-full">
                   <textarea
                     id="1651657008"
                     name="entry.1651657008"
                     // className="form-control"
-                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 w-5/6 justify-items-center items-center  px-4 py-2"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 w-5/6 justify-items-center items-center w-full px-4 py-2"
                     required
                   ></textarea>
                 </div>
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
-              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3">
-                <fieldset>
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full ">
+              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full">
+                <fieldset className="w-full">
                   <legend
                     htmlFor="1885957116"
-                    className=" text-bblue-200 text-xl py-2 "
+                    className=" text-bblue-200 text-xl py-2 w-full"
                   >
                     Team Leader Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="445699137"
                       type="text"
                     class="formText"
                       name="entry.445699137"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required
                     />
                   </div>
                 </fieldset>
 
                 {/*  */}
-                <fieldset>
+                <fieldset className="w-full">
                   <legend
                     htmlFor="1476785257"
-                    className=" text-bblue-200 text-xl py-2 "
+                    className=" text-bblue-200 text-xl py-2 w-full"
                   >
                     Team Leader Email ID
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1814031188"
                       type="text"
-                    class="formText"
+                    class="formText w-full"
                       name="entry.1814031188"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-full w-full"
                       required
                     />
                   </div>
                 </fieldset>
 
                 {/*  */}
-                <fieldset>
+                <fieldset className="w-full">
                   <legend
                     htmlFor="811144166"
-                    className=" text-bblue-200 text-xl py-2 "
+                    className=" text-bblue-200 text-xl py-2 w-full"
                   >
                     Team Leader Contact Number
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group ">
                     <input
                       id="580637188"
                       type="text"
                     class="formText"
                       name="entry.580637188"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-full w-full"
                       required
                     />
                   </div>
                 </fieldset>
 
                 {/*  */}
-                <fieldset>
+                <fieldset className="w-full">
                   <legend
                     htmlFor="296546576"
                     className=" text-bblue-200 text-xl py-2 "
                   >
                     Roll Number
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1494484691"
                       type="text"
                     class="formText"
                       name="entry.1494484691"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required
                     />
                   </div>
                 </fieldset>
 
                 {/*  */}
-                <fieldset>
+                <fieldset className="w-full">
                   <legend
                     htmlFor="30119366"
                     className=" text-bblue-200 text-xl py-2 "
                   >
                     College Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1644823420"
                       type="text"
                     class="formText"
                       name="entry.1644823420"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
+                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required
                     />
                   </div>
                 </fieldset>
 
                 {/*  */}
-                <fieldset>
+                <fieldset className="w-full">
                   <legend
                     htmlFor="620465286"
                     className=" text-bblue-200 text-xl py-2 "
                   >
                     Year of Study
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="620465286"
                       name="entry.108615760"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void focus:w-60 md:focus:w-80"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void focus:w-60 md:focus:w-80"
                     >
                       <option
                         readOnly="First Year"
@@ -430,18 +430,18 @@ class Form extends React.Component {
                 </fieldset>
 
                 {/*  */}
-                <fieldset>
+                <fieldset className="w-full">
                   <legend
                     htmlFor="1672735296"
                     className=" text-bblue-200 text-xl py-2 "
                   >
                     Branch
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="1672735296"
                       name="entry.1563983552"
-                      className="md:w-80 w-60  form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
+                      className="w-full  form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
                     >
                       <option readOnly="CSE" className=" text-bblue-200 ">
                         CSE
@@ -487,18 +487,18 @@ class Form extends React.Component {
                 </fieldset>
 
                 {/*  */}
-                <fieldset>
+                <fieldset className="w-full">
                   <legend
                     htmlFor="1743077529"
                     className=" text-bblue-200 text-xl py-2 "
                   >
                     Section
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="1743077529"
                       name="entry.1958219572"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
                     >
                       <option readOnly="1" className=" text-bblue-200 ">
                         1
@@ -528,19 +528,19 @@ class Form extends React.Component {
             >
               <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3 w-min mx-auto">
                 {/*  */}
-                <fieldset>
+                <fieldset className="w-full">
                   <legend htmlFor="1998221997" className=" formlabel">
                     Team Member Details
                   </legend>
-                  <div className="form-group"></div>
+                  <div className="form-group w-full"></div>
                 </fieldset>
 
                 {/*  */}
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="88520221">
                     Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="614815331"
                       type="text"
@@ -553,11 +553,11 @@ class Form extends React.Component {
                 </fieldset>
 
                 {/*  */}
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1049216781">
                     Roll Number
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="592584203"
                       type="text"
@@ -569,11 +569,11 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1147559039">
                     College Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="257862837"
                       type="text"
@@ -585,15 +585,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="596154546">
                     Year
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="596154546"
                       name="entry.467655292"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="First Year">First Year</option>
                       <option readOnly="Second Year">Second Year</option>
@@ -603,15 +603,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="2093469607">
                     Branch
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="2093469607"
                       name="entry.113284536"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="CSE">CSE</option>
                       <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
@@ -629,15 +629,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="245507387">
                     Section
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="245507387"
                       name="entry.639858685"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="1">1</option>
                       <option readOnly="2">2</option>
@@ -657,18 +657,18 @@ class Form extends React.Component {
               }}
             >
               <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3 w-min mx-auto">
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="297319105">
                     Team Member Details
                   </legend>
-                  <div className="form-group"></div>
+                  <div className="form-group w-full"></div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="934191790">
                     Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1193142679"
                       type="text"
@@ -680,11 +680,11 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="966119623">
                     Roll Number
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1627949356"
                       type="text"
@@ -696,11 +696,11 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1289435999">
                     College Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="443034656"
                       type="text"
@@ -712,15 +712,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="219766217">
                     Year
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="219766217"
                       name="entry.1324061005"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="First Year">First Year</option>
                       <option readOnly="Second Year">Second Year</option>
@@ -730,15 +730,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="625150825">
                     Branch
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="625150825"
                       name="entry.1284054994"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="CSE">CSE</option>
                       <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
@@ -756,15 +756,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="291227852">
                     Section
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="291227852"
                       name="entry.11271393"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="1">1</option>
                       <option readOnly="2">2</option>
@@ -785,18 +785,18 @@ class Form extends React.Component {
               }}
             >
               <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3 w-min mx-auto">
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1535613039">
                     Team Member Details
                   </legend>
-                  <div className="form-group"></div>
+                  <div className="form-group w-full"></div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="839804749">
                     Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1369366464"
                       type="text"
@@ -808,11 +808,11 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1911951528">
                     Roll Number
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1399044406"
                       type="text"
@@ -824,11 +824,11 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="536772932">
                     College Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="477497822"
                       type="text"
@@ -840,15 +840,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="471078577">
                     Year
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="471078577"
                       name="entry.962333022"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="First Year">First Year</option>
                       <option readOnly="Second Year">Second Year</option>
@@ -858,15 +858,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1317916075">
                     Branch
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="1317916075"
                       name="entry.171849333"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="CSE">CSE</option>
                       <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
@@ -884,15 +884,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1725491973">
                     Section
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="1725491973"
                       name="entry.2122078574"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="1">1</option>
                       <option readOnly="2">2</option>
@@ -913,18 +913,18 @@ class Form extends React.Component {
               }}
             >
               <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3 w-min mx-auto">
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="494494688">
                     Team Member Details
                   </legend>
-                  <div className="form-group"></div>
+                  <div className="form-group w-full"></div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="684711812">
                     Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1172486922"
                       type="text"
@@ -936,11 +936,11 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="49335025">
                     Roll Number
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1756258122"
                       type="text"
@@ -952,11 +952,11 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="892138441">
                     College Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1327608088"
                       type="text"
@@ -968,15 +968,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="650086981">
                     Year
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="650086981"
                       name="entry.1988676886"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="First Year">First Year</option>
                       <option readOnly="Second Year">Second Year</option>
@@ -986,15 +986,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1580540328">
                     Branch
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="1580540328"
                       name="entry.1536308670"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="CSE">CSE</option>
                       <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
@@ -1012,15 +1012,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1352080404">
                     Section
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="1352080404"
                       name="entry.1511534131"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="1">1</option>
                       <option readOnly="2">2</option>
@@ -1039,18 +1039,18 @@ class Form extends React.Component {
               style={{ display: hiddenOrShow(this.state.teamSize === 2) }}
             >
               <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3 w-min mx-auto">
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1716255882">
                     Team Member Details
                   </legend>
-                  <div className="form-group"></div>
+                  <div className="form-group w-full"></div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1570443883">
                     Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="2120853261"
                       type="text"
@@ -1062,11 +1062,11 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="717435800">
                     Roll Number
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="2011915937"
                       type="text"
@@ -1078,11 +1078,11 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1859382656">
                     College Name
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <input
                       id="1137456307"
                       type="text"
@@ -1094,15 +1094,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1803766961">
                     Year
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="1803766961"
                       name="entry.232235344"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="First Year">First Year</option>
                       <option readOnly="Second Year">Second Year</option>
@@ -1112,15 +1112,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="2092753228">
                     Branch
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="2092753228"
                       name="entry.1312317868"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="CSE">CSE</option>
                       <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
@@ -1138,15 +1138,15 @@ class Form extends React.Component {
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1047500206">
                     Section
                   </legend>
-                  <div className="form-group">
+                  <div className="form-group w-full">
                     <select
                       id="1047500206"
                       name="entry.1679693985"
-                      className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
                       <option readOnly="1">1</option>
                       <option readOnly="2">2</option>
@@ -1165,19 +1165,19 @@ class Form extends React.Component {
                 display: hiddenOrShow([1, 2].includes(this.state.teamSize)),
               }}
             >
-              <fieldset>
+              <fieldset className="w-full">
                 <legend className=" formlabel" htmlFor="673550520">
                   Team Member Details
                 </legend>
-                <div className="form-group"></div>
+                <div className="form-group w-full"></div>
               </fieldset>
 
-              <fieldset>
+              <fieldset className="w-full">
                 <legend className=" formlabel" htmlFor="1085751915">
                   Which of the following tech stacks are you and your teammate
                   (if any) familiar with?
                 </legend>
-                <div className="form-group">
+                <div className="form-group w-full">
                   <div className="checkbox">
                     <input
                       type="checkbox"

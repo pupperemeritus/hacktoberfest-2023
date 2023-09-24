@@ -11,7 +11,7 @@ function Footer() {
           <strong className="shimmerb text-bblue-200">What We Do</strong>
           <br />
           <br />
-          At COSC, we're more than just an event organizer; we're a community
+          At COSC, we're more than just an event organizer we're a community
           dedicated to advancing the open source culture. We host hackathons,
           conduct bootcamps, and facilitate workshops to equip students with the
           skills they need to thrive in the world of technology. Through our
