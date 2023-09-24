@@ -130,7 +130,9 @@ class Form extends React.Component {
                   <div className=" my-2">
                     For any queries, contact: <br />
                     <span className=" text-bgold-200">Akil:</span>{" "}
-                    <span className=" text-bblue-100">9442621187</span>
+                    <span className=" text-bblue-100">+91 94426 21187</span><br/>
+                    <span className=" text-bgold-200">Ritesh:</span>{" "}
+                    <span className=" text-bblue-100">+91 96182 66824</span>
                   </div>
                 </div>
               </div>
@@ -165,6 +167,7 @@ class Form extends React.Component {
                   <input
                     id="2063582306"
                     type="text"
+                    class="formText"
                     name="entry.2063582306"
                     // className="form-control"
                     className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 md:text-xl  w-60"
@@ -174,7 +177,7 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8 ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20 items-center rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8 ">
               <fieldset>
                 <legend
                   htmlFor="115335284"
@@ -196,6 +199,7 @@ class Form extends React.Component {
                       <label>
                         <input
                           type="radio"
+                          className="radio"
                           name="entry.1110453834"
                           defaultValue={1}
                           onClick={(e) => this.handleTeamSizeChange(1)}
@@ -208,6 +212,7 @@ class Form extends React.Component {
                       <label>
                         <input
                           type="radio"
+                          className="radio"
                           name="entry.1110453834"
                           defaultValue={2}
                           onClick={(e) => this.handleTeamSizeChange(2)}
@@ -220,6 +225,7 @@ class Form extends React.Component {
                       <label>
                         <input
                           type="radio"
+                          className="radio"
                           name="entry.1110453834"
                           defaultValue={3}
                           onClick={(e) => this.handleTeamSizeChange(3)}
@@ -232,6 +238,7 @@ class Form extends React.Component {
                       <label>
                         <input
                           type="radio"
+                          className="radio"
                           name="entry.1110453834"
                           defaultValue={4}
                           onClick={(e) => this.handleTeamSizeChange(4)}
@@ -244,6 +251,7 @@ class Form extends React.Component {
                       <label>
                         <input
                           type="radio"
+                          className="radio"
                           name="entry.1110453834"
                           defaultValue={5}
                           onClick={(e) => this.handleTeamSizeChange(5)}
@@ -257,7 +265,7 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8 ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
               <fieldset>
                 <legend
                   htmlFor="2019641531"
@@ -271,7 +279,7 @@ class Form extends React.Component {
                     id="1651657008"
                     name="entry.1651657008"
                     // className="form-control"
-                    className="form-control shadow-md  rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 w-full  px-4 py-2"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 w-5/6 justify-items-center items-center  px-4 py-2"
                     required
                   ></textarea>
                 </div>
@@ -291,6 +299,7 @@ class Form extends React.Component {
                     <input
                       id="445699137"
                       type="text"
+                    class="formText"
                       name="entry.445699137"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                       required
@@ -310,6 +319,7 @@ class Form extends React.Component {
                     <input
                       id="1814031188"
                       type="text"
+                    class="formText"
                       name="entry.1814031188"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                       required
@@ -329,6 +339,7 @@ class Form extends React.Component {
                     <input
                       id="580637188"
                       type="text"
+                    class="formText"
                       name="entry.580637188"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                       required
@@ -348,6 +359,7 @@ class Form extends React.Component {
                     <input
                       id="1494484691"
                       type="text"
+                    class="formText"
                       name="entry.1494484691"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                       required
@@ -367,6 +379,7 @@ class Form extends React.Component {
                     <input
                       id="1644823420"
                       type="text"
+                    class="formText"
                       name="entry.1644823420"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
                       required
@@ -531,6 +544,7 @@ class Form extends React.Component {
                     <input
                       id="614815331"
                       type="text"
+                    class="formText"
                       name="entry.614815331"
                       className="form-control forminput"
                       required={this.state.teamSize === 5}
@@ -547,6 +561,7 @@ class Form extends React.Component {
                     <input
                       id="592584203"
                       type="text"
+                    class="formText"
                       name="entry.592584203"
                       className="form-control forminput"
                       required={this.state.teamSize === 5}
@@ -562,6 +577,7 @@ class Form extends React.Component {
                     <input
                       id="257862837"
                       type="text"
+                    class="formText"
                       name="entry.257862837"
                       className="form-control forminput"
                       required={this.state.teamSize === 5}
@@ -656,6 +672,7 @@ class Form extends React.Component {
                     <input
                       id="1193142679"
                       type="text"
+                    class="formText"
                       name="entry.1193142679"
                       className="form-control forminput"
                       required={[4, 5].includes(this.state.teamSize)}
@@ -671,6 +688,7 @@ class Form extends React.Component {
                     <input
                       id="1627949356"
                       type="text"
+                    class="formText"
                       name="entry.1627949356"
                       className="form-control forminput"
                       required={[4, 5].includes(this.state.teamSize)}
@@ -686,6 +704,7 @@ class Form extends React.Component {
                     <input
                       id="443034656"
                       type="text"
+                    class="formText"
                       name="entry.443034656"
                       className="form-control forminput"
                       required={[4, 5].includes(this.state.teamSize)}
@@ -781,6 +800,7 @@ class Form extends React.Component {
                     <input
                       id="1369366464"
                       type="text"
+                    class="formText"
                       name="entry.1369366464"
                       className="form-control forminput"
                       required={[3, 4, 5].includes(this.state.teamSize)}
@@ -796,6 +816,7 @@ class Form extends React.Component {
                     <input
                       id="1399044406"
                       type="text"
+                    class="formText"
                       name="entry.1399044406"
                       className="form-control forminput"
                       required={[3, 4, 5].includes(this.state.teamSize)}
@@ -811,6 +832,7 @@ class Form extends React.Component {
                     <input
                       id="477497822"
                       type="text"
+                    class="formText"
                       name="entry.477497822"
                       className="form-control forminput"
                       required={[3, 4, 5].includes(this.state.teamSize)}
@@ -906,6 +928,7 @@ class Form extends React.Component {
                     <input
                       id="1172486922"
                       type="text"
+                    class="formText"
                       name="entry.1172486922"
                       className="form-control forminput"
                       required={[3, 4, 5].includes(this.state.teamSize)}
@@ -921,6 +944,7 @@ class Form extends React.Component {
                     <input
                       id="1756258122"
                       type="text"
+                    class="formText"
                       name="entry.1756258122"
                       className="form-control forminput"
                       required={[3, 4, 5].includes(this.state.teamSize)}
@@ -936,6 +960,7 @@ class Form extends React.Component {
                     <input
                       id="1327608088"
                       type="text"
+                    class="formText"
                       name="entry.1327608088"
                       className="form-control forminput"
                       required={[3, 4, 5].includes(this.state.teamSize)}
@@ -1029,6 +1054,7 @@ class Form extends React.Component {
                     <input
                       id="2120853261"
                       type="text"
+                    class="formText"
                       name="entry.2120853261"
                       className="form-control forminput"
                       required={this.state.teamSize === 2}
@@ -1044,6 +1070,7 @@ class Form extends React.Component {
                     <input
                       id="2011915937"
                       type="text"
+                    class="formText"
                       name="entry.2011915937"
                       className="form-control forminput"
                       required={this.state.teamSize === 2}
@@ -1059,6 +1086,7 @@ class Form extends React.Component {
                     <input
                       id="1137456307"
                       type="text"
+                    class="formText"
                       name="entry.1137456307"
                       className="form-control forminput"
                       required={this.state.teamSize === 2}
@@ -1153,6 +1181,7 @@ class Form extends React.Component {
                   <div className="checkbox">
                     <input
                       type="checkbox"
+                      class="checkbox"
                       name="entry.1744030706"
                       readOnly="Frontend Development"
                         // required={[1, 2].includes(this.state.teamSize)}
@@ -1162,6 +1191,7 @@ class Form extends React.Component {
                   <div className="checkbox">
                     <input
                       type="checkbox"
+                      class="checkbox"
                       name="entry.1744030706"
                       readOnly="Backend  Development"
                         // required={[1, 2].includes(this.state.teamSize)}
@@ -1171,6 +1201,7 @@ class Form extends React.Component {
                   <div className="checkbox">
                     <input
                       type="checkbox"
+                      class="checkbox"
                       name="entry.1744030706"
                       readOnly="UI/UX"
                         // required={[1, 2].includes(this.state.teamSize)}
@@ -1180,6 +1211,7 @@ class Form extends React.Component {
                   <div className="checkbox">
                     <input
                       type="checkbox"
+                      class="checkbox"
                       name="entry.1744030706"
                       readOnly="Machine Learning and Artificial Intelligence"
                       //   required={[1, 2].includes(this.state.teamSize)}
@@ -1190,12 +1222,14 @@ class Form extends React.Component {
                     <label>
                       <input
                         type="checkbox"
+                        class="checkbox"
                         name="entry.1744030706"
                         readOnly="__other_option__"
                       />
                     </label>
                     <input
                       type="text"
+                    class="formText"
                       name="entry.1744030706.other_option_response"
                       placeholder="custom readOnly"
                       className=" rounded text-sm px-2 py-1 border shadow-md border-bgold-200 bg-Manga-100 bg-opacity-30"
