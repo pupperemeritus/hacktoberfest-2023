@@ -32,16 +32,16 @@ function Footer() {
       <div className=" self-center w-fit mx-auto my-8">
         <div className=" flex  gap-6">
           <Link href="https://www.facebook.com/cbitosc/">
-            <Image src="/images/facebook.svg" width={40} height={40} />
+            <Image alt="facebook" src="/images/facebook.svg" width={40} height={40} />
           </Link>
           <Link href="https://twitter.com/cbitosc?t=rWGqPsaidSTGfA8FpwPPUw&s=09">
-            <Image src="/images/x.png" width={40} height={40} />
+            <Image alt="x(twitter)" src="/images/x.png" width={40} height={40} />
           </Link>
           <Link href="https://www.instagram.com/cbitosc/">
-            <Image src="/images/insta.svg" width={40} height={40} />
+            <Image alt="instagram" src="/images/insta.svg" width={40} height={40} />
           </Link>
           <Link href="https://www.linkedin.com/company/cbitosc/">
-            <Image src="/images/linkedin.svg" width={40} height={40} />
+            <Image alt="linkedin" src="/images/linkedin.svg" width={40} height={40} />
           </Link>
         </div>
       </div>
@@ -67,11 +67,11 @@ function Footer() {
       <script
         type="module"
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
+       async></script>
       <script
         noModule
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      ></script>
+      async></script>
     </div>
   );
 }
