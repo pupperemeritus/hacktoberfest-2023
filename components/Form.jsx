@@ -1,26 +1,13 @@
 "use client";
 import React from "react";
 import Script from "next/script";
+// window.$ = window.jQuery = require('jquery')
+
 const hiddenOrShow = (e) => {
   if (e === true) return "block";
   else return "none";
 };
-// const handleTeamSizeChange = (e) => {
-//     const selectedTeamSize = parseInt(e.target.value);
-//     setFormState((prevState) => ({
-//         ...prevState,
-//         teamSize: selectedTeamSize,
-//     }));
-// };
-// let [formState, setFormState] = useState({
-//     teamSize: 1,
-//     section2: false,
-//     section3: false,
-//     section4: false,
-//     section5: false,
-//     section6: false,
-//     section7: false,
-// });
+
 
 class Form extends React.Component {
     constructor() {
@@ -30,32 +17,33 @@ class Form extends React.Component {
     };
   }
 
+  handleJqueryLoad() {
+    window.$ = window.jQuery = require('jquery');
+  }
   handleTeamSizeChange = (e) => {
     this.setState({ teamSize: e }, () => {
       console.log("teamSize Updated:", this.state.teamSize);
     });
   };
+  componentDidMount() {
+    this.handleJqueryLoad()
+  }
 
   static async getInitialProps(ctx) {
     ctx.res.setHeader("Content-type", "text/html");
     ctx.res.write(str);
     ctx.res.end();
   }
-  //     If team size is one -> Jump to section 7 and submit
-  // If team size is two -> Jump to section 6 Team Member Details -> Jump to section 7 -> submit
 
-  // If team size is three -> Jump to section 4 -> Jump to section 5 -> Submit
-  // If team size is four -> Jump to section 3 -> Jump to section 4 -> Jump to section 5 -> Submit
-  // If team size is five -> Jump to section 2 -> Jump to section 3 -> Jump to section 4 -> Jump to section 5 -> Submit
   render() {
     return (
-      <div className=" w-[90%] md:w-[75%] mx-auto snap-start snap-both snap-proximity snap-stop-normal">
+      <div className=" w-[90%] md:w-2/3 sm:w-5/6 mx-auto">
         <form
           action="https://docs.google.com/forms/d/e/1FAIpQLSepwkYVpD9rWy5Ym2LnvZipnlQlZH5YPbL-M6J0M6uAg9K2BA/formResponse"
           target="_self"
           id="bootstrapForm"
           method="POST"
-          className=" flex flex-col items-center my-2"
+          className=" flex flex-col items-center justify-items-center justify-center my-2"
         >
           <div id="section-1">
             <fieldset>
@@ -148,7 +136,7 @@ class Form extends React.Component {
               </div>
             </fieldset>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
               <fieldset className=" my-2">
                 <legend htmlFor="" className=" text-bblue-200 text-xl py-2">
                   Email
@@ -159,7 +147,7 @@ class Form extends React.Component {
                     type="email"
                     name="emailAddress"
                     // className="form-control"
-                    className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-80 w-60"
+                    className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2  w-60"
                     required
                   />
                 </div>
@@ -179,14 +167,14 @@ class Form extends React.Component {
                     type="text"
                     name="entry.2063582306"
                     // className="form-control"
-                    className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 md:text-xl md:w-80 w-60"
+                    className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 md:text-xl  w-60"
                     required
                   />
                 </div>
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8 ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8 ">
               <fieldset>
                 <legend
                   htmlFor="115335284"
@@ -269,7 +257,7 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8 ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8 ">
               <fieldset>
                 <legend
                   htmlFor="2019641531"
@@ -290,8 +278,8 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
-              <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
+              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3">
                 <fieldset>
                   <legend
                     htmlFor="1885957116"
@@ -401,25 +389,25 @@ class Form extends React.Component {
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void focus:w-60 md:focus:w-80"
                     >
                       <option
-                        value="First Year"
+                        readOnly="First Year"
                         className=" w-min text-bblue-200 "
                       >
                         First Year
                       </option>
                       <option
-                        value="Second Year"
+                        readOnly="Second Year"
                         className=" w-min text-bblue-200 "
                       >
                         Second Year
                       </option>
                       <option
-                        value="Third Year"
+                        readOnly="Third Year"
                         className=" w-min text-bblue-200 "
                       >
                         Third Year
                       </option>
                       <option
-                        value="Fourth Year"
+                        readOnly="Fourth Year"
                         className=" w-min text-bblue-200 "
                       >
                         Fourth Year
@@ -442,43 +430,43 @@ class Form extends React.Component {
                       name="entry.1563983552"
                       className="md:w-80 w-60  form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
                     >
-                      <option value="CSE" className=" text-bblue-200 ">
+                      <option readOnly="CSE" className=" text-bblue-200 ">
                         CSE
                       </option>
                       <option
-                        value="CSE AI &amp; ML"
+                        readOnly="CSE AI &amp; ML"
                         className=" text-bblue-200 "
                       >
                         CSE AI &amp; ML
                       </option>
-                      <option value="CET" className=" text-bblue-200 ">
+                      <option readOnly="CET" className=" text-bblue-200 ">
                         CET
                       </option>
-                      <option value="IT" className=" text-bblue-200 ">
+                      <option readOnly="IT" className=" text-bblue-200 ">
                         IT
                       </option>
-                      <option value="AIDS" className=" text-bblue-200 ">
+                      <option readOnly="AIDS" className=" text-bblue-200 ">
                         AIDS
                       </option>
-                      <option value="CIVIL" className=" text-bblue-200 ">
+                      <option readOnly="CIVIL" className=" text-bblue-200 ">
                         CIVIL
                       </option>
-                      <option value="MECHANICAL" className=" text-bblue-200 ">
+                      <option readOnly="MECHANICAL" className=" text-bblue-200 ">
                         MECHANICAL
                       </option>
-                      <option value="ECE" className=" text-bblue-200 ">
+                      <option readOnly="ECE" className=" text-bblue-200 ">
                         ECE
                       </option>
-                      <option value="EEE" className=" text-bblue-200 ">
+                      <option readOnly="EEE" className=" text-bblue-200 ">
                         EEE
                       </option>
-                      <option value="CHEMICAL" className=" text-bblue-200 ">
+                      <option readOnly="CHEMICAL" className=" text-bblue-200 ">
                         CHEMICAL
                       </option>
-                      <option value="BIOTECH" className=" text-bblue-200 ">
+                      <option readOnly="BIOTECH" className=" text-bblue-200 ">
                         BIOTECH
                       </option>
-                      <option value="MCA" className=" text-bblue-200 ">
+                      <option readOnly="MCA" className=" text-bblue-200 ">
                         MCA
                       </option>
                     </select>
@@ -499,19 +487,19 @@ class Form extends React.Component {
                       name="entry.1958219572"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
                     >
-                      <option value="1" className=" text-bblue-200 ">
+                      <option readOnly="1" className=" text-bblue-200 ">
                         1
                       </option>
-                      <option value="2" className=" text-bblue-200 ">
+                      <option readOnly="2" className=" text-bblue-200 ">
                         2
                       </option>
-                      <option value="3" className=" text-bblue-200 ">
+                      <option readOnly="3" className=" text-bblue-200 ">
                         3
                       </option>
-                      <option value="4 " className=" text-bblue-200 ">
+                      <option readOnly="4 " className=" text-bblue-200 ">
                         4
                       </option>
-                      <option value="5" className=" text-bblue-200 ">
+                      <option readOnly="5" className=" text-bblue-200 ">
                         5
                       </option>
                     </select>
@@ -521,7 +509,7 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
               id="section-2"
               style={{ display: hiddenOrShow(this.state.teamSize === 5) }}
             >
@@ -591,10 +579,10 @@ class Form extends React.Component {
                       name="entry.467655292"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="First Year">First Year</option>
-                      <option value="Second Year">Second Year</option>
-                      <option value="Third Year">Third Year</option>
-                      <option value="Fourth Year">Fourth Year</option>
+                      <option readOnly="First Year">First Year</option>
+                      <option readOnly="Second Year">Second Year</option>
+                      <option readOnly="Third Year">Third Year</option>
+                      <option readOnly="Fourth Year">Fourth Year</option>
                     </select>
                   </div>
                 </fieldset>
@@ -609,18 +597,18 @@ class Form extends React.Component {
                       name="entry.113284536"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="CSE">CSE</option>
-                      <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                      <option value="CET">CET</option>
-                      <option value="IT">IT</option>
-                      <option value="AIDS">AIDS</option>
-                      <option value="CIVIL">CIVIL</option>
-                      <option value="MECHANICAL">MECHANICAL</option>
-                      <option value="ECE">ECE</option>
-                      <option value="EEE">EEE</option>
-                      <option value="CHEMICAL">CHEMICAL</option>
-                      <option value="BIOTECH">BIOTECH</option>
-                      <option value="MCA">MCA</option>
+                      <option readOnly="CSE">CSE</option>
+                      <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                      <option readOnly="CET">CET</option>
+                      <option readOnly="IT">IT</option>
+                      <option readOnly="AIDS">AIDS</option>
+                      <option readOnly="CIVIL">CIVIL</option>
+                      <option readOnly="MECHANICAL">MECHANICAL</option>
+                      <option readOnly="ECE">ECE</option>
+                      <option readOnly="EEE">EEE</option>
+                      <option readOnly="CHEMICAL">CHEMICAL</option>
+                      <option readOnly="BIOTECH">BIOTECH</option>
+                      <option readOnly="MCA">MCA</option>
                     </select>
                   </div>
                 </fieldset>
@@ -635,18 +623,18 @@ class Form extends React.Component {
                       name="entry.639858685"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
+                      <option readOnly="1">1</option>
+                      <option readOnly="2">2</option>
+                      <option readOnly="3">3</option>
+                      <option readOnly="4">4</option>
+                      <option readOnly="5">5</option>
                     </select>
                   </div>
                 </fieldset>
               </div>
             </div>
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
               id="section-3"
               style={{
                 display: hiddenOrShow([4, 5].includes(this.state.teamSize)),
@@ -715,10 +703,10 @@ class Form extends React.Component {
                       name="entry.1324061005"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="First Year">First Year</option>
-                      <option value="Second Year">Second Year</option>
-                      <option value="Third Year">Third Year</option>
-                      <option value="Fourth Year">Fourth Year</option>
+                      <option readOnly="First Year">First Year</option>
+                      <option readOnly="Second Year">Second Year</option>
+                      <option readOnly="Third Year">Third Year</option>
+                      <option readOnly="Fourth Year">Fourth Year</option>
                     </select>
                   </div>
                 </fieldset>
@@ -733,18 +721,18 @@ class Form extends React.Component {
                       name="entry.1284054994"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="CSE">CSE</option>
-                      <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                      <option value="CET">CET</option>
-                      <option value="IT">IT</option>
-                      <option value="AIDS">AIDS</option>
-                      <option value="CIVIL">CIVIL</option>
-                      <option value="MECHANICAL">MECHANICAL</option>
-                      <option value="ECE">ECE</option>
-                      <option value="EEE">EEE</option>
-                      <option value="CHEMICAL">CHEMICAL</option>
-                      <option value="BIOTECH">BIOTECH</option>
-                      <option value="MCA">MCA</option>
+                      <option readOnly="CSE">CSE</option>
+                      <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                      <option readOnly="CET">CET</option>
+                      <option readOnly="IT">IT</option>
+                      <option readOnly="AIDS">AIDS</option>
+                      <option readOnly="CIVIL">CIVIL</option>
+                      <option readOnly="MECHANICAL">MECHANICAL</option>
+                      <option readOnly="ECE">ECE</option>
+                      <option readOnly="EEE">EEE</option>
+                      <option readOnly="CHEMICAL">CHEMICAL</option>
+                      <option readOnly="BIOTECH">BIOTECH</option>
+                      <option readOnly="MCA">MCA</option>
                     </select>
                   </div>
                 </fieldset>
@@ -759,11 +747,11 @@ class Form extends React.Component {
                       name="entry.11271393"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
+                      <option readOnly="1">1</option>
+                      <option readOnly="2">2</option>
+                      <option readOnly="3">3</option>
+                      <option readOnly="4">4</option>
+                      <option readOnly="5">5</option>
                     </select>
                   </div>
                 </fieldset>
@@ -771,7 +759,7 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
               id="section-4"
               style={{
                 display: hiddenOrShow([3, 4, 5].includes(this.state.teamSize)),
@@ -840,10 +828,10 @@ class Form extends React.Component {
                       name="entry.962333022"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="First Year">First Year</option>
-                      <option value="Second Year">Second Year</option>
-                      <option value="Third Year">Third Year</option>
-                      <option value="Fourth Year">Fourth Year</option>
+                      <option readOnly="First Year">First Year</option>
+                      <option readOnly="Second Year">Second Year</option>
+                      <option readOnly="Third Year">Third Year</option>
+                      <option readOnly="Fourth Year">Fourth Year</option>
                     </select>
                   </div>
                 </fieldset>
@@ -858,18 +846,18 @@ class Form extends React.Component {
                       name="entry.171849333"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="CSE">CSE</option>
-                      <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                      <option value="CET">CET</option>
-                      <option value="IT">IT</option>
-                      <option value="AIDS">AIDS</option>
-                      <option value="CIVIL">CIVIL</option>
-                      <option value="MECHANICAL">MECHANICAL</option>
-                      <option value="ECE">ECE</option>
-                      <option value="EEE">EEE</option>
-                      <option value="CHEMICAL">CHEMICAL</option>
-                      <option value="BIOTECH">BIOTECH</option>
-                      <option value="MCA">MCA</option>
+                      <option readOnly="CSE">CSE</option>
+                      <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                      <option readOnly="CET">CET</option>
+                      <option readOnly="IT">IT</option>
+                      <option readOnly="AIDS">AIDS</option>
+                      <option readOnly="CIVIL">CIVIL</option>
+                      <option readOnly="MECHANICAL">MECHANICAL</option>
+                      <option readOnly="ECE">ECE</option>
+                      <option readOnly="EEE">EEE</option>
+                      <option readOnly="CHEMICAL">CHEMICAL</option>
+                      <option readOnly="BIOTECH">BIOTECH</option>
+                      <option readOnly="MCA">MCA</option>
                     </select>
                   </div>
                 </fieldset>
@@ -884,11 +872,11 @@ class Form extends React.Component {
                       name="entry.2122078574"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
+                      <option readOnly="1">1</option>
+                      <option readOnly="2">2</option>
+                      <option readOnly="3">3</option>
+                      <option readOnly="4">4</option>
+                      <option readOnly="5">5</option>
                     </select>
                   </div>
                 </fieldset>
@@ -896,7 +884,7 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
               id="section-5"
               style={{
                 display: hiddenOrShow([3, 4, 5].includes(this.state.teamSize)),
@@ -965,10 +953,10 @@ class Form extends React.Component {
                       name="entry.1988676886"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="First Year">First Year</option>
-                      <option value="Second Year">Second Year</option>
-                      <option value="Third Year">Third Year</option>
-                      <option value="Fourth Year">Fourth Year</option>
+                      <option readOnly="First Year">First Year</option>
+                      <option readOnly="Second Year">Second Year</option>
+                      <option readOnly="Third Year">Third Year</option>
+                      <option readOnly="Fourth Year">Fourth Year</option>
                     </select>
                   </div>
                 </fieldset>
@@ -983,18 +971,18 @@ class Form extends React.Component {
                       name="entry.1536308670"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="CSE">CSE</option>
-                      <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                      <option value="CET">CET</option>
-                      <option value="IT">IT</option>
-                      <option value="AIDS">AIDS</option>
-                      <option value="CIVIL">CIVIL</option>
-                      <option value="MECHANICAL">MECHANICAL</option>
-                      <option value="ECE">ECE</option>
-                      <option value="EEE">EEE</option>
-                      <option value="CHEMICAL">CHEMICAL</option>
-                      <option value="BIOTECH">BIOTECH</option>
-                      <option value="MCA">MCA</option>
+                      <option readOnly="CSE">CSE</option>
+                      <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                      <option readOnly="CET">CET</option>
+                      <option readOnly="IT">IT</option>
+                      <option readOnly="AIDS">AIDS</option>
+                      <option readOnly="CIVIL">CIVIL</option>
+                      <option readOnly="MECHANICAL">MECHANICAL</option>
+                      <option readOnly="ECE">ECE</option>
+                      <option readOnly="EEE">EEE</option>
+                      <option readOnly="CHEMICAL">CHEMICAL</option>
+                      <option readOnly="BIOTECH">BIOTECH</option>
+                      <option readOnly="MCA">MCA</option>
                     </select>
                   </div>
                 </fieldset>
@@ -1009,11 +997,11 @@ class Form extends React.Component {
                       name="entry.1511534131"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
+                      <option readOnly="1">1</option>
+                      <option readOnly="2">2</option>
+                      <option readOnly="3">3</option>
+                      <option readOnly="4">4</option>
+                      <option readOnly="5">5</option>
                     </select>
                   </div>
                 </fieldset>
@@ -1021,7 +1009,7 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md items-center my-8 "
               id="section-6"
               style={{ display: hiddenOrShow(this.state.teamSize === 2) }}
             >
@@ -1088,10 +1076,10 @@ class Form extends React.Component {
                       name="entry.232235344"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="First Year">First Year</option>
-                      <option value="Second Year">Second Year</option>
-                      <option value="Third Year">Third Year</option>
-                      <option value="Fourth Year">Fourth Year</option>
+                      <option readOnly="First Year">First Year</option>
+                      <option readOnly="Second Year">Second Year</option>
+                      <option readOnly="Third Year">Third Year</option>
+                      <option readOnly="Fourth Year">Fourth Year</option>
                     </select>
                   </div>
                 </fieldset>
@@ -1106,18 +1094,18 @@ class Form extends React.Component {
                       name="entry.1312317868"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="CSE">CSE</option>
-                      <option value="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                      <option value="CET">CET</option>
-                      <option value="IT">IT</option>
-                      <option value="AIDS">AIDS</option>
-                      <option value="CIVIL">CIVIL</option>
-                      <option value="MECHANICAL">MECHANICAL</option>
-                      <option value="ECE">ECE</option>
-                      <option value="EEE">EEE</option>
-                      <option value="CHEMICAL">CHEMICAL</option>
-                      <option value="BIOTECH">BIOTECH</option>
-                      <option value="MCA">MCA</option>
+                      <option readOnly="CSE">CSE</option>
+                      <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                      <option readOnly="CET">CET</option>
+                      <option readOnly="IT">IT</option>
+                      <option readOnly="AIDS">AIDS</option>
+                      <option readOnly="CIVIL">CIVIL</option>
+                      <option readOnly="MECHANICAL">MECHANICAL</option>
+                      <option readOnly="ECE">ECE</option>
+                      <option readOnly="EEE">EEE</option>
+                      <option readOnly="CHEMICAL">CHEMICAL</option>
+                      <option readOnly="BIOTECH">BIOTECH</option>
+                      <option readOnly="MCA">MCA</option>
                     </select>
                   </div>
                 </fieldset>
@@ -1132,18 +1120,18 @@ class Form extends React.Component {
                       name="entry.1679693985"
                       className="md:w-80 w-60 form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
                     >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
+                      <option readOnly="1">1</option>
+                      <option readOnly="2">2</option>
+                      <option readOnly="3">3</option>
+                      <option readOnly="4">4</option>
+                      <option readOnly="5">5</option>
                     </select>
                   </div>
                 </fieldset>
               </div>
             </div>
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
               id="section-7"
               style={{
                 display: hiddenOrShow([1, 2].includes(this.state.teamSize)),
@@ -1166,8 +1154,8 @@ class Form extends React.Component {
                     <input
                       type="checkbox"
                       name="entry.1744030706"
-                      value="Frontend Development"
-                      //   required={[1, 2].includes(this.state.teamSize)}
+                      readOnly="Frontend Development"
+                        // required={[1, 2].includes(this.state.teamSize)}
                     />
                     <label>Frontend Development</label>
                   </div>
@@ -1175,8 +1163,8 @@ class Form extends React.Component {
                     <input
                       type="checkbox"
                       name="entry.1744030706"
-                      value="Backend  Development"
-                      //   required={[1, 2].includes(this.state.teamSize)}
+                      readOnly="Backend  Development"
+                        // required={[1, 2].includes(this.state.teamSize)}
                     />
                     <label>Backend Development</label>
                   </div>
@@ -1184,8 +1172,8 @@ class Form extends React.Component {
                     <input
                       type="checkbox"
                       name="entry.1744030706"
-                      value="UI/UX"
-                      //   required={[1, 2].includes(this.state.teamSize)}
+                      readOnly="UI/UX"
+                        // required={[1, 2].includes(this.state.teamSize)}
                     />
                     <label>UI/UX</label>
                   </div>
@@ -1193,7 +1181,7 @@ class Form extends React.Component {
                     <input
                       type="checkbox"
                       name="entry.1744030706"
-                      value="Machine Learning and Artificial Intelligence"
+                      readOnly="Machine Learning and Artificial Intelligence"
                       //   required={[1, 2].includes(this.state.teamSize)}
                     />
                     <label>Machine Learning and Artificial Intelligence</label>
@@ -1203,40 +1191,52 @@ class Form extends React.Component {
                       <input
                         type="checkbox"
                         name="entry.1744030706"
-                        value="__other_option__"
+                        readOnly="__other_option__"
                       />
                     </label>
                     <input
                       type="text"
                       name="entry.1744030706.other_option_response"
-                      placeholder="custom value"
+                      placeholder="custom readOnly"
                       className=" rounded text-sm px-2 py-1 border shadow-md border-bgold-200 bg-Manga-100 bg-opacity-30"
                     />
                   </div>
                 </div>
               </fieldset>
               <div className=" hidden">
-                <input type="none" name="fvv" value="1" />
-                <input type="none" name="fbzx" value="7231037383997258336" />
+                <input type="none" name="fvv" readOnly="1" />
+                <input type="none" name="fbzx" readOnly="7231037383997258336" />
                 {/* <!--
                         CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
                         This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
                         Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
                         We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
     --> */}
-                <input type="none" name="pageHistory" value="0,1,2,3,4,5,6" />
+                <input type="none" name="pageHistory" readOnly="0,1,2,3,4,5,6" />
               </div>
             </div>
             <div id="section-8" className=" flex justify-center my-3">
               <input
                 className="cursor-pointer px-4 py-2 bg-bblue-200 text-void text-xl rounded-lg border border-bgold-200 hover:bg-bblue-300 duration-300"
                 type="submit"
-                value="Submit"
+                readOnly="Submit"
               />
             </div>
           </div>
         </form>
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+          strategy
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"
+        />
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
+          integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+          crossorigin="anonymous"
+        />
       </div>
+      
     );
     {
       /* // This script requires jQuery and jquery-form plugin */
@@ -1245,38 +1245,13 @@ class Form extends React.Component {
       /* // You can use these ones from Cloudflare CDN: */
     }
     {
-      <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-        strategy
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"
-      />;
+      
     }
     {
-      <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
-        integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
-        crossorigin="anonymous"
-      />;
+      
     }
-    <MyDynamicComponentWithFallback />;
-    {
-      $("#bootstrapForm").submit(function (event) {
-        event.preventDefault();
-        var extraData = {};
-        $("#bootstrapForm").ajaxSubmit({
-          data: extraData,
-          dataType: "jsonp", // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
-          error: function () {
-            // Submit of form should be successful but JSONP callback will fail because Google Forms
-            // does not support it, so this is handled as a failure.
-            alert("Form Submitted. Thanks.");
-            // You can also redirect the user to a custom thank-you page:
-            // window.location = 'http://www.mydomain.com/thankyoupage.html'
-          },
-        });
-      });
-    }
+    // <MyDynamicComponentWithFallback />;
+    
   }
 }
 {

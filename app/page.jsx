@@ -13,7 +13,7 @@ export default function Home() {
       <section id="home" className=" spacer layer1 section">
         <Hero />
       </section>
-      <section id="about" className=" section spacer layerDeez md:pt-0 pt-10">
+      <section id="about" className=" section spacer layerDeez justify-between w-full md:pt-0 pt-10 h-100">
         <About />
       </section>
       {/* <div className="spacer layer2"></div> */}
@@ -21,12 +21,12 @@ export default function Home() {
         <Timeline />
       </section>
 
-      <div className=" spacer1 layer5 flex flex-col justify-center  mb-12">
+      <div className=" spacer layer5 flex flex-col justify-center w-full mb-12">
         <section id="mentors" className=" section pt-16">
           <Mentors />
         </section>
         {/* <Sponsors /> */}
-        <section id="contact" className=" section pt-28">
+        <section id="contact" className=" section w-full pt-28">
           <Contact />
         </section>
       </div>

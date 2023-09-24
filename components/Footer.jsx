@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 function Footer() {
   return (
-    <div className=" w-[85%] mx-auto mb-16 ">
+    <div className=" w-[85%] mx-auto mb-16 sm-spacing h-min">
       <div>
-        <p className="text-center text-Manga-100">
+        <p className="text-center text-lg text-Manga-100">
           <br />
           <br />
-          <strong>What We Do</strong>
+          <strong className="shimmerb text-bblue-200">What We Do</strong>
           <br />
           <br />
           At COSC, we're more than just an event organizer; we're a community
@@ -18,7 +18,7 @@ function Footer() {
           events, we nurture creativity, collaboration, and innovation.
           <br />
           <br />
-          <strong>Join Us on This Journey</strong>
+          <strong className="shimmerb text-bblue-200">Join Us on This Journey</strong>
           <br />
           <br />
           HacktoberFest isn't just an event; it's a chance to be part of
@@ -48,7 +48,7 @@ function Footer() {
 
       <div className=" flex justify-between font-thin  flex-col md:flex-row items-center gap-4 text-bgold-200">
         <div>
-          <Link className="shimmer" href="https://hacktoberfest.com/">
+          <Link className="shimmer text-lg" href="https://hacktoberfest.com/">
             Hacktoberfest
           </Link>
         </div>

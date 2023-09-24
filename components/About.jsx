@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <div className=" flex flex-col items-center gap-2">
-        <h1 className=" text-center text-3xl text-bgold-200 shimmer">
+        <h1 className=" text-center text-4xl text-bgold-200 shimmer">
           About The Event
         </h1>
         <div className=" h-[2px] bg-bblue-200 w-16"></div>
@@ -23,7 +23,7 @@ function About() {
         development and dissemination.
       </p>
       <h1>About the event</h1> */}
-      <div className=" py-6 w-[85%] mx-auto text-center flex flex-col gap-8 ">
+      <div className=" py-6 w-[85%] mx-auto text-center flex flex-col gap-8 text-xl">
         About the Event Welcome to HacktoberFest - the annual extravaganza that
         fuels the spirit of open source collaboration! 🚀
         <div className=" px-4 py-2 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md">

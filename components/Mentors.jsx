@@ -111,12 +111,12 @@ const Slider = ({ children, options }) => {
     <div className=" relative">
       <div className="top-0 bottom-0 left-5 absolute  justify-center items-center z-10 md:flex hidden">
         <button className="embla__prev " onClick={scrollPrev}>
-          <Image src={"images/leftarrow.svg"} width={30} height={30} />
+          <Image src={"images/leftarrow.svg"} alt="embla_prev" width={30} height={30} />
         </button>
       </div>
       <div className=" top-0 bottom-0 right-3 absolute md:flex hidden justify-center items-center z-10">
-        <button className="embla__next" onClick={scrollNext}>
-          <Image src={"/images/rightarrow.svg"} width={30} height={30} />
+        <button className="embla__next" alt="embla_next" onClick={scrollNext}>
+          <Image src={"/images/rightarrow.svg"} alt="rightarrow" width={30} height={30} />
         </button>
       </div>
 
@@ -130,7 +130,7 @@ const Slider = ({ children, options }) => {
 function Mentors() {
   return (
     <>
-      <div className=" flex flex-col items-center gap-2">
+      <div className=" flex flex-col items-center gap-2 h-min">
         <h1 className=" text-center text-3xl text-bblue-200 shimmerb">
           Mentors
         </h1>

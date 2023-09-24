@@ -57,15 +57,15 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full bg-void px-4 text-sm py-1 text-bblue-200 flex justify-center">
+      <div className="w-full bg-void px-4 text-md py-1 text-bblue-200 flex justify-center">
         <span className="shimmer">Learn. Code. Share.</span>
       </div>
       <div
         className={`${
           isSticky
             ? "sticky top-0 h-16 backdrop-blur-3xl bg-[#0f0913] bg-opacity-70 shadow-md"
-            : " bg-void"
-        } left-0  py-2 px-4 flex justify-between items-center w-full transition-all duration-300 z-10 `}
+            : "bg-void"
+        } left-0 h-20 py-2 px-4 flex justify-between items-center w-full transition-all duration-300 z-10 text-3xl `}
       >
         <div className="flex items-center">
           <Image
@@ -73,7 +73,7 @@ const Navbar = () => {
             width={51}
             height={45}
             alt="Hf10 Logo"
-            style={{ padding: 0 }}
+            style={{ padding: 0 , scale: 1.0}}
           />
           <div className="w-[1px] h-5 bg-[#efedef] mx-2"></div>
           <div className="relative w-10 h-10">

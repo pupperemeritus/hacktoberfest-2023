@@ -7,9 +7,9 @@ const Contact = () => {
   const phone = "Akil: +91 94426 21187";
 
   return (
-    <div className="mx-auto p-4 sm:w-1/2">
+    <div className="mx-auto p-4 sm:w-1/2 h-fit py-0 my-0">
       <div className=" flex flex-col items-center gap-2">
-        <h1 className=" text-center text-3xl text-bblue-200 shimmerb">
+        <h1 className=" text-center text-4xl justify-center justify-items-center text-bblue-200 shimmerb">
           Contact Information
         </h1>
         <div className=" h-[2px] bg-bblue-200 w-16"></div>
