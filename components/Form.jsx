@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import Script from "next/script";
 const hiddenOrShow = (e) => {
   if (e === true) return "block";
   else return "none";
@@ -23,7 +23,7 @@ const hiddenOrShow = (e) => {
 // });
 
 class Form extends React.Component {
-  constructor() {
+    constructor() {
     super();
     this.state = {
       teamSize: 1,
@@ -49,7 +49,7 @@ class Form extends React.Component {
   // If team size is five -> Jump to section 2 -> Jump to section 3 -> Jump to section 4 -> Jump to section 5 -> Submit
   render() {
     return (
-      <div className=" w-[90%] md:w-[75%] mx-auto">
+      <div className=" w-[90%] md:w-[75%] mx-auto snap-start snap-both snap-proximity snap-stop-normal">
         <form
           action="https://docs.google.com/forms/d/e/1FAIpQLSepwkYVpD9rWy5Ym2LnvZipnlQlZH5YPbL-M6J0M6uAg9K2BA/formResponse"
           target="_self"
@@ -210,7 +210,7 @@ class Form extends React.Component {
                           type="radio"
                           name="entry.1110453834"
                           defaultValue={1}
-                          onChange={(e) => this.handleTeamSizeChange(1)}
+                          onClick={(e) => this.handleTeamSizeChange(1)}
                           required
                         />
                         1
@@ -222,7 +222,7 @@ class Form extends React.Component {
                           type="radio"
                           name="entry.1110453834"
                           defaultValue={2}
-                          onChange={(e) => this.handleTeamSizeChange(2)}
+                          onClick={(e) => this.handleTeamSizeChange(2)}
                           required
                         />
                         2
@@ -234,7 +234,7 @@ class Form extends React.Component {
                           type="radio"
                           name="entry.1110453834"
                           defaultValue={3}
-                          onChange={(e) => this.handleTeamSizeChange(3)}
+                          onClick={(e) => this.handleTeamSizeChange(3)}
                           required
                         />
                         3
@@ -246,7 +246,7 @@ class Form extends React.Component {
                           type="radio"
                           name="entry.1110453834"
                           defaultValue={4}
-                          onChange={(e) => this.handleTeamSizeChange(4)}
+                          onClick={(e) => this.handleTeamSizeChange(4)}
                           required
                         />
                         4
@@ -258,7 +258,7 @@ class Form extends React.Component {
                           type="radio"
                           name="entry.1110453834"
                           defaultValue={5}
-                          onChange={(e) => this.handleTeamSizeChange(5)}
+                          onClick={(e) => this.handleTeamSizeChange(5)}
                           required
                         />
                         5
@@ -1245,14 +1245,15 @@ class Form extends React.Component {
       /* // You can use these ones from Cloudflare CDN: */
     }
     {
-      <script
+      <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        strategy
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"
       />;
     }
     {
-      <script
+      <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
         integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
         crossorigin="anonymous"
