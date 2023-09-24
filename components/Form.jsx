@@ -88,19 +88,19 @@ class Form extends React.Component {
                     mind:
                   </span>
                   <ul className=" list-disc">
-                    <li>
+                    <li className=" my-1">
                       Every team will consist of 3 to 5 members and individual
                       or paired participants will be pooled together
                     </li>
-                    <li>
+                    <li className=" my-1">
                       In the spirit of open source, there will be{" "}
                       <span className=" font-bold">no Registration Fees</span>
                     </li>
-                    <li>
+                    <li className=" my-1">
                       <span className=" font-bold">Problem Statements </span>
                       will be released on the day of the Hackathon.
                     </li>
-                    <li className=" font-bold">
+                    <li className=" my-1 font-bold">
                       The hackathon is inclusive and welcomes students from all
                       academic disciplines, all years of study, and any college
                       or university.
@@ -148,7 +148,7 @@ class Form extends React.Component {
               </div>
             </fieldset>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-5 ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
               <fieldset className=" my-2">
                 <legend htmlFor="" className=" text-bblue-200 text-xl py-2">
                   Email
@@ -186,7 +186,7 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-5 ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8 ">
               <fieldset>
                 <legend
                   htmlFor="115335284"
@@ -269,7 +269,7 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-5 ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8 ">
               <fieldset>
                 <legend
                   htmlFor="2019641531"
@@ -290,7 +290,7 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-5 ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
               <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3">
                 <fieldset>
                   <legend
@@ -509,7 +509,7 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-5 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
               id="section-2"
               style={{ display: hiddenOrShow(this.state.teamSize === 5) }}
             >
@@ -634,7 +634,7 @@ class Form extends React.Component {
               </div>
             </div>
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-5 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
               id="section-3"
               style={{
                 display: hiddenOrShow([4, 5].includes(this.state.teamSize)),
@@ -759,7 +759,7 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-5 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
               id="section-4"
               style={{
                 display: hiddenOrShow([3, 4, 5].includes(this.state.teamSize)),
@@ -884,7 +884,7 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-5 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
               id="section-5"
               style={{
                 display: hiddenOrShow([3, 4, 5].includes(this.state.teamSize)),
@@ -1009,7 +1009,7 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md items-center my-5 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md items-center my-8 "
               id="section-6"
               style={{ display: hiddenOrShow(this.state.teamSize === 2) }}
             >
@@ -1060,7 +1060,7 @@ class Form extends React.Component {
                       id="1137456307"
                       type="text"
                       name="entry.1137456307"
-                      className="form-control"
+                      className="form-control forminput"
                       required={this.state.teamSize === 2}
                     />
                   </div>
@@ -1131,7 +1131,7 @@ class Form extends React.Component {
               </div>
             </div>
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-5 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
               id="section-7"
               style={{
                 display: hiddenOrShow([1, 2].includes(this.state.teamSize)),
