@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Script from "next/script";
+import Link from "next/link";
 // window.$ = window.jQuery = require('jquery')
 
 const hiddenOrShow = (e) => {
@@ -138,7 +139,7 @@ class Form extends React.Component {
               </div>
             </fieldset>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  w-full rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  w-full rounded-xl lex flex-col items-center my-8 ">
               <fieldset className=" my-2 w-full">
                 <legend htmlFor="" className=" text-bblue-200 text-xl py-2 w-full">
                   Email
@@ -167,7 +168,7 @@ class Form extends React.Component {
                   <input
                     id="2063582306"
                     type="text"
-                    class="formText"
+                    
                     name="entry.2063582306"
                     // className="form-control"
                     className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 md:text-xl  w-full"
@@ -177,7 +178,7 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20 justify-content-center align-center items-center rounded-xl w-full justify-self-center shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col  my-8">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20 justify-content-center align-center items-center rounded-xl w-full justify-self-center lex flex-col  my-8">
               <fieldset className="w-full">
                 <legend
                   htmlFor="115335284"
@@ -265,7 +266,7 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl lex flex-col items-center my-8 w-full">
               <fieldset className="w-full">
                 <legend
                   htmlFor="2019641531"
@@ -286,9 +287,9 @@ class Form extends React.Component {
               </fieldset>
             </div>
 
-            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full ">
+            <div className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl lex flex-col items-center my-8 w-full ">
               <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full">
-                <fieldset className="w-full">
+                <fieldset className="form-group w-full">
                   <legend
                     htmlFor="1885957116"
                     className=" text-bblue-200 text-xl py-2 w-full"
@@ -299,7 +300,7 @@ class Form extends React.Component {
                     <input
                       id="445699137"
                       type="text"
-                    class="formText"
+                    
                       name="entry.445699137"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required
@@ -308,7 +309,7 @@ class Form extends React.Component {
                 </fieldset>
 
                 {/*  */}
-                <fieldset className="w-full">
+                <fieldset className="form-group w-full">
                   <legend
                     htmlFor="1476785257"
                     className=" text-bblue-200 text-xl py-2 w-full"
@@ -319,7 +320,6 @@ class Form extends React.Component {
                     <input
                       id="1814031188"
                       type="text"
-                    class="formText w-full"
                       name="entry.1814031188"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-full w-full"
                       required
@@ -328,18 +328,18 @@ class Form extends React.Component {
                 </fieldset>
 
                 {/*  */}
-                <fieldset className="w-full">
+                <fieldset className="form-group w-full">
                   <legend
                     htmlFor="811144166"
                     className=" text-bblue-200 text-xl py-2 w-full"
                   >
                     Team Leader Contact Number
                   </legend>
-                  <div className="form-group ">
+                  <div className="formText ">
                     <input
                       id="580637188"
                       type="text"
-                    class="formText"
+                    
                       name="entry.580637188"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-full w-full"
                       required
@@ -348,10 +348,10 @@ class Form extends React.Component {
                 </fieldset>
 
                 {/*  */}
-                <fieldset className="w-full">
+                <fieldset className="form-group w-full">
                   <legend
                     htmlFor="296546576"
-                    className=" text-bblue-200 text-xl py-2 "
+                    className=" text-bblue-200 text-xl py-2 w-full "
                   >
                     Roll Number
                   </legend>
@@ -359,7 +359,7 @@ class Form extends React.Component {
                     <input
                       id="1494484691"
                       type="text"
-                    class="formText"
+                    
                       name="entry.1494484691"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required
@@ -368,27 +368,27 @@ class Form extends React.Component {
                 </fieldset>
 
                 {/*  */}
-                <fieldset className="w-full">
-                  <legend
-                    htmlFor="30119366"
-                    className=" text-bblue-200 text-xl py-2 "
-                  >
-                    College Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="1644823420"
-                      type="text"
-                    class="formText"
-                      name="entry.1644823420"
-                      className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required
-                    />
-                  </div>
-                </fieldset>
+                <fieldset className="form-group w-full">
+                <legend for="30119366">College Name</legend>
+                  <div className="form-group">
+                    <div className="radio">
+                        <label>
+                            <input type="radio" name="entry.1644823420" value="CBIT" required/>
+                            CBIT
+                        </label>
+                    </div>
+                    <div className="radio ">
+                        <label>
+                            <input type="radio" name="entry.1644823420" value="__other_option__" required/>
+                        </label>
+                        <input type="text" name="entry.1644823420.other_option_response" placeholder="custom value" className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"/>
+                    </div>
+              </div>
+          </fieldset>
+
 
                 {/*  */}
-                <fieldset className="w-full">
+                <fieldset className="form-group w-full">
                   <legend
                     htmlFor="620465286"
                     className=" text-bblue-200 text-xl py-2 "
@@ -521,15 +521,16 @@ class Form extends React.Component {
               </div>
             </div>
 
+          </div>
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
               id="section-2"
               style={{ display: hiddenOrShow(this.state.teamSize === 5) }}
             >
-              <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3 w-min mx-auto">
+              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
                 {/*  */}
                 <fieldset className="w-full">
-                  <legend htmlFor="1998221997" className=" formlabel">
+                  <legend htmlFor="1998221997" className=" formlabel w-full">
                     Team Member Details
                   </legend>
                   <div className="form-group w-full"></div>
@@ -537,53 +538,56 @@ class Form extends React.Component {
 
                 {/*  */}
                 <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="88520221">
+                  <legend className=" formlabel w-full" htmlFor="88520221">
                     Name
                   </legend>
                   <div className="form-group w-full">
                     <input
                       id="614815331"
                       type="text"
-                    class="formText"
+                    
                       name="entry.614815331"
-                      className="form-control forminput"
+                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required={this.state.teamSize === 5}
                     />
                   </div>
                 </fieldset>
 
                 {/*  */}
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1049216781">
+                <fieldset className="form-group w-full">
+                  <legend className=" formlabel w-full" htmlFor="1049216781">
                     Roll Number
                   </legend>
                   <div className="form-group w-full">
                     <input
                       id="592584203"
                       type="text"
-                    class="formText"
+                    
                       name="entry.592584203"
-                      className="form-control forminput"
+                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required={this.state.teamSize === 5}
                     />
                   </div>
                 </fieldset>
 
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1147559039">
-                    College Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="257862837"
-                      type="text"
-                    class="formText"
-                      name="entry.257862837"
-                      className="form-control forminput"
-                      required={this.state.teamSize === 5}
-                    />
-                  </div>
-                </fieldset>
+                <fieldset className="form-group w-full">
+        <legend for="30119366">College Name</legend>
+        <div className="form-group">
+            <div className="radio">
+                <label>
+                    <input type="radio" name="entry.1644823420" value="CBIT" required={this.state.teamSize === 5}/>
+                    CBIT
+                </label>
+            </div>
+            <div className="radio">
+                <label>
+                    <input type="radio" name="entry.1644823420" value="__other_option__" required={this.state.teamSize === 5}/>
+                </label>
+                <input type="text" name="entry.1644823420.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"/>
+            </div>
+        </div>
+    </fieldset>
+
 
                 <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="596154546">
@@ -650,15 +654,15 @@ class Form extends React.Component {
               </div>
             </div>
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
               id="section-3"
               style={{
                 display: hiddenOrShow([4, 5].includes(this.state.teamSize)),
               }}
             >
-              <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3 w-min mx-auto">
+              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
                 <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="297319105">
+                  <legend className=" formlabel w-full" htmlFor="297319105">
                     Team Member Details
                   </legend>
                   <div className="form-group w-full"></div>
@@ -672,44 +676,46 @@ class Form extends React.Component {
                     <input
                       id="1193142679"
                       type="text"
-                    class="formText"
+                    
                       name="entry.1193142679"
-                      className="form-control forminput"
+                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required={[4, 5].includes(this.state.teamSize)}
                     />
                   </div>
                 </fieldset>
 
                 <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="966119623">
+                  <legend className=" formlabel w-full" htmlFor="966119623">
                     Roll Number
                   </legend>
                   <div className="form-group w-full">
                     <input
                       id="1627949356"
                       type="text"
-                    class="formText"
+                    
                       name="entry.1627949356"
-                      className="form-control forminput"
+                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required={[4, 5].includes(this.state.teamSize)}
                     />
                   </div>
                 </fieldset>
 
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1289435999">
-                    College Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="443034656"
-                      type="text"
-                    class="formText"
-                      name="entry.443034656"
-                      className="form-control forminput"
-                      required={[4, 5].includes(this.state.teamSize)}
-                    />
-                  </div>
+                <fieldset className="form-group w-full">
+                  <legend for="1147559039">College Name</legend>
+                    <div className="form-group">
+                        <div className="radio">
+                            <label>
+                                <input type="radio" name="entry.257862837" value="CBIT" required={[4, 5].includes(this.state.teamSize)}/>
+                                CBIT
+                            </label>
+                        </div>
+                        <div className="radio">
+                            <label>
+                                <input type="radio" name="entry.257862837" value="__other_option__" required={[4, 5].includes(this.state.teamSize)}/>
+                            </label>
+                            <input type="text" name="entry.257862837.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"/>
+                        </div>
+                    </div>
                 </fieldset>
 
                 <fieldset className="w-full">
@@ -778,13 +784,13 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
               id="section-4"
               style={{
                 display: hiddenOrShow([3, 4, 5].includes(this.state.teamSize)),
               }}
             >
-              <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3 w-min mx-auto">
+              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
                 <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1535613039">
                     Team Member Details
@@ -793,52 +799,54 @@ class Form extends React.Component {
                 </fieldset>
 
                 <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="839804749">
+                  <legend className=" formlabel w-full" htmlFor="839804749">
                     Name
                   </legend>
                   <div className="form-group w-full">
                     <input
                       id="1369366464"
                       type="text"
-                    class="formText"
+                    
                       name="entry.1369366464"
-                      className="form-control forminput"
+                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required={[3, 4, 5].includes(this.state.teamSize)}
                     />
                   </div>
                 </fieldset>
 
                 <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1911951528">
+                  <legend className=" formlabel w-full" htmlFor="1911951528">
                     Roll Number
                   </legend>
                   <div className="form-group w-full">
                     <input
                       id="1399044406"
                       type="text"
-                    class="formText"
+                    
                       name="entry.1399044406"
-                      className="form-control forminput"
+                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required={[3, 4, 5].includes(this.state.teamSize)}
                     />
                   </div>
                 </fieldset>
 
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="536772932">
-                    College Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="477497822"
-                      type="text"
-                    class="formText"
-                      name="entry.477497822"
-                      className="form-control forminput"
-                      required={[3, 4, 5].includes(this.state.teamSize)}
-                    />
-                  </div>
-                </fieldset>
+                <fieldset className="form-group w-full">
+                    <legend for="1289435999">College Name</legend>
+                      <div className="form-group">
+                          <div className="radio">
+                              <label>
+                                  <input type="radio" name="entry.443034656" value="CBIT" required={[3, 4, 5].includes(this.state.teamSize)}/>
+                                  CBIT
+                              </label>
+                          </div>
+                          <div className="radio">
+                              <label>
+                                  <input type="radio" name="entry.443034656" value="__other_option__" required={[3, 4, 5].includes(this.state.teamSize)}/>
+                              </label>
+                              <input type="text" name="entry.443034656.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"/>
+                          </div>
+                      </div>
+                  </fieldset>
 
                 <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="471078577">
@@ -906,13 +914,13 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
               id="section-5"
               style={{
                 display: hiddenOrShow([3, 4, 5].includes(this.state.teamSize)),
               }}
             >
-              <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3 w-min mx-auto">
+              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
                 <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="494494688">
                     Team Member Details
@@ -928,9 +936,9 @@ class Form extends React.Component {
                     <input
                       id="1172486922"
                       type="text"
-                    class="formText"
+                    
                       name="entry.1172486922"
-                      className="form-control forminput"
+                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required={[3, 4, 5].includes(this.state.teamSize)}
                     />
                   </div>
@@ -944,29 +952,31 @@ class Form extends React.Component {
                     <input
                       id="1756258122"
                       type="text"
-                    class="formText"
+                    
                       name="entry.1756258122"
-                      className="form-control forminput"
+                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required={[3, 4, 5].includes(this.state.teamSize)}
                     />
                   </div>
                 </fieldset>
 
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="892138441">
-                    College Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="1327608088"
-                      type="text"
-                    class="formText"
-                      name="entry.1327608088"
-                      className="form-control forminput"
-                      required={[3, 4, 5].includes(this.state.teamSize)}
-                    />
+                <fieldset className="form-group w-full">
+                  <legend for="892138441">College Name</legend>
+                    <div className="form-group">
+                      <div className="radio">
+                          <label>
+                              <input type="radio" name="entry.1327608088" value="CBIT" required={[3, 4, 5].includes(this.state.teamSize)}/>
+                              CBIT
+                          </label>
+                      </div>
+                      <div className="radio">
+                          <label>
+                              <input type="radio" name="entry.1327608088" value="__other_option__" required={[3, 4, 5].includes(this.state.teamSize)}/>
+                          </label>
+                          <input type="text" name="entry.1327608088.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"/>
+                      </div>
                   </div>
-                </fieldset>
+              </fieldset>
 
                 <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="650086981">
@@ -1034,11 +1044,11 @@ class Form extends React.Component {
             </div>
 
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl tems-center my-8 w-full"
               id="section-6"
               style={{ display: hiddenOrShow(this.state.teamSize === 2) }}
             >
-              <div className=" flex flex-col items-start gap-4 rounded-lg md:shadow-xl md:border border-void border-opacity-10  md:px-4 md:py-3 w-min mx-auto">
+              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
                 <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1716255882">
                     Team Member Details
@@ -1054,9 +1064,9 @@ class Form extends React.Component {
                     <input
                       id="2120853261"
                       type="text"
-                    class="formText"
+                    
                       name="entry.2120853261"
-                      className="form-control forminput"
+                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required={this.state.teamSize === 2}
                     />
                   </div>
@@ -1070,29 +1080,31 @@ class Form extends React.Component {
                     <input
                       id="2011915937"
                       type="text"
-                    class="formText"
+                    
                       name="entry.2011915937"
-                      className="form-control forminput"
+                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required={this.state.teamSize === 2}
                     />
                   </div>
                 </fieldset>
 
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1859382656">
-                    College Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="1137456307"
-                      type="text"
-                    class="formText"
-                      name="entry.1137456307"
-                      className="form-control forminput"
-                      required={this.state.teamSize === 2}
-                    />
+                <fieldset className="form-group w-full">
+                  <legend for="1859382656">College Name</legend>
+                  <div className="form-group">
+                      <div className="radio">
+                          <label>
+                              <input type="radio" name="entry.1137456307" value="CBIT" required={this.state.teamSize === 2}/>
+                              CBIT
+                          </label>
+                      </div>
+                      <div className="radio">
+                          <label>
+                              <input type="radio" name="entry.1137456307" value="__other_option__" required={this.state.teamSize === 2}/>
+                          </label>
+                          <input type="text" name="entry.1137456307.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"/>
+                      </div>
                   </div>
-                </fieldset>
+              </fieldset>
 
                 <fieldset className="w-full">
                   <legend className=" formlabel" htmlFor="1803766961">
@@ -1159,7 +1171,7 @@ class Form extends React.Component {
               </div>
             </div>
             <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md  items-center my-8 "
+              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
               id="section-7"
               style={{
                 display: hiddenOrShow([1, 2].includes(this.state.teamSize)),
@@ -1181,7 +1193,7 @@ class Form extends React.Component {
                   <div className="checkbox">
                     <input
                       type="checkbox"
-                      class="checkbox"
+                      className="checkbox"
                       name="entry.1744030706"
                       readOnly="Frontend Development"
                         // required={[1, 2].includes(this.state.teamSize)}
@@ -1191,7 +1203,7 @@ class Form extends React.Component {
                   <div className="checkbox">
                     <input
                       type="checkbox"
-                      class="checkbox"
+                      className="checkbox"
                       name="entry.1744030706"
                       readOnly="Backend  Development"
                         // required={[1, 2].includes(this.state.teamSize)}
@@ -1201,7 +1213,7 @@ class Form extends React.Component {
                   <div className="checkbox">
                     <input
                       type="checkbox"
-                      class="checkbox"
+                      className="checkbox"
                       name="entry.1744030706"
                       readOnly="UI/UX"
                         // required={[1, 2].includes(this.state.teamSize)}
@@ -1211,7 +1223,7 @@ class Form extends React.Component {
                   <div className="checkbox">
                     <input
                       type="checkbox"
-                      class="checkbox"
+                      className="checkbox"
                       name="entry.1744030706"
                       readOnly="Machine Learning and Artificial Intelligence"
                       //   required={[1, 2].includes(this.state.teamSize)}
@@ -1222,16 +1234,15 @@ class Form extends React.Component {
                     <label>
                       <input
                         type="checkbox"
-                        class="checkbox"
+                        className="checkbox"
                         name="entry.1744030706"
                         readOnly="__other_option__"
                       />
                     </label>
                     <input
                       type="text"
-                    class="formText"
                       name="entry.1744030706.other_option_response"
-                      placeholder="custom readOnly"
+                      placeholder="Others"
                       className=" rounded text-sm px-2 py-1 border shadow-md border-bgold-200 bg-Manga-100 bg-opacity-30"
                     />
                   </div>
@@ -1249,14 +1260,13 @@ class Form extends React.Component {
                 <input type="none" name="pageHistory" readOnly="0,1,2,3,4,5,6" />
               </div>
             </div>
-            <div id="section-8" className=" flex justify-center my-3">
+            <div id="section-8" className=" flex justify-center my-3 w-full">
               <input
                 className="cursor-pointer px-4 py-2 bg-bblue-200 text-void text-xl rounded-lg border border-bgold-200 hover:bg-bblue-300 duration-300"
                 type="submit"
                 readOnly="Submit"
               />
             </div>
-          </div>
         </form>
         <Script
           src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
@@ -1269,6 +1279,11 @@ class Form extends React.Component {
           integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
           crossorigin="anonymous"
         />
+          <div className="align-items-center flex justify-between font-thin  flex-col md:flex-row items-center gap-4 text-bgold-200 text-align-center">
+            <Link className="shimmerb text-lg" href="https://forms.gle/pt1HRckW8i8gAMgv9">
+              To edit response or if the website isn't working please go to this google form
+            </Link>
+        </div>
       </div>
       
     );
@@ -1284,7 +1299,6 @@ class Form extends React.Component {
     {
       
     }
-    // <MyDynamicComponentWithFallback />;
     
   }
 }
