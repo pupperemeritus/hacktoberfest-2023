@@ -1,6 +1,6 @@
 import React from 'react';
 //import './Sponsors.css';
-
+import Image from "next/image";
 const Sponsors = () => {
   const sponsors = [
     {
@@ -22,7 +22,7 @@ const Sponsors = () => {
         {sponsors.map((sponsor, index) => (
           <div key={index} className="sponsor">
             <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
-              <img src={sponsor.logo} alt={sponsor.name} />
+              <Image width={200} height={200} src={sponsor.logo} alt={sponsor.name} />
             </a>
           </div>
         ))}
