@@ -5,6 +5,7 @@ const Contact = () => {
     "Chaitanya Bharathi Institute of Technology, Gandipet, Hyderabad.";
   const email = "cosc@cbit.ac.in";
   const phone = "Akil: +91 94426 21187";
+  const phone2 = "Ritesh: +91 96182 66824";
 
   return (
     <div className="mx-auto p-4 sm:w-1/2 h-fit py-0 my-0">
@@ -27,6 +28,7 @@ const Contact = () => {
         <div className="border border-solid border-bgold-200 p-3 rounded-md mt-3">
           <h3 className="text-md font-medium  text-bblue-100">Phone:</h3>
           <p className="text-gray-700">{phone}</p>
+          <p className="text-gray-700">{phone2}</p>
         </div>
       </div>
     </div>
