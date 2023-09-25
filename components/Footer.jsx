@@ -21,7 +21,7 @@ function Footer() {
           <strong className="shimmerb text-bblue-200">Join Us on This Journey</strong>
           <br />
           <br />
-          <strong>HacktoberFest</strong> isn&apos;t just an event; it&apos;s a chance to be part of
+          <strong>Hacktoberfest</strong> isn&apos;t just an event; it&apos;s a chance to be part of
           something bigger, to embrace the power of open source, and to make an
           impact in the tech world. So, whether you&apos;re a seasoned developer, a
           curious beginner, or simply someone with a passion for technology, we
