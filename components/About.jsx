@@ -24,14 +24,14 @@ function About() {
       </p>
       <h1>About the event</h1> */}
       <div className=" py-6 w-[85%] mx-auto text-center flex flex-col gap-8 text-xl">
-        About the Event Welcome to HacktoberFest - the annual extravaganza that
+        Welcome to Hacktoberfest - the annual extravaganza that
         fuels the spirit of open source collaboration! 🚀
         <div className=" px-4 py-2 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md">
           <span className=" text-bgold-200 shimmer font-bold ">
-            What is HacktoberFest?
+            What is Hacktoberfest?
           </span>
           <p className=" mt-2">
-            HacktoberFest, presented by DigitalOcean, Appwrite, and ILLA Cloud,
+            Hacktoberfest, presented by DigitalOcean, Appwrite, and ILLA Cloud,
             is a month-long open source celebration. Its aim? To inspire
             students and enthusiasts while fostering community, collaboration,
             and skill-building.
