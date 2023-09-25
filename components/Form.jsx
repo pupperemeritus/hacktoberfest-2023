@@ -378,8 +378,8 @@ class Form extends React.Component {
                     </div>
                     <div className="radio ">
                       <label>
-                        Other
                         <input type="radio" name="entry.1644823420" value="__other_option__" required />
+                        Other
                       </label>
                       <input type="text" name="entry.1644823420.other_option_response" placeholder="Your Institute Name" className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full" />
                     </div>
