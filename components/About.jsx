@@ -23,14 +23,16 @@ function About() {
         development and dissemination.
       </p>
       <h1>About the event</h1> */}
-      <div className=" py-6 w-[85%] mx-auto text-center flex flex-col gap-8 text-xl">
-        Welcome to Hacktoberfest - the annual extravaganza that
-        fuels the spirit of open source collaboration! 🚀
+      <div className=" py-6 w-[85%] mx-auto text-center flex flex-col gap-8 md:text-xl text-base md:inline">
+        <span className=" md:inline hidden">
+          Welcome to Hacktoberfest - the annual extravaganza that fuels the
+          spirit of open source collaboration! 🚀
+        </span>
         <div className=" px-4 py-2 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md">
           <span className=" text-bgold-200 shimmer font-bold ">
             What is Hacktoberfest?
           </span>
-          <p className=" mt-2">
+          <p className=" mt-2 text-xs md:text-base font-thin ">
             Hacktoberfest, presented by DigitalOcean, Appwrite, and ILLA Cloud,
             is a month-long open source celebration. Its aim? To inspire
             students and enthusiasts while fostering community, collaboration,
@@ -41,16 +43,16 @@ function About() {
           <span className=" text-bgold-200 shimmer font-bold">
             Why We&apos;re Thrilled
           </span>
-          <p className=" mt-2">
-            The &quot;CBIT Hacktoberfest Hackathon&quot; is an exciting 24-hour coding
-            challenge within this event. It empowers individuals to make
+          <p className=" mt-2 font-thin text-xs md:text-base">
+            The &quot;CBIT Hacktoberfest Hackathon&quot; is an exciting 24-hour
+            coding challenge within this event. It empowers individuals to make
             meaningful contributions, expand tech knowledge, and connect with
             open source enthusiasts.
           </p>
         </div>
         <div className=" px-4 py-2 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md">
           <span className=" text-bgold-200 shimmer font-bold">Who We Are</span>
-          <p className=" mt-2">
+          <p className=" mt-2 font-thin text-xs md:text-base">
             We are the Chaitanya Bharathi Institute of Technology Open Source
             Community (COSC) in Hyderabad. Our mission? Promote open source
             values, provide a platform for students to explore and contribute to

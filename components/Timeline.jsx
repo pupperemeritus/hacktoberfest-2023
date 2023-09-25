@@ -278,7 +278,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Coding Ends</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden text-lg">
+                  <p className=" text-sm text-bgold-300 md:inline hidden ">
                     The time for the contestants to finish up has finally come.
                   </p>
                 </div>
@@ -296,7 +296,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Submissions Close</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden text-lg">
+                  <p className=" text-sm text-bgold-300 md:inline hidden ">
                     Contestants must push their codes to GitHub before the
                     deadline and delays will not be accepted
                   </p>
@@ -317,7 +317,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Presentations</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden text-lg">
+                  <p className=" text-sm text-bgold-300 md:inline hidden ">
                     Pitching a solution to a panel of judges often acts as the
                     deciding factor to ensuring victory!
                   </p>
@@ -336,7 +336,7 @@ function ScrollSection() {
                 </div>
                 <div className=" flex flex-col items-start">
                   <span className=" md:text-xl pb-3">Closing Ceremony</span>
-                  <p className=" text-sm text-bgold-300 md:inline hidden text-lg ">
+                  <p className=" text-sm text-bgold-300 md:inline hidden  ">
                     It’s time for closing remarks and to finally announce the
                     much awaited winners!
                   </p>
