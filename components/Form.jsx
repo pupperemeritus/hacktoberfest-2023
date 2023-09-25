@@ -56,8 +56,9 @@ class Form extends React.Component {
               <p className=" my-3">
                 Greetings Open-Source Enthusiasts! It&#x27;s that time of the
                 year again, the much awaited CBIT Hacktoberfest Hackathon is
-                just around the corner. With a tremendous turnout of 98 teams
-                and 516 participants, Hacktoberfest is still going strong and we
+                just around the corner. With a tremendous turnout of 105 teams
+                and 516 participants in the previous edition, Hacktoberfest 
+                is still going strong and we
                 intend to keep it that way! This years edition of COSC&#x27;s
                 flagship event is similar to its predecessors and fosters a
                 community and celebrates open source. Hacktoberfest stands as
