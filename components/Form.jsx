@@ -459,7 +459,7 @@ class Form extends React.Component {
                         IT
                       </option>
                       <option readOnly="AIDS" className=" text-bblue-200 ">
-                        AIDS
+                        AI &amp; DS
                       </option>
                       <option readOnly="CIVIL" className=" text-bblue-200 ">
                         CIVIL
