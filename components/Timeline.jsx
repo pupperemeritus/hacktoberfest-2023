@@ -14,7 +14,7 @@ function ScrollSection() {
 
   useEffect(() => {
     const isMdScreen = window.matchMedia("(max-width: 768px)").matches; // Adjust the breakpoint as per your Tailwind CSS configuration
-    const translateXValue = isMdScreen ? "-275vmin" : "-525vmin";
+    const translateXValue = isMdScreen ? "-275vmin" : "-460vmin";
     const translateXvalStart = isMdScreen ? "8vmin" : "25vmin";
     const end = isMdScreen ? "2500 top" : "4000 top";
     const pin = gsap.fromTo(
@@ -149,7 +149,7 @@ function ScrollSection() {
 
           <div className=" flex md:flex-row flex-col mt-60">
             <div className="scroll-section mx-4 w-[50vmin] ">
-              <div className="  text-bgold-200 md:h-60 h-60 w-60 md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full text-xl ">
+              <div className="  text-bgold-200 md:h-60 h-40  md:px-8 md:py-4 px-4 py-2 mb-6 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full text-xl ">
                 <div className=" tracking-tighter md:text-2xl text-sm">
                   <h1>
                     6th October
