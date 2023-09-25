@@ -69,7 +69,7 @@ class Form extends React.Component {
               </p>
               <div className=" flex flex-col gap-2">
                 <span className=" self-center text-bgold-200 mb-10">
-                  This is your chance to make a mark on the open-source realm
+                  This is your chance to make a mark in the open-source realm!
                   <span className=" text-bblue-200">!</span>
                 </span>{" "}
                 <div className=" flex flex-col">
@@ -79,16 +79,15 @@ class Form extends React.Component {
                   </span>
                   <ul className=" list-disc">
                     <li className=" my-1">
-                      Every team will consist of 3 to 5 members and individual
-                      or paired participants will be pooled together
+                      Every team will consist of 3 to 5 members and individual or paired participants will be pooled together.
                     </li>
                     <li className=" my-1">
                       In the spirit of open source, there will be{" "}
                       <span className=" font-bold">no Registration Fees</span>
                     </li>
                     <li className=" my-1">
-                      <span className=" font-bold">Problem Statements </span>
-                      will be released on the day of the Hackathon.
+                      <span className=" font-bold">Problem statements  </span>
+                      will be released on the day of the hackathon.
                     </li>
                     <li className=" my-1 font-bold">
                       The hackathon is inclusive and welcomes students from all
@@ -121,10 +120,9 @@ class Form extends React.Component {
                 </div>
                 <div className=" my-2">
                   {" "}
-                  Stay tuned for additional information that will be relayed
-                  through your Team Leader. Please keep an eye on your
-                  registered email addresses for upcoming announcements. And
-                  most importantly, may the source be with you!{" "}
+                  Stay tuned for additional information that will be relayed through your team leader.
+                  Please keep an eye on your registered email addresses for upcoming announcements.
+                  And most importantly, may the source be with you!{" "}
                   <p className=" my-2">
                     Also, stay connected and stay informed by following our
                     Instagram handle for future updates.
