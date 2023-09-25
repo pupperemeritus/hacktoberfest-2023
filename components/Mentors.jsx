@@ -54,7 +54,7 @@ const mentors = [
     Github: "https://github.com/kbhavana14",
     LinkedIn: "https://www.linkedin.com/in/kbhavana14/",
     Designation: "Joint Secretary",
-    imgSrc: "/images/mentors/Bhavana .jpg",
+    imgSrc: "/images/mentors/Bhavana.jpg",
   },
   {
     Name: "Nishanth Artham",
