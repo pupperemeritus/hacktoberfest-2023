@@ -15,7 +15,7 @@ const Navbar = () => {
     { name: "Register", link: "/register", section: "register" },
   ];
 
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState(null);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -73,7 +73,7 @@ const Navbar = () => {
             width={51}
             height={45}
             alt="Hf10 Logo"
-            style={{ padding: 0 , scale: 1.0}}
+            style={{ padding: 0, scale: 1.0 }}
           />
           <div className="w-[1px] h-5 bg-[#efedef] mx-2"></div>
           <div className="relative w-10 h-10">

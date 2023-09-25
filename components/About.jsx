@@ -23,7 +23,7 @@ function About() {
         development and dissemination.
       </p>
       <h1>About the event</h1> */}
-      <div className=" py-6 w-[85%] mx-auto text-center flex flex-col gap-8 md:text-xl text-base md:inline">
+      <div className=" py-6 w-[85%] mx-auto  items-center flex flex-col gap-8 md:text-xl text-base ">
         <span className=" md:inline hidden">
           Welcome to Hacktoberfest - the annual extravaganza that fuels the
           spirit of open source collaboration! 🚀
