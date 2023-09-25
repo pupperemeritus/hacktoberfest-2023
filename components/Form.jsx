@@ -11,7 +11,7 @@ const hiddenOrShow = (e) => {
 
 
 class Form extends React.Component {
-    constructor() {
+  constructor() {
     super();
     this.state = {
       teamSize: 1,
@@ -27,7 +27,7 @@ class Form extends React.Component {
     });
   };
   componentDidMount() {
-    this.handleJqueryLoad()
+    this.handleJqueryLoad();
   }
 
   static async getInitialProps(ctx) {
@@ -131,7 +131,7 @@ class Form extends React.Component {
                   <div className=" my-2">
                     For any queries, contact: <br />
                     <span className=" text-bgold-200">Akil:</span>{" "}
-                    <span className=" text-bblue-100">+91 94426 21187</span><br/>
+                    <span className=" text-bblue-100">+91 94426 21187</span><br />
                     <span className=" text-bgold-200">Ritesh:</span>{" "}
                     <span className=" text-bblue-100">+91 96182 66824</span>
                   </div>
@@ -168,7 +168,7 @@ class Form extends React.Component {
                   <input
                     id="2063582306"
                     type="text"
-                    
+
                     name="entry.2063582306"
                     // className="form-control"
                     className=" form-control rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  px-4 py-2 md:text-xl  w-full"
@@ -300,7 +300,7 @@ class Form extends React.Component {
                     <input
                       id="445699137"
                       type="text"
-                    
+
                       name="entry.445699137"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required
@@ -339,7 +339,7 @@ class Form extends React.Component {
                     <input
                       id="580637188"
                       type="text"
-                    
+
                       name="entry.580637188"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 md:w-full w-full"
                       required
@@ -359,7 +359,7 @@ class Form extends React.Component {
                     <input
                       id="1494484691"
                       type="text"
-                    
+
                       name="entry.1494484691"
                       className=" form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
                       required
@@ -369,22 +369,22 @@ class Form extends React.Component {
 
                 {/*  */}
                 <fieldset className="form-group w-full">
-                <legend for="30119366">College Name</legend>
+                  <legend for="30119366">College Name</legend>
                   <div className="form-group">
                     <div className="radio">
-                        <label>
-                            <input type="radio" name="entry.1644823420" value="CBIT" required/>
-                            CBIT
-                        </label>
+                      <label>
+                        <input type="radio" name="entry.1644823420" value="CBIT" required />
+                        CBIT
+                      </label>
                     </div>
                     <div className="radio ">
-                        <label>
-                            <input type="radio" name="entry.1644823420" value="__other_option__" required/>
-                        </label>
-                        <input type="text" name="entry.1644823420.other_option_response" placeholder="custom value" className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"/>
+                      <label>
+                        <input type="radio" name="entry.1644823420" value="__other_option__" required />
+                      </label>
+                      <input type="text" name="entry.1644823420.other_option_response" placeholder="custom value" className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full" />
                     </div>
-              </div>
-          </fieldset>
+                  </div>
+                </fieldset>
 
 
                 {/*  */}
@@ -522,751 +522,751 @@ class Form extends React.Component {
             </div>
 
           </div>
-            <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
-              id="section-2"
-              style={{ display: hiddenOrShow(this.state.teamSize === 5) }}
-            >
-              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
-                {/*  */}
-                <fieldset className="w-full">
-                  <legend htmlFor="1998221997" className=" formlabel w-full">
-                    Team Member Details
-                  </legend>
-                  <div className="form-group w-full"></div>
-                </fieldset>
-
-                {/*  */}
-                <fieldset className="w-full">
-                  <legend className=" formlabel w-full" htmlFor="88520221">
-                    Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="614815331"
-                      type="text"
-                    
-                      name="entry.614815331"
-                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required={this.state.teamSize === 5}
-                    />
-                  </div>
-                </fieldset>
-
-                {/*  */}
-                <fieldset className="form-group w-full">
-                  <legend className=" formlabel w-full" htmlFor="1049216781">
-                    Roll Number
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="592584203"
-                      type="text"
-                    
-                      name="entry.592584203"
-                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required={this.state.teamSize === 5}
-                    />
-                  </div>
-                </fieldset>
-
-                <fieldset className="form-group w-full">
-        <legend for="30119366">College Name</legend>
-        <div className="form-group">
-            <div className="radio">
-                <label>
-                    <input type="radio" name="entry.1644823420" value="CBIT" required={this.state.teamSize === 5}/>
-                    CBIT
-                </label>
-            </div>
-            <div className="radio">
-                <label>
-                    <input type="radio" name="entry.1644823420" value="__other_option__" required={this.state.teamSize === 5}/>
-                </label>
-                <input type="text" name="entry.1644823420.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"/>
-            </div>
-        </div>
-    </fieldset>
-
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="596154546">
-                    Year
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="596154546"
-                      name="entry.467655292"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="First Year">First Year</option>
-                      <option readOnly="Second Year">Second Year</option>
-                      <option readOnly="Third Year">Third Year</option>
-                      <option readOnly="Fourth Year">Fourth Year</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="2093469607">
-                    Branch
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="2093469607"
-                      name="entry.113284536"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="CSE">CSE</option>
-                      <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                      <option readOnly="CET">CET</option>
-                      <option readOnly="IT">IT</option>
-                      <option readOnly="AIDS">AIDS</option>
-                      <option readOnly="CIVIL">CIVIL</option>
-                      <option readOnly="MECHANICAL">MECHANICAL</option>
-                      <option readOnly="ECE">ECE</option>
-                      <option readOnly="EEE">EEE</option>
-                      <option readOnly="CHEMICAL">CHEMICAL</option>
-                      <option readOnly="BIOTECH">BIOTECH</option>
-                      <option readOnly="MCA">MCA</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="245507387">
-                    Section
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="245507387"
-                      name="entry.639858685"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="1">1</option>
-                      <option readOnly="2">2</option>
-                      <option readOnly="3">3</option>
-                      <option readOnly="4">4</option>
-                      <option readOnly="5">5</option>
-                    </select>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-            <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
-              id="section-3"
-              style={{
-                display: hiddenOrShow([4, 5].includes(this.state.teamSize)),
-              }}
-            >
-              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
-                <fieldset className="w-full">
-                  <legend className=" formlabel w-full" htmlFor="297319105">
-                    Team Member Details
-                  </legend>
-                  <div className="form-group w-full"></div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="934191790">
-                    Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="1193142679"
-                      type="text"
-                    
-                      name="entry.1193142679"
-                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required={[4, 5].includes(this.state.teamSize)}
-                    />
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel w-full" htmlFor="966119623">
-                    Roll Number
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="1627949356"
-                      type="text"
-                    
-                      name="entry.1627949356"
-                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required={[4, 5].includes(this.state.teamSize)}
-                    />
-                  </div>
-                </fieldset>
-
-                <fieldset className="form-group w-full">
-                  <legend for="1147559039">College Name</legend>
-                    <div className="form-group">
-                        <div className="radio">
-                            <label>
-                                <input type="radio" name="entry.257862837" value="CBIT" required={[4, 5].includes(this.state.teamSize)}/>
-                                CBIT
-                            </label>
-                        </div>
-                        <div className="radio">
-                            <label>
-                                <input type="radio" name="entry.257862837" value="__other_option__" required={[4, 5].includes(this.state.teamSize)}/>
-                            </label>
-                            <input type="text" name="entry.257862837.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"/>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="219766217">
-                    Year
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="219766217"
-                      name="entry.1324061005"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="First Year">First Year</option>
-                      <option readOnly="Second Year">Second Year</option>
-                      <option readOnly="Third Year">Third Year</option>
-                      <option readOnly="Fourth Year">Fourth Year</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="625150825">
-                    Branch
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="625150825"
-                      name="entry.1284054994"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="CSE">CSE</option>
-                      <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                      <option readOnly="CET">CET</option>
-                      <option readOnly="IT">IT</option>
-                      <option readOnly="AIDS">AIDS</option>
-                      <option readOnly="CIVIL">CIVIL</option>
-                      <option readOnly="MECHANICAL">MECHANICAL</option>
-                      <option readOnly="ECE">ECE</option>
-                      <option readOnly="EEE">EEE</option>
-                      <option readOnly="CHEMICAL">CHEMICAL</option>
-                      <option readOnly="BIOTECH">BIOTECH</option>
-                      <option readOnly="MCA">MCA</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="291227852">
-                    Section
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="291227852"
-                      name="entry.11271393"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="1">1</option>
-                      <option readOnly="2">2</option>
-                      <option readOnly="3">3</option>
-                      <option readOnly="4">4</option>
-                      <option readOnly="5">5</option>
-                    </select>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-
-            <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
-              id="section-4"
-              style={{
-                display: hiddenOrShow([3, 4, 5].includes(this.state.teamSize)),
-              }}
-            >
-              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1535613039">
-                    Team Member Details
-                  </legend>
-                  <div className="form-group w-full"></div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel w-full" htmlFor="839804749">
-                    Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="1369366464"
-                      type="text"
-                    
-                      name="entry.1369366464"
-                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required={[3, 4, 5].includes(this.state.teamSize)}
-                    />
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel w-full" htmlFor="1911951528">
-                    Roll Number
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="1399044406"
-                      type="text"
-                    
-                      name="entry.1399044406"
-                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required={[3, 4, 5].includes(this.state.teamSize)}
-                    />
-                  </div>
-                </fieldset>
-
-                <fieldset className="form-group w-full">
-                    <legend for="1289435999">College Name</legend>
-                      <div className="form-group">
-                          <div className="radio">
-                              <label>
-                                  <input type="radio" name="entry.443034656" value="CBIT" required={[3, 4, 5].includes(this.state.teamSize)}/>
-                                  CBIT
-                              </label>
-                          </div>
-                          <div className="radio">
-                              <label>
-                                  <input type="radio" name="entry.443034656" value="__other_option__" required={[3, 4, 5].includes(this.state.teamSize)}/>
-                              </label>
-                              <input type="text" name="entry.443034656.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"/>
-                          </div>
-                      </div>
-                  </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="471078577">
-                    Year
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="471078577"
-                      name="entry.962333022"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="First Year">First Year</option>
-                      <option readOnly="Second Year">Second Year</option>
-                      <option readOnly="Third Year">Third Year</option>
-                      <option readOnly="Fourth Year">Fourth Year</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1317916075">
-                    Branch
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="1317916075"
-                      name="entry.171849333"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="CSE">CSE</option>
-                      <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                      <option readOnly="CET">CET</option>
-                      <option readOnly="IT">IT</option>
-                      <option readOnly="AIDS">AIDS</option>
-                      <option readOnly="CIVIL">CIVIL</option>
-                      <option readOnly="MECHANICAL">MECHANICAL</option>
-                      <option readOnly="ECE">ECE</option>
-                      <option readOnly="EEE">EEE</option>
-                      <option readOnly="CHEMICAL">CHEMICAL</option>
-                      <option readOnly="BIOTECH">BIOTECH</option>
-                      <option readOnly="MCA">MCA</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1725491973">
-                    Section
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="1725491973"
-                      name="entry.2122078574"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="1">1</option>
-                      <option readOnly="2">2</option>
-                      <option readOnly="3">3</option>
-                      <option readOnly="4">4</option>
-                      <option readOnly="5">5</option>
-                    </select>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-
-            <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
-              id="section-5"
-              style={{
-                display: hiddenOrShow([3, 4, 5].includes(this.state.teamSize)),
-              }}
-            >
-              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="494494688">
-                    Team Member Details
-                  </legend>
-                  <div className="form-group w-full"></div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="684711812">
-                    Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="1172486922"
-                      type="text"
-                    
-                      name="entry.1172486922"
-                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required={[3, 4, 5].includes(this.state.teamSize)}
-                    />
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="49335025">
-                    Roll Number
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="1756258122"
-                      type="text"
-                    
-                      name="entry.1756258122"
-                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required={[3, 4, 5].includes(this.state.teamSize)}
-                    />
-                  </div>
-                </fieldset>
-
-                <fieldset className="form-group w-full">
-                  <legend for="892138441">College Name</legend>
-                    <div className="form-group">
-                      <div className="radio">
-                          <label>
-                              <input type="radio" name="entry.1327608088" value="CBIT" required={[3, 4, 5].includes(this.state.teamSize)}/>
-                              CBIT
-                          </label>
-                      </div>
-                      <div className="radio">
-                          <label>
-                              <input type="radio" name="entry.1327608088" value="__other_option__" required={[3, 4, 5].includes(this.state.teamSize)}/>
-                          </label>
-                          <input type="text" name="entry.1327608088.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"/>
-                      </div>
-                  </div>
-              </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="650086981">
-                    Year
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="650086981"
-                      name="entry.1988676886"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="First Year">First Year</option>
-                      <option readOnly="Second Year">Second Year</option>
-                      <option readOnly="Third Year">Third Year</option>
-                      <option readOnly="Fourth Year">Fourth Year</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1580540328">
-                    Branch
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="1580540328"
-                      name="entry.1536308670"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="CSE">CSE</option>
-                      <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                      <option readOnly="CET">CET</option>
-                      <option readOnly="IT">IT</option>
-                      <option readOnly="AIDS">AIDS</option>
-                      <option readOnly="CIVIL">CIVIL</option>
-                      <option readOnly="MECHANICAL">MECHANICAL</option>
-                      <option readOnly="ECE">ECE</option>
-                      <option readOnly="EEE">EEE</option>
-                      <option readOnly="CHEMICAL">CHEMICAL</option>
-                      <option readOnly="BIOTECH">BIOTECH</option>
-                      <option readOnly="MCA">MCA</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1352080404">
-                    Section
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="1352080404"
-                      name="entry.1511534131"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="1">1</option>
-                      <option readOnly="2">2</option>
-                      <option readOnly="3">3</option>
-                      <option readOnly="4">4</option>
-                      <option readOnly="5">5</option>
-                    </select>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-
-            <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl tems-center my-8 w-full"
-              id="section-6"
-              style={{ display: hiddenOrShow(this.state.teamSize === 2) }}
-            >
-              <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1716255882">
-                    Team Member Details
-                  </legend>
-                  <div className="form-group w-full"></div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1570443883">
-                    Name
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="2120853261"
-                      type="text"
-                    
-                      name="entry.2120853261"
-                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required={this.state.teamSize === 2}
-                    />
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="717435800">
-                    Roll Number
-                  </legend>
-                  <div className="form-group w-full">
-                    <input
-                      id="2011915937"
-                      type="text"
-                    
-                      name="entry.2011915937"
-                      className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      required={this.state.teamSize === 2}
-                    />
-                  </div>
-                </fieldset>
-
-                <fieldset className="form-group w-full">
-                  <legend for="1859382656">College Name</legend>
-                  <div className="form-group">
-                      <div className="radio">
-                          <label>
-                              <input type="radio" name="entry.1137456307" value="CBIT" required={this.state.teamSize === 2}/>
-                              CBIT
-                          </label>
-                      </div>
-                      <div className="radio">
-                          <label>
-                              <input type="radio" name="entry.1137456307" value="__other_option__" required={this.state.teamSize === 2}/>
-                          </label>
-                          <input type="text" name="entry.1137456307.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"/>
-                      </div>
-                  </div>
-              </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1803766961">
-                    Year
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="1803766961"
-                      name="entry.232235344"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="First Year">First Year</option>
-                      <option readOnly="Second Year">Second Year</option>
-                      <option readOnly="Third Year">Third Year</option>
-                      <option readOnly="Fourth Year">Fourth Year</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="2092753228">
-                    Branch
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="2092753228"
-                      name="entry.1312317868"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="CSE">CSE</option>
-                      <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
-                      <option readOnly="CET">CET</option>
-                      <option readOnly="IT">IT</option>
-                      <option readOnly="AIDS">AIDS</option>
-                      <option readOnly="CIVIL">CIVIL</option>
-                      <option readOnly="MECHANICAL">MECHANICAL</option>
-                      <option readOnly="ECE">ECE</option>
-                      <option readOnly="EEE">EEE</option>
-                      <option readOnly="CHEMICAL">CHEMICAL</option>
-                      <option readOnly="BIOTECH">BIOTECH</option>
-                      <option readOnly="MCA">MCA</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <fieldset className="w-full">
-                  <legend className=" formlabel" htmlFor="1047500206">
-                    Section
-                  </legend>
-                  <div className="form-group w-full">
-                    <select
-                      id="1047500206"
-                      name="entry.1679693985"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
-                    >
-                      <option readOnly="1">1</option>
-                      <option readOnly="2">2</option>
-                      <option readOnly="3">3</option>
-                      <option readOnly="4">4</option>
-                      <option readOnly="5">5</option>
-                    </select>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-            <div
-              className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
-              id="section-7"
-              style={{
-                display: hiddenOrShow([1, 2].includes(this.state.teamSize)),
-              }}
-            >
+          <div
+            className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
+            id="section-2"
+            style={{ display: hiddenOrShow(this.state.teamSize === 5) }}
+          >
+            <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
+              {/*  */}
               <fieldset className="w-full">
-                <legend className=" formlabel" htmlFor="673550520">
+                <legend htmlFor="1998221997" className=" formlabel w-full">
+                  Team Member Details
+                </legend>
+                <div className="form-group w-full"></div>
+              </fieldset>
+
+              {/*  */}
+              <fieldset className="w-full">
+                <legend className=" formlabel w-full" htmlFor="88520221">
+                  Name
+                </legend>
+                <div className="form-group w-full">
+                  <input
+                    id="614815331"
+                    type="text"
+
+                    name="entry.614815331"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                    required={this.state.teamSize === 5}
+                  />
+                </div>
+              </fieldset>
+
+              {/*  */}
+              <fieldset className="form-group w-full">
+                <legend className=" formlabel w-full" htmlFor="1049216781">
+                  Roll Number
+                </legend>
+                <div className="form-group w-full">
+                  <input
+                    id="592584203"
+                    type="text"
+
+                    name="entry.592584203"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                    required={this.state.teamSize === 5}
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset className="form-group w-full">
+                <legend for="30119366">College Name</legend>
+                <div className="form-group">
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.1644823420" value="CBIT" required={this.state.teamSize === 5} />
+                      CBIT
+                    </label>
+                  </div>
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.1644823420" value="__other_option__" required={this.state.teamSize === 5} />
+                    </label>
+                    <input type="text" name="entry.1644823420.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
+                  </div>
+                </div>
+              </fieldset>
+
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="596154546">
+                  Year
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="596154546"
+                    name="entry.467655292"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="First Year">First Year</option>
+                    <option readOnly="Second Year">Second Year</option>
+                    <option readOnly="Third Year">Third Year</option>
+                    <option readOnly="Fourth Year">Fourth Year</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="2093469607">
+                  Branch
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="2093469607"
+                    name="entry.113284536"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="CSE">CSE</option>
+                    <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                    <option readOnly="CET">CET</option>
+                    <option readOnly="IT">IT</option>
+                    <option readOnly="AIDS">AIDS</option>
+                    <option readOnly="CIVIL">CIVIL</option>
+                    <option readOnly="MECHANICAL">MECHANICAL</option>
+                    <option readOnly="ECE">ECE</option>
+                    <option readOnly="EEE">EEE</option>
+                    <option readOnly="CHEMICAL">CHEMICAL</option>
+                    <option readOnly="BIOTECH">BIOTECH</option>
+                    <option readOnly="MCA">MCA</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="245507387">
+                  Section
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="245507387"
+                    name="entry.639858685"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="1">1</option>
+                    <option readOnly="2">2</option>
+                    <option readOnly="3">3</option>
+                    <option readOnly="4">4</option>
+                    <option readOnly="5">5</option>
+                  </select>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
+            id="section-3"
+            style={{
+              display: hiddenOrShow([4, 5].includes(this.state.teamSize)),
+            }}
+          >
+            <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
+              <fieldset className="w-full">
+                <legend className=" formlabel w-full" htmlFor="297319105">
                   Team Member Details
                 </legend>
                 <div className="form-group w-full"></div>
               </fieldset>
 
               <fieldset className="w-full">
-                <legend className=" formlabel" htmlFor="1085751915">
-                  Which of the following tech stacks are you and your teammate
-                  (if any) familiar with?
+                <legend className=" formlabel" htmlFor="934191790">
+                  Name
                 </legend>
                 <div className="form-group w-full">
-                  <div className="checkbox">
-                    <input
-                      type="checkbox"
-                      className="checkbox"
-                      name="entry.1744030706"
-                      readOnly="Frontend Development"
-                        // required={[1, 2].includes(this.state.teamSize)}
-                    />
-                    <label>Frontend Development</label>
-                  </div>
-                  <div className="checkbox">
-                    <input
-                      type="checkbox"
-                      className="checkbox"
-                      name="entry.1744030706"
-                      readOnly="Backend  Development"
-                        // required={[1, 2].includes(this.state.teamSize)}
-                    />
-                    <label>Backend Development</label>
-                  </div>
-                  <div className="checkbox">
-                    <input
-                      type="checkbox"
-                      className="checkbox"
-                      name="entry.1744030706"
-                      readOnly="UI/UX"
-                        // required={[1, 2].includes(this.state.teamSize)}
-                    />
-                    <label>UI/UX</label>
-                  </div>
-                  <div className="checkbox">
-                    <input
-                      type="checkbox"
-                      className="checkbox"
-                      name="entry.1744030706"
-                      readOnly="Machine Learning and Artificial Intelligence"
-                      //   required={[1, 2].includes(this.state.teamSize)}
-                    />
-                    <label>Machine Learning and Artificial Intelligence</label>
-                  </div>
-                  <div className="checkbox">
+                  <input
+                    id="1193142679"
+                    type="text"
+
+                    name="entry.1193142679"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                    required={[4, 5].includes(this.state.teamSize)}
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel w-full" htmlFor="966119623">
+                  Roll Number
+                </legend>
+                <div className="form-group w-full">
+                  <input
+                    id="1627949356"
+                    type="text"
+
+                    name="entry.1627949356"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                    required={[4, 5].includes(this.state.teamSize)}
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset className="form-group w-full">
+                <legend for="1147559039">College Name</legend>
+                <div className="form-group">
+                  <div className="radio">
                     <label>
-                      <input
-                        type="checkbox"
-                        className="checkbox"
-                        name="entry.1744030706"
-                        readOnly="__other_option__"
-                      />
+                      <input type="radio" name="entry.257862837" value="CBIT" required={[4, 5].includes(this.state.teamSize)} />
+                      CBIT
                     </label>
-                    <input
-                      type="text"
-                      name="entry.1744030706.other_option_response"
-                      placeholder="Others"
-                      className=" rounded text-sm px-2 py-1 border shadow-md border-bgold-200 bg-Manga-100 bg-opacity-30"
-                    />
+                  </div>
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.257862837" value="__other_option__" required={[4, 5].includes(this.state.teamSize)} />
+                    </label>
+                    <input type="text" name="entry.257862837.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
                 </div>
               </fieldset>
-              <div className=" hidden">
-                <input type="none" name="fvv" readOnly="1" />
-                <input type="none" name="fbzx" readOnly="7231037383997258336" />
-                {/* <!--
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="219766217">
+                  Year
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="219766217"
+                    name="entry.1324061005"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="First Year">First Year</option>
+                    <option readOnly="Second Year">Second Year</option>
+                    <option readOnly="Third Year">Third Year</option>
+                    <option readOnly="Fourth Year">Fourth Year</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="625150825">
+                  Branch
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="625150825"
+                    name="entry.1284054994"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="CSE">CSE</option>
+                    <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                    <option readOnly="CET">CET</option>
+                    <option readOnly="IT">IT</option>
+                    <option readOnly="AIDS">AIDS</option>
+                    <option readOnly="CIVIL">CIVIL</option>
+                    <option readOnly="MECHANICAL">MECHANICAL</option>
+                    <option readOnly="ECE">ECE</option>
+                    <option readOnly="EEE">EEE</option>
+                    <option readOnly="CHEMICAL">CHEMICAL</option>
+                    <option readOnly="BIOTECH">BIOTECH</option>
+                    <option readOnly="MCA">MCA</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="291227852">
+                  Section
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="291227852"
+                    name="entry.11271393"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="1">1</option>
+                    <option readOnly="2">2</option>
+                    <option readOnly="3">3</option>
+                    <option readOnly="4">4</option>
+                    <option readOnly="5">5</option>
+                  </select>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div
+            className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
+            id="section-4"
+            style={{
+              display: hiddenOrShow([3, 4, 5].includes(this.state.teamSize)),
+            }}
+          >
+            <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="1535613039">
+                  Team Member Details
+                </legend>
+                <div className="form-group w-full"></div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel w-full" htmlFor="839804749">
+                  Name
+                </legend>
+                <div className="form-group w-full">
+                  <input
+                    id="1369366464"
+                    type="text"
+
+                    name="entry.1369366464"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                    required={[3, 4, 5].includes(this.state.teamSize)}
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel w-full" htmlFor="1911951528">
+                  Roll Number
+                </legend>
+                <div className="form-group w-full">
+                  <input
+                    id="1399044406"
+                    type="text"
+
+                    name="entry.1399044406"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                    required={[3, 4, 5].includes(this.state.teamSize)}
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset className="form-group w-full">
+                <legend for="1289435999">College Name</legend>
+                <div className="form-group">
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.443034656" value="CBIT" required={[3, 4, 5].includes(this.state.teamSize)} />
+                      CBIT
+                    </label>
+                  </div>
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.443034656" value="__other_option__" required={[3, 4, 5].includes(this.state.teamSize)} />
+                    </label>
+                    <input type="text" name="entry.443034656.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="471078577">
+                  Year
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="471078577"
+                    name="entry.962333022"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="First Year">First Year</option>
+                    <option readOnly="Second Year">Second Year</option>
+                    <option readOnly="Third Year">Third Year</option>
+                    <option readOnly="Fourth Year">Fourth Year</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="1317916075">
+                  Branch
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="1317916075"
+                    name="entry.171849333"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="CSE">CSE</option>
+                    <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                    <option readOnly="CET">CET</option>
+                    <option readOnly="IT">IT</option>
+                    <option readOnly="AIDS">AIDS</option>
+                    <option readOnly="CIVIL">CIVIL</option>
+                    <option readOnly="MECHANICAL">MECHANICAL</option>
+                    <option readOnly="ECE">ECE</option>
+                    <option readOnly="EEE">EEE</option>
+                    <option readOnly="CHEMICAL">CHEMICAL</option>
+                    <option readOnly="BIOTECH">BIOTECH</option>
+                    <option readOnly="MCA">MCA</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="1725491973">
+                  Section
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="1725491973"
+                    name="entry.2122078574"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="1">1</option>
+                    <option readOnly="2">2</option>
+                    <option readOnly="3">3</option>
+                    <option readOnly="4">4</option>
+                    <option readOnly="5">5</option>
+                  </select>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div
+            className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
+            id="section-5"
+            style={{
+              display: hiddenOrShow([3, 4, 5].includes(this.state.teamSize)),
+            }}
+          >
+            <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="494494688">
+                  Team Member Details
+                </legend>
+                <div className="form-group w-full"></div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="684711812">
+                  Name
+                </legend>
+                <div className="form-group w-full">
+                  <input
+                    id="1172486922"
+                    type="text"
+
+                    name="entry.1172486922"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                    required={[3, 4, 5].includes(this.state.teamSize)}
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="49335025">
+                  Roll Number
+                </legend>
+                <div className="form-group w-full">
+                  <input
+                    id="1756258122"
+                    type="text"
+
+                    name="entry.1756258122"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                    required={[3, 4, 5].includes(this.state.teamSize)}
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset className="form-group w-full">
+                <legend for="892138441">College Name</legend>
+                <div className="form-group">
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.1327608088" value="CBIT" required={[3, 4, 5].includes(this.state.teamSize)} />
+                      CBIT
+                    </label>
+                  </div>
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.1327608088" value="__other_option__" required={[3, 4, 5].includes(this.state.teamSize)} />
+                    </label>
+                    <input type="text" name="entry.1327608088.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="650086981">
+                  Year
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="650086981"
+                    name="entry.1988676886"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="First Year">First Year</option>
+                    <option readOnly="Second Year">Second Year</option>
+                    <option readOnly="Third Year">Third Year</option>
+                    <option readOnly="Fourth Year">Fourth Year</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="1580540328">
+                  Branch
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="1580540328"
+                    name="entry.1536308670"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="CSE">CSE</option>
+                    <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                    <option readOnly="CET">CET</option>
+                    <option readOnly="IT">IT</option>
+                    <option readOnly="AIDS">AIDS</option>
+                    <option readOnly="CIVIL">CIVIL</option>
+                    <option readOnly="MECHANICAL">MECHANICAL</option>
+                    <option readOnly="ECE">ECE</option>
+                    <option readOnly="EEE">EEE</option>
+                    <option readOnly="CHEMICAL">CHEMICAL</option>
+                    <option readOnly="BIOTECH">BIOTECH</option>
+                    <option readOnly="MCA">MCA</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="1352080404">
+                  Section
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="1352080404"
+                    name="entry.1511534131"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="1">1</option>
+                    <option readOnly="2">2</option>
+                    <option readOnly="3">3</option>
+                    <option readOnly="4">4</option>
+                    <option readOnly="5">5</option>
+                  </select>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div
+            className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl tems-center my-8 w-full"
+            id="section-6"
+            style={{ display: hiddenOrShow(this.state.teamSize === 2) }}
+          >
+            <div className=" flex flex-col items-start gap-4 rounded-lg  md:px-4 md:py-3 w-full mx-auto">
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="1716255882">
+                  Team Member Details
+                </legend>
+                <div className="form-group w-full"></div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="1570443883">
+                  Name
+                </legend>
+                <div className="form-group w-full">
+                  <input
+                    id="2120853261"
+                    type="text"
+
+                    name="entry.2120853261"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                    required={this.state.teamSize === 2}
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="717435800">
+                  Roll Number
+                </legend>
+                <div className="form-group w-full">
+                  <input
+                    id="2011915937"
+                    type="text"
+
+                    name="entry.2011915937"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                    required={this.state.teamSize === 2}
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset className="form-group w-full">
+                <legend for="1859382656">College Name</legend>
+                <div className="form-group">
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.1137456307" value="CBIT" required={this.state.teamSize === 2} />
+                      CBIT
+                    </label>
+                  </div>
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.1137456307" value="__other_option__" required={this.state.teamSize === 2} />
+                    </label>
+                    <input type="text" name="entry.1137456307.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="1803766961">
+                  Year
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="1803766961"
+                    name="entry.232235344"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="First Year">First Year</option>
+                    <option readOnly="Second Year">Second Year</option>
+                    <option readOnly="Third Year">Third Year</option>
+                    <option readOnly="Fourth Year">Fourth Year</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="2092753228">
+                  Branch
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="2092753228"
+                    name="entry.1312317868"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="CSE">CSE</option>
+                    <option readOnly="CSE AI &amp; ML">CSE AI &amp; ML</option>
+                    <option readOnly="CET">CET</option>
+                    <option readOnly="IT">IT</option>
+                    <option readOnly="AIDS">AIDS</option>
+                    <option readOnly="CIVIL">CIVIL</option>
+                    <option readOnly="MECHANICAL">MECHANICAL</option>
+                    <option readOnly="ECE">ECE</option>
+                    <option readOnly="EEE">EEE</option>
+                    <option readOnly="CHEMICAL">CHEMICAL</option>
+                    <option readOnly="BIOTECH">BIOTECH</option>
+                    <option readOnly="MCA">MCA</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset className="w-full">
+                <legend className=" formlabel" htmlFor="1047500206">
+                  Section
+                </legend>
+                <div className="form-group w-full">
+                  <select
+                    id="1047500206"
+                    name="entry.1679693985"
+                    className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void"
+                  >
+                    <option readOnly="1">1</option>
+                    <option readOnly="2">2</option>
+                    <option readOnly="3">3</option>
+                    <option readOnly="4">4</option>
+                    <option readOnly="5">5</option>
+                  </select>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
+            id="section-7"
+            style={{
+              display: hiddenOrShow([1, 2].includes(this.state.teamSize)),
+            }}
+          >
+            <fieldset className="w-full">
+              <legend className=" formlabel" htmlFor="673550520">
+                Team Member Details
+              </legend>
+              <div className="form-group w-full"></div>
+            </fieldset>
+
+            <fieldset className="w-full">
+              <legend className=" formlabel" htmlFor="1085751915">
+                Which of the following tech stacks are you and your teammate
+                (if any) familiar with?
+              </legend>
+              <div className="form-group w-full">
+                <div className="checkbox">
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="entry.1744030706"
+                    readOnly="Frontend Development"
+                  // required={[1, 2].includes(this.state.teamSize)}
+                  />
+                  <label>Frontend Development</label>
+                </div>
+                <div className="checkbox">
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="entry.1744030706"
+                    readOnly="Backend  Development"
+                  // required={[1, 2].includes(this.state.teamSize)}
+                  />
+                  <label>Backend Development</label>
+                </div>
+                <div className="checkbox">
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="entry.1744030706"
+                    readOnly="UI/UX"
+                  // required={[1, 2].includes(this.state.teamSize)}
+                  />
+                  <label>UI/UX</label>
+                </div>
+                <div className="checkbox">
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="entry.1744030706"
+                    readOnly="Machine Learning and Artificial Intelligence"
+                  //   required={[1, 2].includes(this.state.teamSize)}
+                  />
+                  <label>Machine Learning and Artificial Intelligence</label>
+                </div>
+                <div className="checkbox">
+                  <label>
+                    <input
+                      type="checkbox"
+                      className="checkbox"
+                      name="entry.1744030706"
+                      readOnly="__other_option__"
+                    />
+                  </label>
+                  <input
+                    type="text"
+                    name="entry.1744030706.other_option_response"
+                    placeholder="Others"
+                    className=" rounded text-sm px-2 py-1 border shadow-md border-bgold-200 bg-Manga-100 bg-opacity-30"
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <div className=" hidden">
+              <input type="none" name="fvv" readOnly="1" />
+              <input type="none" name="fbzx" readOnly="7231037383997258336" />
+              {/* <!--
                         CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
                         This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
                         Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
                         We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
     --> */}
-                <input type="none" name="pageHistory" readOnly="0,1,2,3,4,5,6" />
-              </div>
+              <input type="none" name="pageHistory" readOnly="0,1,2,3,4,5,6" />
             </div>
-            <div id="section-8" className=" flex justify-center my-3 w-full">
-              <input
-                className="cursor-pointer px-4 py-2 bg-bblue-200 text-void text-xl rounded-lg border border-bgold-200 hover:bg-bblue-300 duration-300"
-                type="submit"
-                readOnly="Submit"
-              />
-            </div>
+          </div>
+          <div id="section-8" className=" flex justify-center my-3 w-full">
+            <input
+              className="cursor-pointer px-4 py-2 bg-bblue-200 text-void text-xl rounded-lg border border-bgold-200 hover:bg-bblue-300 duration-300"
+              type="submit"
+              readOnly="Submit"
+            />
+          </div>
         </form>
         <Script
           src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
@@ -1279,13 +1279,13 @@ class Form extends React.Component {
           integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
           crossorigin="anonymous"
         />
-          <div className="align-items-center flex justify-between font-thin  flex-col md:flex-row items-center gap-4 text-bgold-200 text-align-center">
-            <Link className="shimmerb text-lg" href="https://forms.gle/pt1HRckW8i8gAMgv9">
-              To edit response or if the website isn&apos;t working please go to this google form
-            </Link>
+        <div className="align-items-center flex justify-between font-thin  flex-col md:flex-row items-center gap-4 text-bgold-200 text-align-center">
+          <Link className="shimmerb text-lg" href="https://forms.gle/pt1HRckW8i8gAMgv9">
+            To edit response or if the website isn&apos;t working please go to this google form
+          </Link>
         </div>
       </div>
-      
+
     );
     {
       /* // This script requires jQuery and jquery-form plugin */
@@ -1294,12 +1294,12 @@ class Form extends React.Component {
       /* // You can use these ones from Cloudflare CDN: */
     }
     {
-      
+
     }
     {
-      
+
     }
-    
+
   }
 }
 {
