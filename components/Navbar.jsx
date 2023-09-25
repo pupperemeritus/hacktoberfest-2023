@@ -72,12 +72,13 @@ const Navbar = () => {
         <span className="shimmer">Learn. Code. Share.</span>
       </div>
       <div
-        className={`${
-          isSticky
+        className={`${isSticky
             ? "sticky top-0 h-16 backdrop-blur-3xl bg-[#0f0913] bg-opacity-70 shadow-md"
             : "bg-void"
           } left-0 h-16 py-2 px-4 flex justify-between items-center w-full transition-all duration-300 z-10 text-2xl `}
-        style="z-index: 2;"
+        style={{
+            "z-index": 2,
+          }}
       >
         <div className="flex items-center">
           <Image
