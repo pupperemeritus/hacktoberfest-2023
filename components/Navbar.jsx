@@ -25,10 +25,9 @@ const Navbar = () => {
   const getActiveSection = () => {
     const sections = document.querySelectorAll(".section");
     for (const section of sections) {
-      const sectionTop = section.getBoundingClientRect().top;
-
+      const sectionTop = section.getBoundingClientRect().top - 10000;
       const sectionBottom = section.getBoundingClientRect().bottom;
-      if (sectionTop - 1000 <= 0 && sectionBottom >= 0) {
+      if (sectionTop <= 0 && sectionBottom >= 0) {
         return section.id;
       }
     }
@@ -39,9 +38,23 @@ const Navbar = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  const scrollDownOnLoad = () => {
+    const scrollAmount = 1; // Adjust this value as needed
+    window.scrollBy(0, scrollAmount);
+  };
+
+  const handleLink = (event, link) => {
+    event.preventDefault();
+    window.location.href = link;
+    scrollDownOnLoad();
+  };
+
   useEffect(() => {
+    // Call the scrollDownOnLoad function when the component mounts
+    scrollDownOnLoad();
     const handleScroll = () => {
       const activeSection = getActiveSection();
+
       setActiveSection(activeSection);
 
       const scrollTop = window.scrollY;
@@ -134,7 +147,12 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                <Link href={link.link}>{link.name}</Link>
+                <Link
+                  href={link.link}
+                  onClick={(event) => handleLink(event, link.link)}
+                >
+                  {link.name}
+                </Link>
               </li>
             ))}
           </ul>
