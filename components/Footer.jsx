@@ -11,9 +11,9 @@ function Footer() {
           <strong className="shimmerb text-bblue-200">What We Do</strong>
           <br />
           <br />
-          At COSC, we&apos;re more than just an event organizer we&apos;re a community
-          dedicated to advancing the open source culture. We host hackathons,
-          conduct bootcamps, and facilitate workshops to equip students with the
+          At <strong>COSC</strong>, we&apos;re more than just an event organizer we&apos;re a community
+          dedicated to advancing the open source culture. We host <strong>hackathons</strong>,
+          conduct <strong>bootcamps</strong>, and facilitate <strong>workshops</strong> to equip students with the
           skills they need to thrive in the world of technology. Through our
           events, we nurture creativity, collaboration, and innovation.
           <br />
@@ -21,7 +21,7 @@ function Footer() {
           <strong className="shimmerb text-bblue-200">Join Us on This Journey</strong>
           <br />
           <br />
-          HacktoberFest isn&apos;t just an event; it&apos;s a chance to be part of
+          <strong>HacktoberFest</strong> isn&apos;t just an event; it&apos;s a chance to be part of
           something bigger, to embrace the power of open source, and to make an
           impact in the tech world. So, whether you&apos;re a seasoned developer, a
           curious beginner, or simply someone with a passion for technology, we
