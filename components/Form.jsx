@@ -974,8 +974,8 @@ class Form extends React.Component {
                   </div>
                   <div className="radio">
                     <label>
-                      Other
                       <input type="radio" name="entry.1327608088" value="__other_option__" required={[3, 4, 5].includes(this.state.teamSize)} />
+                      Other
                     </label>
                     <input type="text" name="entry.1327608088.other_option_response" placeholder="Your Institute Name" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
