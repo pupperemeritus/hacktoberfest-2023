@@ -368,7 +368,7 @@ class Form extends React.Component {
 
                 {/*  */}
                 <fieldset className="form-group w-full">
-                  <legend for="30119366">College Name</legend>
+                  <legend for="30119366" className="text-bblue-200 text-xl py-2">College Name</legend>
                   <div className="form-group">
                     <div className="radio">
                       <label>
@@ -378,9 +378,10 @@ class Form extends React.Component {
                     </div>
                     <div className="radio ">
                       <label>
+                        Other
                         <input type="radio" name="entry.1644823420" value="__other_option__" required />
                       </label>
-                      <input type="text" name="entry.1644823420.other_option_response" placeholder="custom value" className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full" />
+                      <input type="text" name="entry.1644823420.other_option_response" placeholder="Your Institute Name" className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full" />
                     </div>
                   </div>
                 </fieldset>
@@ -580,9 +581,10 @@ class Form extends React.Component {
                   </div>
                   <div className="radio">
                     <label>
+                      Other
                       <input type="radio" name="entry.1644823420" value="__other_option__" required={this.state.teamSize === 5} />
                     </label>
-                    <input type="text" name="entry.1644823420.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
+                    <input type="text" name="entry.1644823420.other_option_response" placeholder="Your Institute Name" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
                 </div>
               </fieldset>
@@ -710,9 +712,10 @@ class Form extends React.Component {
                   </div>
                   <div className="radio">
                     <label>
+                      Other
                       <input type="radio" name="entry.257862837" value="__other_option__" required={[4, 5].includes(this.state.teamSize)} />
                     </label>
-                    <input type="text" name="entry.257862837.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
+                    <input type="text" name="entry.257862837.other_option_response" placeholder="Your Institute Name" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
                 </div>
               </fieldset>
@@ -840,9 +843,10 @@ class Form extends React.Component {
                   </div>
                   <div className="radio">
                     <label>
+                      Other
                       <input type="radio" name="entry.443034656" value="__other_option__" required={[3, 4, 5].includes(this.state.teamSize)} />
                     </label>
-                    <input type="text" name="entry.443034656.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
+                    <input type="text" name="entry.443034656.other_option_response" placeholder="Your Institute Name" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
                 </div>
               </fieldset>
@@ -970,9 +974,10 @@ class Form extends React.Component {
                   </div>
                   <div className="radio">
                     <label>
+                      Other
                       <input type="radio" name="entry.1327608088" value="__other_option__" required={[3, 4, 5].includes(this.state.teamSize)} />
                     </label>
-                    <input type="text" name="entry.1327608088.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
+                    <input type="text" name="entry.1327608088.other_option_response" placeholder="Your Institute Name" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
                 </div>
               </fieldset>
@@ -1098,9 +1103,10 @@ class Form extends React.Component {
                   </div>
                   <div className="radio">
                     <label>
+                      Other
                       <input type="radio" name="entry.1137456307" value="__other_option__" required={this.state.teamSize === 2} />
                     </label>
-                    <input type="text" name="entry.1137456307.other_option_response" placeholder="custom value" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
+                    <input type="text" name="entry.1137456307.other_option_response" placeholder="Your Institute Name" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
                 </div>
               </fieldset>
