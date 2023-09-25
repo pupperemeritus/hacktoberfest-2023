@@ -1285,7 +1285,7 @@ class Form extends React.Component {
           crossorigin="anonymous"
         />
         <div className="align-items-center flex justify-center font-thin  flex-col md:flex-row items-center gap-4 text-bgold-200 w-full text-center">
-            To edit response or if the website isn&apos;t working please go to this google form <Link className="shimmerb" href="https://forms.gle/pt1HRckW8i8gAMgv9">https://forms.gle/pt1HRckW8i8gAMgv9</Link>
+            To edit response or if the website isn&apos;t working please go to this google form <span><Link className="shimmerb" href="https://forms.gle/pt1HRckW8i8gAMgv9"><br/>https://forms.gle/pt1HRckW8i8gAMgv9</Link></span>
         </div>
       </div>
 
