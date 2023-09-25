@@ -69,7 +69,7 @@ class Form extends React.Component {
               </p>
               <div className=" flex flex-col gap-2">
                 <span className=" self-center text-bgold-200 mb-10">
-                  This is your chance to make a mark in the open-source realm!
+                  This is your chance to make a mark in the open-source realm
                   <span className=" text-bblue-200">!</span>
                 </span>{" "}
                 <div className=" flex flex-col">
@@ -523,7 +523,7 @@ class Form extends React.Component {
 
           </div>
           <div
-            className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full"
+            className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl items-center my-8 w-full fadeInFadeOut"
             id="section-2"
             style={{ display: hiddenOrShow(this.state.teamSize === 5) }}
           >
@@ -581,8 +581,8 @@ class Form extends React.Component {
                   </div>
                   <div className="radio">
                     <label>
-                      Other
                       <input type="radio" name="entry.1644823420" value="__other_option__" required={this.state.teamSize === 5} />
+                      Other
                     </label>
                     <input type="text" name="entry.1644823420.other_option_response" placeholder="Your Institute Name" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
@@ -712,8 +712,8 @@ class Form extends React.Component {
                   </div>
                   <div className="radio">
                     <label>
-                      Other
                       <input type="radio" name="entry.257862837" value="__other_option__" required={[4, 5].includes(this.state.teamSize)} />
+                      Other
                     </label>
                     <input type="text" name="entry.257862837.other_option_response" placeholder="Your Institute Name" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
@@ -843,8 +843,8 @@ class Form extends React.Component {
                   </div>
                   <div className="radio">
                     <label>
-                      Other
                       <input type="radio" name="entry.443034656" value="__other_option__" required={[3, 4, 5].includes(this.state.teamSize)} />
+                      Other
                     </label>
                     <input type="text" name="entry.443034656.other_option_response" placeholder="Your Institute Name" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
@@ -1103,8 +1103,8 @@ class Form extends React.Component {
                   </div>
                   <div className="radio">
                     <label>
-                      Other
                       <input type="radio" name="entry.1137456307" value="__other_option__" required={this.state.teamSize === 2} />
+                      Other
                     </label>
                     <input type="text" name="entry.1137456307.other_option_response" placeholder="Your Institute Name" className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full" />
                   </div>
