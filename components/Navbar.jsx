@@ -15,7 +15,7 @@ const Navbar = () => {
     { name: "Register", link: "/register", section: "register" },
   ];
 
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState("home");
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -50,8 +50,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // Call the scrollDownOnLoad function when the component mounts
-    scrollDownOnLoad();
     const handleScroll = () => {
       const activeSection = getActiveSection();
 
