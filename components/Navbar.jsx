@@ -76,7 +76,8 @@ const Navbar = () => {
           isSticky
             ? "sticky top-0 h-16 backdrop-blur-3xl bg-[#0f0913] bg-opacity-70 shadow-md"
             : "bg-void"
-        } left-0 h-16 py-2 px-4 flex justify-between items-center w-full transition-all duration-300 z-10 text-2xl `}
+          } left-0 h-16 py-2 px-4 flex justify-between items-center w-full transition-all duration-300 z-10 text-2xl `}
+        style="z-index: 2;"
       >
         <div className="flex items-center">
           <Image

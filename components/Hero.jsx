@@ -35,6 +35,7 @@ const Hero = () => {
             width={1000}
             height={400}
             src="/images/HFest23_LogoCrop.png"
+            styles="z-index: 1"
             alt="Logo"
             className=""
             style={{ margin: "auto" }}
