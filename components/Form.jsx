@@ -54,18 +54,7 @@ class Form extends React.Component {
                 </span>
               </h2>
               <p className=" my-3">
-                Greetings Open-Source Enthusiasts! It&#x27;s that time of the
-                year again, the much awaited CBIT Hacktoberfest Hackathon is
-                just around the corner. With a tremendous turnout of 105 teams
-                and 516 participants in the previous edition, Hacktoberfest 
-                is still going strong and we
-                intend to keep it that way! This years edition of COSC&#x27;s
-                flagship event is similar to its predecessors and fosters a
-                community and celebrates open source. Hacktoberfest stands as
-                the premier virtual celebration within the Open Source
-                Community, offering a dynamic platform to sharpen your technical
-                prowess and spotlight your talents through meaningful
-                contributions to the open-source world.
+              Join the CBIT Hacktoberfest Hackathon, a virtual celebration of open source and community. With 105 teams and 516 participants in the last edition, this flagship event by COSC is back to foster a strong open-source community. Enhance your technical skills and make meaningful contributions to the open-source world in this exciting edition of Hacktoberfest!
               </p>
               <div className=" flex flex-col gap-2">
                 <span className=" self-center text-bgold-200 mb-10">
