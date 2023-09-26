@@ -5,8 +5,7 @@ import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Mentors from "@/components/Mentors";
 import Sponsors from "@/components/Sponsors";
-import Timeline from "@/components/Timeline";
-import TimelineMobile from "@/components/TimelineMobile";
+import TimelineMain from "@/components/TimelineCon";
 
 export default function Home() {
   return (
@@ -25,7 +24,7 @@ export default function Home() {
 
       {/* <div className="spacer layer2"></div> */}
       <section id="schedule" className=" spacer layer2 w-full section relative">
-        <Timeline />
+        <TimelineMain />
       </section>
 
       <div className=" spacer layer5 flex flex-col justify-center w-full mb-12">
@@ -36,7 +35,6 @@ export default function Home() {
         <section id="contact" className=" section w-full pt-28">
           <Contact />
         </section>
-        <TimelineMobile />
       </div>
     </main>
   );

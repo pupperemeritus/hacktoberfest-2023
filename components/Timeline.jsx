@@ -114,11 +114,11 @@ function ScrollSection() {
             <div className="scroll-section    mx-4 mb-6 w-[50vmin]">
               <div className="  text-bgold-200 md:h-60 h-40 md:px-8 md:py-4 px-4 py-2 border-2 border-bgold-200 rounded-xl flex flex-col justify-between w-full text-xl ">
                 <h1 className=" md:text-2xl text-sm  tracking-tighter ">
-                  24th September
+                  27th September
                   <span className=" hidden md:inline">, 2023</span>
                 </h1>
                 <div className="flex flex-col items-start">
-                  <span className=" md:text-xl text-sm">
+                  <span className=" md:text-xl text-sm text-bblue-200">
                     Registrations Begin
                   </span>
                   <Link href="/register">
@@ -140,7 +140,9 @@ function ScrollSection() {
                   <h1>11:59 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className="  md:text-xl  pb-3">Registrations End</span>
+                  <span className="  md:text-xl  pb-3 text-bblue-200">
+                    Registrations End
+                  </span>
                   <p className=" text-sm"></p>
                 </div>
               </div>
@@ -158,7 +160,9 @@ function ScrollSection() {
                   <h1>7:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className=" md:text-xl pb-3">Introductory Session</span>
+                  <span className=" md:text-xl pb-3 text-bblue-200">
+                    Introductory Session
+                  </span>
                   <p className=" text-sm text-bgold-300 md:inline hidden ">
                     A short introductory session on GitHub and Discord.
                   </p>
@@ -176,7 +180,9 @@ function ScrollSection() {
                   <h1>4:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className=" md:text-xl pb-3">Opening Ceremony</span>
+                  <span className=" md:text-xl pb-3 text-bblue-200">
+                    Opening Ceremony
+                  </span>
                   <p className=" text-sm text-bgold-300 md:inline hidden">
                     The inauguration of the 10th installation of the CBIT
                     Hacktoberfest Hackathon will be set underway
@@ -197,7 +203,7 @@ function ScrollSection() {
                   <h1>6:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className=" md:text-xl pb-3">
+                  <span className=" md:text-xl pb-3 text-bblue-200">
                     Releasing Problem Statements
                   </span>
                   <p className=" text-sm text-bgold-300 md:inline hidden">
@@ -216,7 +222,7 @@ function ScrollSection() {
                   <h1>6:30 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className=" md:text-xl pb-3">
+                  <span className=" md:text-xl pb-3 text-bblue-200">
                     Selection of problem statements
                   </span>
                   <p className=" text-sm text-bgold-300 md:inline hidden">
@@ -238,7 +244,9 @@ function ScrollSection() {
                   <h1>7:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className=" md:text-xl pb-3">Coding begins!</span>
+                  <span className=" md:text-xl pb-3 text-bblue-200">
+                    Coding begins!
+                  </span>
                   <p className=" text-sm text-bgold-300 md:inline hidden">
                     The contestants now set sail and begin their voyage towards
                     success.
@@ -257,7 +265,9 @@ function ScrollSection() {
                   <h1>2:00 AM & 9:00 AM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className=" md:text-xl pb-3">Ice Breaker Sessions</span>
+                  <span className=" md:text-xl pb-3 text-bblue-200">
+                    Ice Breaker Sessions
+                  </span>
                   <p className=" text-sm text-bgold-300 md:inline hidden">
                     Help melt the awkwardness and forge connections.
                   </p>
@@ -277,7 +287,9 @@ function ScrollSection() {
                   <h1>2:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className=" md:text-xl pb-3">Coding Ends</span>
+                  <span className=" md:text-xl pb-3 text-bblue-200">
+                    Coding Ends
+                  </span>
                   <p className=" text-sm text-bgold-300 md:inline hidden ">
                     The time for the contestants to finish up has finally come.
                   </p>
@@ -295,7 +307,9 @@ function ScrollSection() {
                   <h1>2:30 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className=" md:text-xl pb-3">Submissions Close</span>
+                  <span className=" md:text-xl pb-3 text-bblue-200">
+                    Submissions Close
+                  </span>
                   <p className=" text-sm text-bgold-300 md:inline hidden ">
                     Contestants must push their codes to GitHub before the
                     deadline and delays will not be accepted
@@ -316,7 +330,9 @@ function ScrollSection() {
                   <h1>3:00 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className=" md:text-xl pb-3">Presentations</span>
+                  <span className=" md:text-xl pb-3 text-bblue-200">
+                    Presentations
+                  </span>
                   <p className=" text-sm text-bgold-300 md:inline hidden ">
                     Pitching a solution to a panel of judges often acts as the
                     deciding factor to ensuring victory!
@@ -335,7 +351,9 @@ function ScrollSection() {
                   <h1>7:30 PM</h1>
                 </div>
                 <div className=" flex flex-col items-start">
-                  <span className=" md:text-xl pb-3">Closing Ceremony</span>
+                  <span className=" md:text-xl pb-3 text-bblue-200">
+                    Closing Ceremony
+                  </span>
                   <p className=" text-sm text-bgold-300 md:inline hidden  ">
                     It’s time for closing remarks and to finally announce the
                     much awaited winners!

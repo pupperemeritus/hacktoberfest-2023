@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Contact = () => {
@@ -23,12 +24,23 @@ const Contact = () => {
         </div>
         <div className="border border-solid border-bgold-200 p-3 rounded-md mt-3">
           <h3 className="text-md font-medium text-bblue-100">Email:</h3>
-          <p className="text-gray-700">{email}</p>
+
+          <Link
+            href="mailto:cosc@cbit.ac.in "
+            className="text-gray-700 hover:underline"
+          >
+            {email}
+          </Link>
         </div>
-        <div className="border border-solid border-bgold-200 p-3 rounded-md mt-3">
+        <div className="border border-solid border-bgold-200 p-3 rounded-md mt-3 flex flex-col">
           <h3 className="text-md font-medium  text-bblue-100">Phone:</h3>
-          <p className="text-gray-700">{phone}</p>
-          <p className="text-gray-700">{phone2}</p>
+
+          <Link href="tel:+919442621187" className="text-gray-700">
+            {phone}
+          </Link>
+          <Link href="tel:+919618266824" className="text-gray-700">
+            {phone2}
+          </Link>
         </div>
       </div>
     </div>

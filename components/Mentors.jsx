@@ -24,21 +24,21 @@ const mentors = [
     Name: "Arshia Parveen",
     Github: "https://github.com/Arshia-parveen",
     LinkedIn: "https://www.linkedin.com/in/arshia-parveen-8a39ba215/",
-    Designation: "General Secretary ",
+    Designation: "General Secretary",
     imgSrc: "/images/mentors/Arshia Parveen.jpeg",
   },
   {
     Name: "Nikhil Maroju",
     Github: "https://github.com/Maroju-Nikhil",
     LinkedIn: "https://www.linkedin.com/in/nikhil-maroju/",
-    Designation: "General Secretary ",
+    Designation: "General Secretary",
     imgSrc: "/images/mentors/Nikhil Maroju.jpg",
   },
   {
     Name: "Roopika Ponnur",
     Github: "https://github.com/roopika253",
     LinkedIn: "https://www.linkedin.com/in/roopika-ponnur-2423b3216/",
-    Designation: "General Secretary ",
+    Designation: "General Secretary",
     imgSrc: "/images/mentors/Roopika Ponnur .jpg",
   },
 
@@ -111,12 +111,22 @@ const Slider = ({ children, options }) => {
     <div className=" relative">
       <div className="top-0 bottom-0 left-5 absolute  justify-center items-center z-10 md:flex hidden">
         <button className="embla__prev " onClick={scrollPrev}>
-          <Image src={"images/leftarrow.svg"} alt="embla_prev" width={30} height={30} />
+          <Image
+            src={"images/leftarrow.svg"}
+            alt="embla_prev"
+            width={30}
+            height={30}
+          />
         </button>
       </div>
       <div className=" top-0 bottom-0 right-3 absolute md:flex hidden justify-center items-center z-10">
         <button className="embla__next" alt="embla_next" onClick={scrollNext}>
-          <Image src={"/images/rightarrow.svg"} alt="rightarrow" width={30} height={30} />
+          <Image
+            src={"/images/rightarrow.svg"}
+            alt="rightarrow"
+            width={30}
+            height={30}
+          />
         </button>
       </div>
 

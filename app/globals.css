@@ -68,20 +68,26 @@ body {
 
   background: hsla(276, 36%, 5%, 1);
 
-  background: linear-gradient(0deg,
-      hsla(276, 36%, 5%, 1) 0%,
-      hsla(192, 68%, 15%, 1) 44%,
-      hsla(192, 69%, 25%, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    hsla(276, 36%, 5%, 1) 0%,
+    hsla(192, 68%, 15%, 1) 44%,
+    hsla(192, 69%, 25%, 1) 100%
+  );
 
-  background: -moz-linear-gradient(0deg,
-      hsla(276, 36%, 5%, 1) 0%,
-      hsla(192, 68%, 15%, 1) 44%,
-      hsla(192, 69%, 25%, 1) 100%);
+  background: -moz-linear-gradient(
+    0deg,
+    hsla(276, 36%, 5%, 1) 0%,
+    hsla(192, 68%, 15%, 1) 44%,
+    hsla(192, 69%, 25%, 1) 100%
+  );
 
-  background: -webkit-linear-gradient(0deg,
-      hsla(276, 36%, 5%, 1) 0%,
-      hsla(192, 68%, 15%, 1) 44%,
-      hsla(192, 69%, 25%, 1) 100%);
+  background: -webkit-linear-gradient(
+    0deg,
+    hsla(276, 36%, 5%, 1) 0%,
+    hsla(192, 68%, 15%, 1) 44%,
+    hsla(192, 69%, 25%, 1) 100%
+  );
 
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0F0913", endColorstr="#0C3640", GradientType=1);
 }
@@ -142,24 +148,30 @@ body {
 .shimmer {
   text-align: center;
   color: rgba(255, 255, 255, 0.1);
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(#ad832d),
-      to(#ad832d),
-      color-stop(0.3, #fffba4));
-  background: -moz-gradient(linear,
-      left top,
-      right top,
-      from(#ad832d),
-      to(#ad832d),
-      color-stop(0.3, #fffba4));
-  background: gradient(linear,
-      left top,
-      right top,
-      from(#ad832d),
-      to(#ad832d),
-      color-stop(0.3, #fffba4));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ad832d),
+    to(#ad832d),
+    color-stop(0.3, #fffba4)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ad832d),
+    to(#ad832d),
+    color-stop(0.3, #fffba4)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#ad832d),
+    to(#ad832d),
+    color-stop(0.3, #fffba4)
+  );
   -webkit-background-size: 70px 100%;
   -moz-background-size: 70px 100%;
   background-size: 70px 100%;
@@ -223,24 +235,30 @@ body {
 .shimmerb {
   text-align: center;
   color: rgba(255, 255, 255, 0.1);
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(#33b6d8),
-      to(#33b6d8),
-      color-stop(0.3, #b2f3e0));
-  background: -moz-gradient(linear,
-      left top,
-      right top,
-      from(#33b6d8),
-      to(#33b6d8),
-      color-stop(0.3, #b2f3e0));
-  background: gradient(linear,
-      left top,
-      right top,
-      from(#33b6d8),
-      to(#33b6d8),
-      color-stop(0.3, #b2f3e0));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#33b6d8),
+    to(#33b6d8),
+    color-stop(0.3, #b2f3e0)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#33b6d8),
+    to(#33b6d8),
+    color-stop(0.3, #b2f3e0)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#33b6d8),
+    to(#33b6d8),
+    color-stop(0.3, #b2f3e0)
+  );
   -webkit-background-size: 70px 100%;
   -moz-background-size: 70px 100%;
   background-size: 70px 100%;
@@ -323,7 +341,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   /* Apply these styles for screens smaller than or equal to the medium breakpoint (768px) */
   .forminput {
     font-size: 1rem;
@@ -342,30 +359,35 @@ body {
   text-align: justify;
 }
 
-
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black; 
-  border-radius: 0; 
+  background: black;
+  border-radius: 0;
 }
 
 ::-webkit-scrollbar {
-  background: #d2b863; 
+  background: #d2b863;
   border-color: #ad832d;
-  border-radius: 0; 
-  width: 10px; 
+  border-radius: 0;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #d2b863;
-  border-color: #ad832d;}
+  border-color: #ad832d;
+}
 
 ::-webkit-scrollbar-thumb:hover {
   background: #b2f3e0;
 }
 
-
-
-
-
-
+/* footer border */
+.outline-border {
+  border-top: 2px solid #ec4237;
+  border-bottom: 2px solid #33b6d8;
+  background-image: linear-gradient(#ec4237, #33b6d8),
+    linear-gradient(#ec4237, #33b6d8);
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
