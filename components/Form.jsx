@@ -192,9 +192,9 @@ class Form extends React.Component {
                   >
                     Individual participants and teams comprising of two members
                     will be pooled with other participants Further details will
-                    be communicated to the Team Lead and the specified email.
+                    be communicated to the Team Lead and the specified email
                   </p>
-                  <div className=" flex align-items-center justify-center gap-8 my-4 shimmer">
+                  <div className=" flex align-items-center justify-center gap-8 my-4">
                     <div className="radio">
                       <label>
                         <input

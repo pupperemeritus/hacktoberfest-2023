@@ -343,47 +343,11 @@ body {
 }
 
 
-/* Style the container */
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 4px;
-}
 
-/* Style the radio button */
-.radio input[type="radio"] {
-  display: none; /* Hide the actual radio button */
-}
-
-/* Style the label as a button */
-.radio label {
-  display: inline-block;
-  padding: 6px 10px; /* Adjust padding to make the buttons smaller */
-   /* Set the background color to gold */
-  border: 1px solid #d2bb63;
-  border-radius: 4px;
-  cursor: pointer;
-  color: white; /* Color the numbers black */
-  font-size: 12px; /* Adjust the font size to make the buttons smaller */
-}
-
-/* Style the label when the radio button is checked */
-.input[type="radio"]:checked{
-  background-color: #3498db;
-}
-
-.input[type="radio"]:checked + label{
-  color: #000000;
-}
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   /* Safari and Chrome */
   .navbar-ios {
-      /* Add your styles to adjust the Navbar component on iOS here */
-      /* For example, you can use 'position: fixed;' to fix it at the top */
-      /* You may need to adjust other styles as well */
       position: fixed;
       top: 0;
       left: 0;
@@ -391,13 +355,6 @@ body {
   }
 
   .hero-ios {
-      /* Add your styles to adjust the Hero component on iOS here */
-      /* For example, you can add some top margin to create space */
       margin-top: 110px; /* Adjust this value as needed */
   }
 }
-
-* {
-  text-align: justify;
-}
-
