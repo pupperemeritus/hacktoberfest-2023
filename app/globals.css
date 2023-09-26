@@ -357,18 +357,7 @@ body {
   }
 
   .hero-ios {
-      margin-top: 110px; /* Adjust this value as needed */
+      margin-top: 100px; /* Adjust this value as needed */
        /* Adjust this value as needed */
   }
-}
-
-.navbar-ios {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.hero-ios {
-  margin-top: 90px; /* Adjust this value as needed */
-   /* Adjust this value as needed */
 }
