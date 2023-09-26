@@ -347,17 +347,3 @@ body {
 
 
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* Safari and Chrome */
-  .navbar-ios {
-    position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  }
-
-  .hero-ios {
-      margin-top: 10px; /* Adjust this value as needed */
-       /* Adjust this value as needed */
-  }
-}
