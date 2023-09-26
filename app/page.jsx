@@ -13,7 +13,7 @@ export default function Home() {
       <section id="home" className=" spacer layer1 section">
         <Hero />
       </section>
-      <section id="about" className=" section spacer layerDeez justify-between w-full md:pt-0 pt-10 h-100">
+      <section id="about" className=" section spacer layerDeez justify-between w-full md:pt-0 pt-4 h-100">
         <About />
       </section>
       {/* <div className="spacer layer2"></div> */}
