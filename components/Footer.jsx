@@ -21,11 +21,10 @@ function Footer() {
           <br />
           <br />
           <strong>Hacktoberfest</strong> isn&apos;t just an event; it&apos;s a chance to be part of
-          something bigger, to embrace the power of open source, and to make an
+          something bigger and to make an
           impact in the tech world. So, whether you&apos;re a seasoned developer, a
           curious beginner, or simply someone with a passion for technology, we
-          invite you to join us on this exhilarating journey. Let&apos;s learn, code,
-          and celebrate the magic of open source together!
+          invite you to join us on this exhilarating journey. 
         </p>
       </div>
       <div className=" self-center w-fit mx-auto my-8">
