@@ -343,32 +343,23 @@ body {
 }
 
 
-
-
 .navbar-ios {
-  position: fixed;
+  
+}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Safari and Chrome */
+  .navbar-ios {
+    position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-}
+  }
 
-
-.hero-ios {
-  margin-top: 0px; /* Adjust this value as needed */
-
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (/* Safari on iOS */) {
-/* Styles specific to Safari on iOS */
-.navbar-ios {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-   }
-
-.hero-ios {
-  margin-top: 110px; /* Adjust this value as needed */ 
-
-}
+  .hero-ios {
+      margin-top: 110px; /* Adjust this value as needed */
+       /* Adjust this value as needed */
+  }
 }
