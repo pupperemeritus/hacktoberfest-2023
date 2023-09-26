@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className=" h-full">
-      <div className=" mx-auto my-0 py-0 flex flex-col-reverse justify-center justify-items-center items-center w-[90%] h-4/5">
+      <div className=" mx-auto my-0 py-0 flex flex-col-reverse justify-center justify-items-center items-center w-[90%] h-4/5 hero-ios">
         <div className="mx-auto flex flex-col text-center items-center">
           <h1 className="text-4xl tracking-tight text-center ">
             <span className=" text-bblue-100">Welcome to</span>

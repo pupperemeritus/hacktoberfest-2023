@@ -8,14 +8,13 @@ function Footer() {
         <p className="text-center text-lg text-Manga-100">
           <br />
           <br />
-          <strong className="shimmerb text-bblue-200">What We Do</strong>
+          <strong className="shimmerb text-bblue-200">What We Do?</strong>
           <br />
           <br />
-          At <strong>COSC</strong>, we&apos;re more than just an event organizer we&apos;re a community
+          We&apos;re a community
           dedicated to advancing the open source culture. We host <strong>hackathons</strong>,
           conduct <strong>bootcamps</strong>, and facilitate <strong>workshops</strong> to equip students with the
-          skills they need to thrive in the world of technology. Through our
-          events, we nurture creativity, collaboration, and innovation.
+          skills they need to thrive in the world of technology. 
           <br />
           <br />
           <strong className="shimmerb text-bblue-200">Join Us on This Journey</strong>

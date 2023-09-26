@@ -34,14 +34,14 @@ function About() {
           </span>
           <p className=" mt-2 text-xs md:text-base font-thin ">
             Hacktoberfest, presented by DigitalOcean, Appwrite, and ILLA Cloud, is a month-long open 
-            source celebration. Its aim? To inspire students and enthusiasts while fostering community, 
+            source celebration. Its aim is to inspire students and enthusiasts while fostering community, 
             collaboration, and skill-building.
 
           </p>
         </div>
         <div className=" px-4 py-2 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md">
           <span className=" text-bgold-200 shimmer font-bold">
-            Why We&apos;re Thrilled
+            Why We&apos;re Thrilled?
           </span>
           <p className=" mt-2 font-thin text-xs md:text-base">
             The &quot;CBIT Hacktoberfest Hackathon&quot; is an exciting 24-hour
@@ -51,10 +51,10 @@ function About() {
           </p>
         </div>
         <div className=" px-4 py-2 bg-Manga-100 bg-opacity-10  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md">
-          <span className=" text-bgold-200 shimmer font-bold">Who We Are</span>
+          <span className=" text-bgold-200 shimmer font-bold">Who Are We?</span>
           <p className=" mt-2 font-thin text-xs md:text-base">
             We are the Chaitanya Bharathi Institute of Technology Open Source
-            Community (COSC) in Hyderabad. Our mission? Promote open source
+            Community (COSC) in Hyderabad. Our mission is to Promote open source
             values, provide a platform for students to explore and contribute to
             tech, all while crafting experiences that nurture a lifelong love
             for open source.

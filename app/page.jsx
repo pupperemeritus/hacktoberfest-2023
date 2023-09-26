@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 
@@ -6,16 +6,23 @@ import Hero from "@/components/Hero";
 import Mentors from "@/components/Mentors";
 import Sponsors from "@/components/Sponsors";
 import Timeline from "@/components/Timeline";
+import TimelineMobile from "@/components/TimelineMobile";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
-      <section id="home" className=" spacer layer1 section">
-        <Hero />
-      </section>
-      <section id="about" className=" section spacer layerDeez justify-between w-full md:pt-0 pt-10 h-100">
-        <About />
-      </section>
+      <div className=" spacer layer1">
+        <section id="home" className="  section">
+          <Hero />
+        </section>
+        <section
+          id="about"
+          className=" section justify-between w-full md:mt-6 pt-10 h-100"
+        >
+          <About />
+        </section>
+      </div>
+
       {/* <div className="spacer layer2"></div> */}
       <section id="schedule" className=" spacer layer2 w-full section relative">
         <Timeline />
@@ -29,6 +36,7 @@ export default function Home() {
         <section id="contact" className=" section w-full pt-28">
           <Contact />
         </section>
+        <TimelineMobile />
       </div>
     </main>
   );

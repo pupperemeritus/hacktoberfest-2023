@@ -54,18 +54,7 @@ class Form extends React.Component {
                 </span>
               </h2>
               <p className=" my-3">
-                Greetings Open-Source Enthusiasts! It&#x27;s that time of the
-                year again, the much awaited CBIT Hacktoberfest Hackathon is
-                just around the corner. With a tremendous turnout of 105 teams
-                and 516 participants in the previous edition, Hacktoberfest 
-                is still going strong and we
-                intend to keep it that way! This years edition of COSC&#x27;s
-                flagship event is similar to its predecessors and fosters a
-                community and celebrates open source. Hacktoberfest stands as
-                the premier virtual celebration within the Open Source
-                Community, offering a dynamic platform to sharpen your technical
-                prowess and spotlight your talents through meaningful
-                contributions to the open-source world.
+              Join the CBIT Hacktoberfest Hackathon, a virtual celebration of open source and community. With 105 teams and 516 participants in the last edition, this flagship event by COSC is back to foster a strong open-source community. Enhance your technical skills and make meaningful contributions to the open-source world in this exciting edition of Hacktoberfest!
               </p>
               <div className=" flex flex-col gap-2">
                 <span className=" self-center text-bgold-200 mb-10">
@@ -1284,8 +1273,13 @@ class Form extends React.Component {
           integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
           crossorigin="anonymous"
         />
+<<<<<<< HEAD
         <div className="align-items-center flex justify-center font-thin  flex-col md:flex-row items-center gap-4 text-bgold-200 w-full text-justify">
             <span className = "text-center">To edit your response or if the website isn&apos;t working, check out this Google Form <Link className="shimmerb" href="https://forms.gle/pt1HRckW8i8gAMgv9">https://forms.gle/pt1HRckW8i8gAMgv9</Link></span>
+=======
+        <div className="align-items-center flex justify-center font-thin  flex-col md:flex-row items-center gap-4 text-bgold-200 w-full text-center">
+            To edit response or if the website isn&apos;t working please go to this Google Form <Link className="shimmerb" href="https://forms.gle/pt1HRckW8i8gAMgv9">https://forms.gle/pt1HRckW8i8gAMgv9</Link>
+>>>>>>> 13fe3257478528310dd4931b4d4319f9c4c46add
         </div>
       </div>
 

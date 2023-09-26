@@ -64,7 +64,7 @@ const mentors = [
     imgSrc: "/images/mentors/Nishanth Artham.jpeg",
   },
   {
-    Name: "Meghana Veermallu",
+    Name: "Meghana Veeramallu",
     Github: "https://github.com/Meghanasveeramallu",
     LinkedIn: "https://www.linkedin.com/in/meghana-sreeya-veeramallu/",
     Designation: "Joint Secretary",
