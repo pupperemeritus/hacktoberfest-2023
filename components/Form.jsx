@@ -1399,7 +1399,7 @@ class Form extends React.Component {
           integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
           crossorigin="anonymous"
         />
-        <div className="align-items-center flex flex-col justify-center font-thin  md:flex-row items-center gap-4 text-bgold-200 w-full text-center md:text-base text-xs leading-5">
+        <div className="align-items-center flex flex-col justify-center font-thin  md:flex-row items-center gap-4 text-bgold-200 w-full text-center md:text-base text-sm leading-6">
           To edit your response or if you are unable to register on the website,
           register using the Google form.
         </div>
