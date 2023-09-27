@@ -16,7 +16,7 @@ const Hero = () => {
               CBIT Hacktoberfest Hackathon&apos;23
             </span>
           </h1>
-          <span className="md:text-lg mt-6 text-centerS">
+          <span className="md:text-lg mt-6 text-center">
             The Biggest Technical Fest of CBIT{" "}
           </span>
 
