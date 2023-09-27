@@ -52,7 +52,7 @@ class Form extends React.Component {
                   CBIT Hacktoberfest Hackathon 2023
                 </span>
               </h2>
-              <p className=" my-3">
+              <p className=" my-3 text-sm leading-6 md:text-base">
                 Join the CBIT Hacktoberfest Hackathon, a virtual celebration of
                 open source and community. With 105 teams and 516 participants
                 in the last edition, this flagship event by COSC is back to
@@ -61,16 +61,30 @@ class Form extends React.Component {
                 world in this exciting edition of Hacktoberfest!
               </p>
               <div className=" flex flex-col gap-2">
-                <span className=" self-center text-bgold-200 mb-10">
+                <span className=" self-center text-bgold-200 mb-10 text-sm leading-6 md:text-base">
                   This is your chance to make a mark in the open-source realm
                   <span className=" text-bblue-200">!</span>
-                </span>{" "}
+                </span>
+                <div className="align-items-center flex flex-col justify-center font-thin  md:flex-row items-center gap-4 text-bgold-200 w-full  md:text-base text-sm leading-6">
+                  To edit your response or if you are unable to register on the
+                  website, register using the Google form.
+                </div>
+                <div className=" mt-4 flex justify-center">
+                  <Link
+                    className="shimmerb mx-auto "
+                    href="https://forms.gle/pt1HRckW8i8gAMgv9"
+                  >
+                    <button className=" mx-auto mb-3 px-4 py-2 rounded-lg bg-opacity-10 border border-bgold-200 shadow-md hover:bg-Manga-200 hover:bg-opacity-25 duration-300">
+                      Google Form
+                    </button>
+                  </Link>
+                </div>
                 <div className=" flex flex-col">
-                  <span className=" self-center text-bblue-200 text-xl py-2">
+                  <span className=" self-center text-bblue-200 md:text-xl text-base font-semibold leading-6 py-2">
                     Here are some essential rules and guidelines to keep in
                     mind:
                   </span>
-                  <ul className=" list-disc">
+                  <ul className=" list-disc text-sm md:text-base leading-6">
                     <li className=" my-1">
                       Every team will consist of 3 to 5 members and individual
                       or paired participants will be pooled together.
@@ -90,7 +104,7 @@ class Form extends React.Component {
                     </li>
                   </ul>
                 </div>
-                <div className=" mt-3 mb-1">
+                <div className=" mt-3 mb-1 ">
                   <span className=" text-bgold-200"> Mode:</span>
                   <span className=" text-bblue-100"> Virtual (on Discord)</span>
                 </div>
@@ -112,7 +126,7 @@ class Form extends React.Component {
                     7th October, 4:00 PM to 8th October, 7:30 PM
                   </span>
                 </div>
-                <div className=" my-2">
+                <div className=" my-2 md:text-base text-sm leading-6">
                   {" "}
                   Stay tuned for additional information that will be relayed
                   through your team leader. Please keep an eye on your
@@ -123,12 +137,27 @@ class Form extends React.Component {
                     Instagram handle for future updates.
                   </p>{" "}
                   <div className=" my-2">
-                    For any queries, contact: <br />
-                    <span className=" text-bgold-200">Akil:</span>{" "}
-                    <span className=" text-bblue-100">+91 94426 21187</span>
-                    <br />
-                    <span className=" text-bgold-200">Ritesh:</span>{" "}
-                    <span className=" text-bblue-100">+91 96182 66824</span>
+                    For any queries, contact:
+                    <div className=" flex flex-col w-max my-2">
+                      <div className="flex justify-between">
+                        <span className=" text-bgold-200 pr-2">Akil:</span>
+                        <Link
+                          href="tel:+919442621187"
+                          className="text-bblue-100 hover:underline"
+                        >
+                          +91 94426 21187
+                        </Link>
+                      </div>
+                      <div className=" flex justify-between">
+                        <span className=" text-bgold-200 pr-2">Ritesh:</span>
+                        <Link
+                          href="tel:+919618266824"
+                          className=" text-bblue-100 hover:underline"
+                        >
+                          +91 96182 66824
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1371,8 +1400,8 @@ class Form extends React.Component {
           crossorigin="anonymous"
         />
         <div className="align-items-center flex flex-col justify-center font-thin  md:flex-row items-center gap-4 text-bgold-200 w-full text-center md:text-base text-xs leading-5">
-          To edit response or if the website isn&apos;t working please go to
-          this Google Form
+          To edit your response or if you are unable to register on the website,
+          register using the Google form.
         </div>
         <div className=" mt-4 flex justify-center">
           <Link
