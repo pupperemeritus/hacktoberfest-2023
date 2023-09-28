@@ -14,6 +14,15 @@ class Form extends React.Component {
     super();
     this.state = {
       teamSize: 1,
+      collegeOptions: {
+        // Initialize the state for each radio group to false (not "Other" selected).
+        group1: false,
+        group2: false,
+        group3: false,
+        group4: false,
+        group5: false,
+        group6: false,
+      },
     };
   }
 
@@ -25,6 +34,17 @@ class Form extends React.Component {
       console.log("teamSize Updated:", this.state.teamSize);
     });
   };
+
+  handleCollegeOptionChange = (group, value) => {
+    // Update the state for the selected radio group.
+    this.setState((prevState) => ({
+      collegeOptions: {
+        ...prevState.collegeOptions,
+        [group]: value === "__other_option__",
+      },
+    }));
+  };
+
   componentDidMount() {
     this.handleJqueryLoad();
   }
@@ -306,7 +326,7 @@ class Form extends React.Component {
                     id="1651657008"
                     name="entry.1651657008"
                     // className="form-control"
-                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 w-5/6 justify-items-center items-center w-full px-4 py-2"
+                    className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200  justify-items-center items-center w-full px-4 py-2"
                     required
                   ></textarea>
                 </div>
@@ -406,6 +426,9 @@ class Form extends React.Component {
                           name="entry.1644823420"
                           value="CBIT"
                           required
+                          onChange={() =>
+                            this.handleCollegeOptionChange("group1", "CBIT")
+                          }
                         />
                         CBIT
                       </label>
@@ -417,15 +440,23 @@ class Form extends React.Component {
                           name="entry.1644823420"
                           value="__other_option__"
                           required
+                          onChange={() =>
+                            this.handleCollegeOptionChange(
+                              "group1",
+                              "__other_option__"
+                            )
+                          }
                         />
                         Other
                       </label>
-                      <input
-                        type="text"
-                        name="entry.1644823420.other_option_response"
-                        placeholder="Your Institute Name"
-                        className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
-                      />
+                      {this.state.collegeOptions.group1 && (
+                        <input
+                          type="text"
+                          name="entry.1644823420.other_option_response"
+                          placeholder="Your Institute Name"
+                          className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                        />
+                      )}
                     </div>
                   </div>
                 </fieldset>
@@ -442,29 +473,29 @@ class Form extends React.Component {
                     <select
                       id="620465286"
                       name="entry.108615760"
-                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void focus:w-60 md:focus:w-80"
+                      className="w-full form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 focus:bg-void "
                     >
                       <option
                         readOnly="First Year"
-                        className=" w-min text-bblue-200 "
+                        className="  text-bblue-200 "
                       >
                         First Year
                       </option>
                       <option
                         readOnly="Second Year"
-                        className=" w-min text-bblue-200 "
+                        className="  text-bblue-200 "
                       >
                         Second Year
                       </option>
                       <option
                         readOnly="Third Year"
-                        className=" w-min text-bblue-200 "
+                        className="  text-bblue-200 "
                       >
                         Third Year
                       </option>
                       <option
                         readOnly="Fourth Year"
-                        className=" w-min text-bblue-200 "
+                        className="  text-bblue-200 "
                       >
                         Fourth Year
                       </option>
@@ -617,7 +648,12 @@ class Form extends React.Component {
               </fieldset>
 
               <fieldset className="form-group w-full">
-                <legend for="30119366">College Name</legend>
+                <legend
+                  htmlFor="30119366"
+                  className="text-bblue-200 text-xl py-2"
+                >
+                  College Name
+                </legend>
                 <div className="form-group">
                   <div className="radio">
                     <label>
@@ -626,6 +662,9 @@ class Form extends React.Component {
                         name="entry.1644823420"
                         value="CBIT"
                         required={this.state.teamSize === 5}
+                        onChange={() =>
+                          this.handleCollegeOptionChange("group2", "CBIT")
+                        }
                       />
                       CBIT
                     </label>
@@ -637,15 +676,23 @@ class Form extends React.Component {
                         name="entry.1644823420"
                         value="__other_option__"
                         required={this.state.teamSize === 5}
+                        onChange={() =>
+                          this.handleCollegeOptionChange(
+                            "group2",
+                            "__other_option__"
+                          )
+                        }
                       />
                       Other
                     </label>
-                    <input
-                      type="text"
-                      name="entry.1644823420.other_option_response"
-                      placeholder="Your Institute Name"
-                      className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"
-                    />
+                    {this.state.collegeOptions.group2 && (
+                      <input
+                        type="text"
+                        name="entry.1644823420.other_option_response"
+                        placeholder="Your Institute Name"
+                        className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                      />
+                    )}
                   </div>
                 </div>
               </fieldset>
@@ -760,7 +807,12 @@ class Form extends React.Component {
               </fieldset>
 
               <fieldset className="form-group w-full">
-                <legend for="1147559039">College Name</legend>
+                <legend
+                  htmlFor="1147559039"
+                  className="text-bblue-200 text-xl py-2"
+                >
+                  College Name
+                </legend>
                 <div className="form-group">
                   <div className="radio">
                     <label>
@@ -769,6 +821,9 @@ class Form extends React.Component {
                         name="entry.257862837"
                         value="CBIT"
                         required={[4, 5].includes(this.state.teamSize)}
+                        onChange={() =>
+                          this.handleCollegeOptionChange("group3", "CBIT")
+                        }
                       />
                       CBIT
                     </label>
@@ -780,15 +835,23 @@ class Form extends React.Component {
                         name="entry.257862837"
                         value="__other_option__"
                         required={[4, 5].includes(this.state.teamSize)}
+                        onChange={() =>
+                          this.handleCollegeOptionChange(
+                            "group3",
+                            "__other_option__"
+                          )
+                        }
                       />
                       Other
                     </label>
-                    <input
-                      type="text"
-                      name="entry.257862837.other_option_response"
-                      placeholder="Your Institute Name"
-                      className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"
-                    />
+                    {this.state.collegeOptions.group3 && (
+                      <input
+                        type="text"
+                        name="entry.257862837.other_option_response"
+                        placeholder="Your Institute Name"
+                        className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                      />
+                    )}
                   </div>
                 </div>
               </fieldset>
@@ -904,7 +967,12 @@ class Form extends React.Component {
               </fieldset>
 
               <fieldset className="form-group w-full">
-                <legend for="1289435999">College Name</legend>
+                <legend
+                  htmlFor="1289435999"
+                  className="text-bblue-200 text-xl py-2"
+                >
+                  College Name
+                </legend>
                 <div className="form-group">
                   <div className="radio">
                     <label>
@@ -913,6 +981,9 @@ class Form extends React.Component {
                         name="entry.443034656"
                         value="CBIT"
                         required={[3, 4, 5].includes(this.state.teamSize)}
+                        onChange={() =>
+                          this.handleCollegeOptionChange("group4", "CBIT")
+                        }
                       />
                       CBIT
                     </label>
@@ -924,15 +995,23 @@ class Form extends React.Component {
                         name="entry.443034656"
                         value="__other_option__"
                         required={[3, 4, 5].includes(this.state.teamSize)}
+                        onChange={() =>
+                          this.handleCollegeOptionChange(
+                            "group4",
+                            "__other_option__"
+                          )
+                        }
                       />
                       Other
                     </label>
-                    <input
-                      type="text"
-                      name="entry.443034656.other_option_response"
-                      placeholder="Your Institute Name"
-                      className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"
-                    />
+                    {this.state.collegeOptions.group4 && (
+                      <input
+                        type="text"
+                        name="entry.443034656.other_option_response"
+                        placeholder="Your Institute Name"
+                        className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                      />
+                    )}
                   </div>
                 </div>
               </fieldset>
@@ -1048,7 +1127,12 @@ class Form extends React.Component {
               </fieldset>
 
               <fieldset className="form-group w-full">
-                <legend for="892138441">College Name</legend>
+                <legend
+                  htmlFor="892138441"
+                  className="text-bblue-200 text-xl py-2"
+                >
+                  College Name
+                </legend>
                 <div className="form-group">
                   <div className="radio">
                     <label>
@@ -1057,6 +1141,9 @@ class Form extends React.Component {
                         name="entry.1327608088"
                         value="CBIT"
                         required={[3, 4, 5].includes(this.state.teamSize)}
+                        onChange={() =>
+                          this.handleCollegeOptionChange("group5", "CBIT")
+                        }
                       />
                       CBIT
                     </label>
@@ -1068,15 +1155,23 @@ class Form extends React.Component {
                         name="entry.1327608088"
                         value="__other_option__"
                         required={[3, 4, 5].includes(this.state.teamSize)}
+                        onChange={() =>
+                          this.handleCollegeOptionChange(
+                            "group5",
+                            "__other_option__"
+                          )
+                        }
                       />
                       Other
                     </label>
-                    <input
-                      type="text"
-                      name="entry.1327608088.other_option_response"
-                      placeholder="Your Institute Name"
-                      className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"
-                    />
+                    {this.state.collegeOptions.group5 && (
+                      <input
+                        type="text"
+                        name="entry.1327608088.other_option_response"
+                        placeholder="Your Institute Name"
+                        className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                      />
+                    )}
                   </div>
                 </div>
               </fieldset>
@@ -1190,7 +1285,12 @@ class Form extends React.Component {
               </fieldset>
 
               <fieldset className="form-group w-full">
-                <legend for="1859382656">College Name</legend>
+                <legend
+                  htmlFor="1859382656"
+                  className="text-bblue-200 text-xl py-2"
+                >
+                  College Name
+                </legend>
                 <div className="form-group">
                   <div className="radio">
                     <label>
@@ -1199,6 +1299,9 @@ class Form extends React.Component {
                         name="entry.1137456307"
                         value="CBIT"
                         required={this.state.teamSize === 2}
+                        onChange={() =>
+                          this.handleCollegeOptionChange("group6", "CBIT")
+                        }
                       />
                       CBIT
                     </label>
@@ -1210,15 +1313,23 @@ class Form extends React.Component {
                         name="entry.1137456307"
                         value="__other_option__"
                         required={this.state.teamSize === 2}
+                        onChange={() =>
+                          this.handleCollegeOptionChange(
+                            "group6",
+                            "__other_option__"
+                          )
+                        }
                       />
                       Other
                     </label>
-                    <input
-                      type="text"
-                      name="entry.1137456307.other_option_response"
-                      placeholder="Your Institute Name"
-                      className=" px-12 py-6 bg-Manga-100 bg-opacity-20  rounded-xl shadow-lg border border-bgold-200 backdrop-blur-md flex flex-col items-center my-8 w-full"
-                    />
+                    {this.state.collegeOptions.group6 && (
+                      <input
+                        type="text"
+                        name="entry.1137456307.other_option_response"
+                        placeholder="Your Institute Name"
+                        className="form-control shadow-md md:text-xl rounded-lg bg-Manga-200 bg-opacity-20 border border-bgold-200 px-4 py-2 w-full"
+                      />
+                    )}
                   </div>
                 </div>
               </fieldset>
