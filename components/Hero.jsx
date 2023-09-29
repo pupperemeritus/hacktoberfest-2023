@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Hero = () => {
+const Hero = (showRegButton) => {
   return (
     <div className=" h-full">
       <div className=" mx-auto my-0 py-0 flex flex-col-reverse justify-center justify-items-center items-center w-[90%] h-4/5 hero-ios">
@@ -24,7 +24,7 @@ const Hero = () => {
             7th and 8th October 2023
           </span>
 
-          <Link href="/register" className=" self-center mt-6">
+          <Link href="/register" className=" self-center mt-6" style={{ display: showRegButton === true ? ("block") : ("none") }}>
             <button className=" px-6 py-3 bg-none hover:bg-Manga-100 hover:bg-opacity-10 duration-300 my-2  text-bgold-200 border border-bgold-200 rounded-lg text-2xl md:text-3xl mt-3">
               Register
             </button>
