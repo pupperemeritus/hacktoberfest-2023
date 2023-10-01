@@ -4,7 +4,7 @@ import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 import { signIn } from "next-auth/react";
 import { signOut } from "next-auth/react";
 
-function Login({ router }) {
+function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
@@ -20,22 +20,13 @@ function Login({ router }) {
     setError(null); // Reset any previous errors
     setIsLoading(true); // Show loading indicator
 
-    signIn("credentials", {
+    const user = await signIn("credentials", {
       email,
       password,
       redirect: true,
-      callbackUrl: "/register",
+      callbackUrl: "/statements",
     });
     setIsLoading(false); // Hide loading indicator
-
-    if (error) {
-      setError(error.message); // Set the error message if there's an error
-      console.error("Login error:", error.message);
-    } else {
-      console.log("Logged in successfully:", user);
-      // Redirect or perform any other actions after successful login
-      router.push("/statements");
-    }
   };
 
   return (
@@ -63,8 +54,7 @@ function Login({ router }) {
             <button
               type="button"
               className="text-xl duration-300 border rounded-lg cursor-pointer bg-bblue-200 text-void border-bgold-200 hover:bg-bblue-300"
-              onClick={() => setIsPasswordVisible(!isPasswordVisible)}
-            >
+              onClick={() => setIsPasswordVisible(!isPasswordVisible)}>
               {isPasswordVisible ? (
                 <EyeIcon className="w-10 h-10 text-gray-500" />
               ) : (
@@ -77,15 +67,13 @@ function Login({ router }) {
           <button
             type="button"
             className="px-4 py-2 text-xl duration-300 border rounded-lg cursor-pointer bg-bblue-200 text-void border-bgold-200 hover:bg-bblue-300"
-            onClick={handleLogin}
-          >
+            onClick={handleLogin}>
             Login
           </button>
           <button
             type="button"
             className="text-sm bg-[#8e4296] text-white p-2 rounded-xl"
-            onClick={() => signOut()}
-          >
+            onClick={() => signOut()}>
             Sign out
           </button>
         </div>
