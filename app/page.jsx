@@ -31,7 +31,7 @@ export default function Home() {
         <section id="mentors" className=" section pt-16">
           <Mentors />
         </section>
-        {/* <Sponsors /> */}
+        <Sponsors />
         <section id="contact" className=" section w-full pt-28">
           <Contact />
         </section>
