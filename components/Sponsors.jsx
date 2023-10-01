@@ -18,7 +18,7 @@ const Sponsors = () => {
 
         <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-2 ">
-                <h1 className="justify-center text-4xl text-center  justify-items-center text-bblue-200 shimmerb">
+                <h1 className="justify-center text-4xl text-center justify-items-center text-bblue-200 shimmerb">
                     Our Co-sponsor
                 </h1>
                 <div className=" h-[2px] bg-bblue-200 w-16"></div>
@@ -26,8 +26,8 @@ const Sponsors = () => {
             <div className="flex flex-row items-center gap-2">
                 <Image
                     src="/images/sponsors/interview-buddy.png"
-                    width={320}
-                    height={180}
+                    width={284}
+                    height={160}
                 />
             </div>
         </div>
