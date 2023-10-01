@@ -30,6 +30,7 @@ const Sponsors = () => {
                         src="/images/sponsors/interview-buddy.png"
                         width={284}
                         height={160}
+                        className="rounded-xl"
                     />
                 </Link>
             </div>
