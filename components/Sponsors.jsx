@@ -1,6 +1,7 @@
 import React from "react";
 //import './Sponsors.css';
 import Image from "next/image";
+import Link from "next/link";
 const Sponsors = () => {
     return (
         // <div className="sponsors-container">
@@ -24,11 +25,13 @@ const Sponsors = () => {
                 <div className=" h-[2px] bg-bblue-200 w-16"></div>
             </div>
             <div className="flex flex-row items-center gap-2">
-                <Image
-                    src="/images/sponsors/interview-buddy.png"
-                    width={284}
-                    height={160}
-                />
+                <Link href="https://interviewbuddy.in/" target="_blank">
+                    <Image
+                        src="/images/sponsors/interview-buddy.png"
+                        width={284}
+                        height={160}
+                    />
+                </Link>
             </div>
         </div>
     );
