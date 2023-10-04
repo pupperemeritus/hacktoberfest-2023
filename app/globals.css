@@ -128,6 +128,10 @@ body {
     background-image: url("/stacked-waves-blue7.svg");
 }
 
+.layer8 {
+    background-image: url("/stacked-waves-blue8.svg");
+}
+
 .scroll-section-outer {
     overflow: hidden;
 }
