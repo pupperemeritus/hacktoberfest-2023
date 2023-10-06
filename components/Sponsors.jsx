@@ -57,7 +57,7 @@ const Sponsors = () => {
                             src="/images/sponsors/gyandhan.png"
                             width={284}
                             height={160}
-                            className="rounded-xl"
+                            className="rounded-xl "
                         />
                     </Link>
                 </div>
