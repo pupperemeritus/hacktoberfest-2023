@@ -17,8 +17,8 @@ const Sponsors = () => {
         //   </div>
         // </div>
 
-        <>
-            <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col gap-16">
+            <div className="flex flex-col items-center gap-3">
                 <div className="flex flex-col items-center gap-2 ">
                     <h1 className="justify-center text-4xl text-center justify-items-center text-bblue-200 shimmerb">
                         Title-Sponsor
@@ -26,7 +26,11 @@ const Sponsors = () => {
                     <div className=" h-[2px] bg-bblue-200 w-16"></div>
                 </div>
                 <div className="flex flex-row items-center gap-2">
-                    <Link href="https://www.skillsoft.com/" target="_blank">
+                    <Link
+                        href="https://www.skillsoft.com/"
+                        target="_blank"
+                        className="mx-4 "
+                    >
                         <Image
                             src="/images/sponsors/skillsoft.png"
                             width={426}
@@ -43,7 +47,7 @@ const Sponsors = () => {
                     </h1>
                     <div className=" h-[2px] bg-bblue-200 w-16"></div>
                 </div>
-                <div className="flex flex-row items-center gap-12   ">
+                <div className="flex flex-col items-center gap-12 md:flex-row ">
                     <div className="flex flex-row items-center gap-2">
                         <Link href="https://www.gyandhan.com/" target="_blank">
                             <Image
@@ -66,7 +70,7 @@ const Sponsors = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
