@@ -20,19 +20,47 @@ const Sponsors = () => {
         <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-2 ">
                 <h1 className="justify-center text-4xl text-center justify-items-center text-bblue-200 shimmerb">
-                    Our Co-sponsor
+                    Title Sponsor
                 </h1>
                 <div className=" h-[2px] bg-bblue-200 w-16"></div>
             </div>
             <div className="flex flex-row items-center gap-2">
-                <Link href="https://interviewbuddy.in/" target="_blank">
+                <Link href="https://www.skillsoft.com/" target="_blank">
                     <Image
-                        src="/images/sponsors/interview-buddy.png"
-                        width={284}
-                        height={160}
+                        src="/images/sponsors/ssoft.png"
+                        width={426}
+                        height={240}
                         className="rounded-xl "
                     />
                 </Link>
+            </div>
+            <div className="flex flex-col items-center gap-2 ">
+                <h1 className="justify-center text-4xl text-center justify-items-center text-bblue-200 shimmerb">
+                    Co-sponsors
+                </h1>
+                <div className=" h-[2px] bg-bblue-200 w-16"></div>
+            </div>
+            <div className="flex flex-row gap-16">
+                <div className="flex flex-row items-center gap-2">
+                    <Link href="https://interviewbuddy.in/" target="_blank">
+                        <Image
+                            src="/images/sponsors/interview-buddy.png"
+                            width={284}
+                            height={160}
+                            className="rounded-xl "
+                        />
+                    </Link>
+                </div>
+                <div className="flex flex-row items-center gap-2">
+                    <Link href="https://www.gyandhan.com/" target="_blank">
+                        <Image
+                            src="/images/sponsors/gyandhan.png"
+                            width={284}
+                            height={160}
+                            className="rounded-xl"
+                        />
+                    </Link>
+                </div>
             </div>
         </div>
     );
