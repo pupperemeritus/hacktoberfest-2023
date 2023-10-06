@@ -17,7 +17,6 @@ const Sponsors = () => {
         //   </div>
         // </div>
 
-<<<<<<< HEAD
         <>
             <div className="flex flex-col items-center gap-6">
                 <div className="flex flex-col items-center gap-2 ">
