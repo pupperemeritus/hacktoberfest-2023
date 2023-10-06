@@ -43,12 +43,12 @@ const Sponsors = () => {
             <div className="flex flex-col items-center gap-8 ">
                 <div className="flex flex-col items-center gap-2 ">
                     <h1 className="justify-center text-4xl text-center justify-items-center text-bblue-200 shimmerb">
-                        Our Co-sponsors
+                        Co-sponsor
                     </h1>
                     <div className=" h-[2px] bg-bblue-200 w-16"></div>
                 </div>
                 <div className="flex flex-col items-center gap-12 md:flex-row ">
-                    <div className="flex flex-row items-center gap-2">
+                    {/* <div className="flex flex-row items-center gap-2">
                         <Link href="https://www.gyandhan.com/" target="_blank">
                             <Image
                                 src="/images/sponsors/gyandhan.png"
@@ -57,7 +57,7 @@ const Sponsors = () => {
                                 className="rounded-xl "
                             />
                         </Link>
-                    </div>
+                    </div> */}
                     <div className="flex flex-row items-center gap-2">
                         <Link href="https://interviewbuddy.in/" target="_blank">
                             <Image
